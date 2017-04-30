@@ -4,8 +4,8 @@
 
 *Cayman Blog is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://lorepirri.github.io/cayman-blog), or even [use it today](#usage).*
 
-![Thumbnail of cayman-blog](thumbnail.png)
-![Thumbnail of cayman-blog for mobile](thumbnail-mobile.png)
+![Thumbnail of cayman-blog](thumbnail.png =551x432)
+![Thumbnail of cayman-blog for mobile](thumbnail-mobile.png =239x424)
 
 ## Usage
 
