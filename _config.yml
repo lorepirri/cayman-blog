@@ -2,4 +2,9 @@ title: Cayman Blog theme
 description: Cayman Blog is a clean, responsive theme for GitHub Pages, with blogging features.
 show_downloads: true
 google_analytics:
+# cayman-blog date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+cayman-blog:
+  date_format: "%b %-d, %Y"
+
 theme:
