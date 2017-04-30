@@ -1,10 +1,11 @@
 ---
 layout: post
+title: "Example content"
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](another-page).
+[Link to another page: About](about).
 
 There should be whitespace between paragraphs.
 
