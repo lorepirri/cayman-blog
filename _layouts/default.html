@@ -29,7 +29,7 @@
     <section class="page-header">
       <h1 class="project-name">{{ project-name }}</h1>
       <h2 class="project-tagline">{{ project-tagline }}</h2>
-      {% if site.github.is_project_page %}
+      {% if page.layout == 'post' and site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% if site.show_downloads %}
           <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
