@@ -38,7 +38,7 @@
       {% endif %}
       <!-- Post tagline -->
       {% if page.layout == 'post' %}
-        <h2 class="project-tagline">
+        <h2 class="project-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
           {{ page.date | date: date_format }}

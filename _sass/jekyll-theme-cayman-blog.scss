@@ -141,6 +141,25 @@ a {
   }
 }
 
+.project-date {
+  margin-bottom: 0rem;
+  font-weight: normal;
+  opacity: 0.7;
+  font-style: italic;
+
+  @include large {
+    font-size: 1.0rem;
+  }
+
+  @include medium {
+    font-size: 0.95rem;
+  }
+
+  @include small {
+    font-size: 0.75rem;
+  }
+}
+
 .main-content {
   word-wrap: break-word;
 
