@@ -10,6 +10,15 @@
 
 To use the Cayman Blog theme:
 
+:warning: As stated in the official [Jekyll documentation](https://jekyllrb.com/docs/themes/#installing-a-theme):
+
+> If you’re publishing your Jekyll site on [GitHub Pages](https://pages.github.com/), note that GitHub Pages supports only some gem-based themes. See [Supported Themes](https://pages.github.com/themes/) in GitHub’s documentation to see which themes are supported.
+
+Therefore, this theme can not be installed in the same way as the ones officially supported by GitHub Pages (e.g. Cayman, Minima), a bit more effort has to be put on.
+
+The easiest way I found to install _Cayman Blog_, is [installing it](local-install) locally, and then [converting the gem-based theme to regular theme](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes).
+
+### Local Install
 1. Add the following to your site's `_config.yml`:
 
     ```yml
