@@ -16,22 +16,38 @@ To use the Cayman Blog theme:
 
 Therefore, this theme can not be installed in the same way as the ones officially supported by GitHub Pages (e.g. Cayman, Minima), a bit more effort has to be put on.
 
-The easiest way I found to install _Cayman Blog_, is [installing it](local-install) locally, and then [converting the gem-based theme to regular theme](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes).
+The easiest way I found to install _Cayman Blog_, is [installing the theme gem](gem-install), and then [converting the gem-based theme to regular theme](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes).
 
-### Local Install
-1. Add the following to your site's `_config.yml`:
+Alternatively, for new projects, one could fork the whole theme, and keep only the interesting files.
+
+
+### Gem Install
+
+This method is preferred for existing _Jekyll blogs_, as well as newly created ones. Notice that the files `index.md`, `about.md`, `contact.md` will be overwritten (only `index.md` is really needed, the other two are just placeholders).
+
+1. Install the theme gem: ` $ gem install jekyll-theme-cayman-blog`
+3. Run `$ gem env gemdir` to know where the gem was installed
+4. Open the folder shown in the output
+5. Open the theme folder (e.g. `jekyll-theme-cayman-blog-0.0.5`)
+6. Copy all the files into your newly created or existing blog folder    
+7. Leave empty `theme` your site's `_config.yml`:
 
     ```yml
-    theme: jekyll-theme-cayman-blog
+    theme:
     ```
+6. Modify `_config.yml`, `about.md`, `contact.md` for your project
+7. [Customize the theme](customizing)
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+### Install as a Fork
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-
+1. [Fork the repo](https://github.com/lorepirri/cayman-blog)
+2. Clone down the repo with `$ git clone git@github.com:username/reponame.git`
+3. Delete the `screenshot.png` and `screenshot-mobile.png` files
+3. Empty the `_posts` folder
+4. Install bundler and gems with `$ script/bootstrap`
+5. Run Jekyll with `$ script/server`
+6. Modify `_config.yml`, `about.md`, `contact.md` for your project
+7. [Customize the theme](customizing)
 
 ## Customizing
 
