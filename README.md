@@ -28,6 +28,7 @@ This method is preferred for existing _Jekyll blogs_, as well as newly created o
 1. Install the theme gem: ` $ gem install jekyll-theme-cayman-blog`
 3. Run `$ gem env gemdir` to know where the gem was installed
 4. Open the folder shown in the output
+5. Open the folder `gems`
 5. Open the theme folder (e.g. `jekyll-theme-cayman-blog-0.0.5`)
 6. Copy all the files into your newly created or existing blog folder    
 7. Leave empty `theme` your site's `_config.yml`:
