@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
+
   <head>
-    <meta charset="UTF-8">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+
+    {% if page.title %}
+      {% assign page-title = page.title | escape %}
+    {% else %}
+      {% assign page-title = site.title | escape %}
+    {% endif %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
+
+    <title>{{ page-title }}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | default: site.github.project_tagline | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
@@ -14,21 +28,18 @@
     {% include site-header.html %}
 
     {% if page.layout == 'home' %}
-      {% assign project-name = site.title | default: site.github.repository_name %}
-      {% assign project-tagline = site.description | default: site.github.project_tagline %}
+      {% assign page-tagline = site.description | default: site.github.project_tagline %}
     {% endif %}
     {% if page.layout == 'page' %}
-      {% assign project-name = page.title | escape %}
-      {% assign project-tagline = page.tagline | escape %}
+      {% assign page-tagline = page.tagline | escape %}
     {% endif %}
     {% if page.layout == 'post' %}
-      {% assign project-name = page.title | escape %}
-      {% assign project-tagline = page.tagline | default: site.github.project_tagline %}
+      {% assign page-tagline = page.tagline | default: site.github.project_tagline %}
     {% endif %}
 
     <section class="page-header">
-      <h1 class="project-name">{{ project-name }}</h1>
-      <h2 class="project-tagline">{{ project-tagline }}</h2>
+      <h1 class="project-name">{{ page-title }}</h1>
+      <h2 class="project-tagline">{{ page-tagline }}</h2>
       {% if page.layout == 'home' and site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% if site.show_downloads %}
