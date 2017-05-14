@@ -7,4 +7,14 @@ google_analytics:
 cayman-blog:
   date_format: "%b %-d, %Y"
 
-theme:
+theme: # leave it empty
+
+# social
+author: lorenzo
+twitter:
+  username: lorepirri
+  site: pirriontheroad
+facebook:
+  app_id: app1234
+  publisher: lorepirri
+  admins: adminID1234
