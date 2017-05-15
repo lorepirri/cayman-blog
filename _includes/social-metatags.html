@@ -49,9 +49,9 @@ facebook:
 {% assign page_description = page.excerpt | default: site.description | default: site.github.project_tagline | strip_html | normalize_whitespace | truncate: 152 | escape %}
 
 {%if page.featured_image %}
-  {% assign page_featured_image = site.url | append: page.featured_image %}
+  {% assign page_featured_image = site.url | append: site.baseurl | append: page.featured_image %}
 {%else if site.featured_image %}
-  {% assign page_featured_image = site.url | append: site.featured_image %}
+  {% assign page_featured_image = site.url | append: site.baseurl | append: site.featured_image %}
 {%endif %}
 
 {% assign canonical_url = page.url | replace:'index.html','' | absolute_url %}
