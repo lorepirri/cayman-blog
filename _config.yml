@@ -16,6 +16,6 @@ twitter:
   username: lorepirri
   site: pirriontheroad
 facebook:
-  app_id: app1234
   publisher: lorepirri
-  admins: adminID1234
+#  app_id: app1234
+#  admins: adminID1234
