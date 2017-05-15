@@ -9,8 +9,14 @@ cayman-blog:
 
 theme: # leave it empty
 
+# collections
+collections:
+  projects:
+    output: true
+
 # social
-author: lorenzo
+author: "Lore Pirri"
+featured_image: /thumbnail-jumbo.png
 twitter:
   username: lorepirri
   site: pirriontheroad
