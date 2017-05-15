@@ -133,13 +133,8 @@ facebook:
 {%endif %}
 
 {%if facebook_publisher %}
-  <meta property="article:author" content="https://github.com/lorepirri">
   <meta property="article:author" content="https://www.facebook.com/{{ facebook_publisher }}">
 {%endif %}
-
-<!-- {%if page_author %}
-  <meta property="article:author" content="{{ page_author }}">
-{%endif %} -->
 
 {%if page.tags %}
   {% for tag in page.tags %}
