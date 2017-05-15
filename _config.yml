@@ -9,11 +9,6 @@ cayman-blog:
 
 theme: # leave it empty
 
-# collections
-collections:
-  projects:
-    output: true
-
 # social
 author: "Lore Pirri"
 featured_image: /thumbnail-jumbo.png
