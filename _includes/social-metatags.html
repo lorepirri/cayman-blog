@@ -6,8 +6,8 @@ PAGE
 title
 tagline
 author
-author_twitter_username
-author_facebook_publisher
+twitter_username
+facebook_publisher
 keywords
 tags //tags: [jekyll,blogging,facebook,metadata]
 categories //categories: [jekyll,blogging,facebook,metadata]
@@ -19,6 +19,7 @@ modified_date
 SITE
 description
 author
+featured_image // featured_image: /assets/screenshot.jpg
 twitter:
   username: lorepirri
   site: pirriontheroad
@@ -34,11 +35,23 @@ facebook:
  {% assign page_title = site.title | escape %}
 {% endif %}
 
-{% assign page_author = page.author | default: site.author | default: nil | escape %}
+
+{% if page.author or page.facebook_publisher %}
+  {% assign page_author = page.author | default: nil | escape %}
+  {% assign facebook_publisher = page.facebook_publisher | default: nil | escape %}
+  {% assign twitter_creator = page.twitter_username | default: site.twitter.site | default: nil | escape %}
+{% else %}
+  {% assign page_author = site.author | default: nil | escape %}
+  {% assign facebook_publisher = site.facebook.publisher | default: nil | escape %}
+  {% assign twitter_creator = site.twitter.username | default: nil | escape %}
+{% endif %}
+
 {% assign page_description = page.excerpt | default: site.description | default: site.github.project_tagline | strip_html | normalize_whitespace | truncate: 152 | escape %}
 
 {%if page.featured_image %}
   {% assign page_featured_image = site.url | append: page.featured_image %}
+{%else if site.featured_image %}
+  {% assign page_featured_image = site.url | append: site.featured_image %}
 {%endif %}
 
 {% assign canonical_url = page.url | replace:'index.html','' | absolute_url %}
@@ -54,7 +67,7 @@ facebook:
 {%if page.keywords %}
   <meta name="keywords" itemprop="keywords" content="{{ page.keywords | escape  }}">
 {%endif %}
-{%if page.categories %}
+{%if page.categories.length > 0 %}
   <meta name="keywords" itemprop="categories" content="{{ page.categories | join: ', ' | escape  }}">
 {%endif %}
 {%if page.category %}
@@ -64,23 +77,26 @@ facebook:
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="{{ page_title }}">
 <meta itemprop="description" content="{{ page_description }}">
-{%if page.featured_image %}
+{%if page_featured_image %}
   <meta itemprop="image" content="{{ page_featured_image }}">
 {%endif %}
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
+
 {%if site.twitter.site %}
   <meta name="twitter:site" content="@{{ site.twitter.site }}">
 {%endif %}
-  <meta name="twitter:title" content="{{ page_title }}">
-  <meta name="twitter:description" content="{{ page_description }}">
-{%if page.author_twitter_username || site.twitter.username %}
-  <meta name="twitter:creator" content="@{{ page.author_twitter_username | default: site.twitter.username }}">
+
+<meta name="twitter:title" content="{{ page_title }}">
+<meta name="twitter:description" content="{{ page_description }}">
+
+{%if twitter_creator %}
+  <meta name="twitter:creator" content="@{{ twitter_creator }}">
 {%endif %}
 
 <!-- Twitter summary card with large image must be at least 280x150px -->
-{%if page.featured_image %}
+{%if page_featured_image %}
   <meta name="twitter:image:src" content="{{ page_featured_image }}">
   <meta property="twitter:image" content="{{ page_featured_image }}">
 {%endif %}
@@ -92,7 +108,7 @@ facebook:
 <meta property="og:title" content="{{ page_title }}" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ canonical_url }}" />
-{%if page.featured_image %}
+{%if page_featured_image %}
   <meta property="og:image" content="{{ page_featured_image }}" />
 {%endif %}
 <meta property="og:description" content="{{ page_description }}" />
@@ -112,14 +128,8 @@ facebook:
   <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
 {%endif %}
 
-<!-- <meta property="article:section" itemprop="articleSection" content="The Upshot">
-<meta property="article:section_url" content="https://www.nytimes.com/section/upshot">
-<meta property="article:top-level-section" content="upshot"> -->
-
-{%if page.author_facebook %}
-  <meta property="article:author" content="https://www.facebook.com/{{ page.author_facebook }}">
-{%elsif site.facebook.publisher %}
-  <meta property="article:author" content="https://www.facebook.com/{{ site.facebook.publisher }}">
+{%if facebook_publisher %}
+  <meta property="article:author" content="https://www.facebook.com/{{ facebook_publisher }}">
 {%endif %}
 
 {%if page_author %}
