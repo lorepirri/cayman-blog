@@ -42,7 +42,7 @@
       {% assign page-tagline = page.tagline | escape %}
     {% endif %}
     {% if page.layout == 'post' %}
-      {% assign page-tagline = page.tagline | default: site.github.project_tagline | escape  %}
+      {% assign page-tagline = page.tagline | escape  %}
     {% endif %}
 
     <section class="page-header">
