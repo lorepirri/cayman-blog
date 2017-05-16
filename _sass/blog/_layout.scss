@@ -103,6 +103,7 @@
       margin-right: 10px;
       margin-left: 10px;
     }
+
   }
 }
 
@@ -120,6 +121,13 @@
   > li > h2 {
     margin-top: 0rem;
     margin-bottom: 0.4rem;
+  }
+}
+
+@include media-query($on-palm) {
+  .post-list {
+    -webkit-margin-end: 10px;
+    -webkit-padding-start: 10px;
   }
 }
 
