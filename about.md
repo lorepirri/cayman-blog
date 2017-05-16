@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+tagline: A few more words about this theme
 permalink: /about/
 ---
 
@@ -9,4 +10,4 @@ This is the _Cayman Blog_ Jekyll theme. You can find out more info about customi
 You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
 
 
-[back](./)
+[Go to the Home Page](./)
