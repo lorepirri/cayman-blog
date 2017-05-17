@@ -16,21 +16,21 @@ If you’re running Jekyll v3.3+ and **self-hosting** you can quickly install th
 
 1. Add this line to your Jekyll site’s Gemfile:
 
-```
-gem "jekyll-theme-cayman-blog"
-```
+    ```
+    gem "jekyll-theme-cayman-blog"
+    ```
 
 2. Add this line to your Jekyll site’s _config.yml file:
 
-```
-theme: jekyll-theme-cayman-blog
-```
+    ```
+    theme: jekyll-theme-cayman-blog
+    ```
 
 3. Then run Bundler to install the theme gem and dependencies:
 
-```
-script/bootstrap
-```
+    ```
+    script/bootstrap
+    ```
 
 ## Hosting with GitHub Pages
 
