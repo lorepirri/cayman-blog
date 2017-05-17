@@ -1,5 +1,5 @@
 title: Cayman Blog Theme
-description: Cayman Blog is a clean, responsive blogging theme for Jekyll and GitHub Pages, with social features.
+description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and GitHub Pages, with social features.
 show_downloads: true
 google_analytics:
 # cayman-blog date format
@@ -14,7 +14,7 @@ author: "Lore Pirri"
 featured_image: /thumbnail-jumbo.png
 twitter:
   username: lorepirri
-#  site: 
+#  site:
 facebook:
   publisher: lorepirri
   profile_id: 1809805629
