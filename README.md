@@ -68,6 +68,25 @@ show_downloads: ["true" or "false" to indicate whether to provide a download URL
 google_analytics: [Your Google Analytics tracking ID]
 ```
 
+### RSS feeds
+
+To enable RSS feeds and also make visible an RSS feeds button in the footer, the [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) must be installed.
+
+Add this line to your site's Gemfile:
+
+```ruby
+gem 'jekyll-feed'
+```
+
+And then add this line to your site's `_config.yml`:
+
+```yml
+gems:
+  - jekyll-feed
+```
+
+For more information about configuring this plugin, see the official [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) page.
+
 ### Stylesheet
 
 If you'd like to add your own custom styles:
