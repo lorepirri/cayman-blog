@@ -20,7 +20,7 @@
     {% if site.gems contains "jekyll-seo-tag" %}
       <!-- jekyll-seo-tag -->
     {% else %}
-      <!-- custom seo tag -->
+      {% include social-metatags.html %}
     {% endif %}
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

@@ -113,6 +113,36 @@ gems:
 
 For more information about configuring this plugin, see the official [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) page.
 
+### SEO tags
+
+Cayman Blog includes simple SEO tags from [jekyll-social-metatags](https://github.com/lorepirri/jekyll-social-metatags). Have a look at the page for its usage.
+
+The usage is compatible with the plugin [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag), which provides a battle-tested template of crowdsourced best-practices.
+
+To switch to a better SEO tags however, one should install [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed):
+
+1. Add this line to your site's Gemfile:
+
+    ```ruby
+    gem 'jekyll-seo-tag'
+    ```
+
+2. And then add this line to your site's `_config.yml`:
+
+    ```yml
+    gems:
+      - jekyll-seo-tag
+    ```
+
+3. Replace with the following, the `<!-- jekyll-seo-tag -->` comment in your site's `default.html`:
+
+      ```liquid
+      {% seo %}
+      ```
+
+For more information about configuring this plugin, see the official [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag) page.
+
+
 ### Stylesheet
 
 If you'd like to add your own custom styles:
