@@ -11,7 +11,7 @@ theme: # leave it empty
 
 # social
 author: "Lore Pirri"
-featured_image: /thumbnail-jumbo.png
+image: /thumbnail-jumbo.png
 twitter:
   username: lorepirri
 #  site:
