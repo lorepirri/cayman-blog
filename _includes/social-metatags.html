@@ -12,13 +12,15 @@
   {% assign page_author = page.author | default: nil | escape %}
   {% assign facebook_publisher = page.facebook.publisher | default: nil | escape %}
   {% assign twitter_creator = page.twitter.username | default: site.twitter.site | default: nil | escape %}
+  {% assign facebook_authors = page.facebook.authors | default: nil | escape %}
 {% else %}
   {% assign page_author = site.author | default: nil | escape %}
   {% assign facebook_publisher = site.facebook.publisher | default: nil | escape %}
   {% assign twitter_creator = site.twitter.username | default: nil | escape %}
+  {% assign facebook_authors = site.facebook.authors | default: nil | escape %}
 {% endif %}
 
-{% assign page_description = page.excerpt | default: site.description | default: site.github.project_tagline | strip_html | normalize_whitespace | truncate: 152 | escape %}
+{% assign page_description = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 152 | escape %}
 
 {%if page.image %}
   {% assign page_image = site.url | append: site.baseurl | append: page.image %}
@@ -26,7 +28,7 @@
   {% assign page_image = site.url | append: site.baseurl | append: site.image %}
 {%endif %}
 
-{% assign canonical_url = page.url | replace:'index.html','' | absolute_url %}
+{% assign canonical_url = page.url | replace:'index.html','' | prepend: site.url %}
 
 <!-- Place this data between the <head> tags of your website -->
 {%if page_author %}
@@ -91,7 +93,9 @@
 {%endif %}
 
 {%if site.facebook.admins %}
-  <meta property="fb:admins" content="{{ site.facebook.admins }}" />
+  {% for admin in site.facebook.admins %}
+    <meta property="fb:admins" content="{{ admin }}" />
+  {% endfor %}
 {%endif %}
 
 {%if site.facebook.app_id %}
@@ -103,8 +107,14 @@
 {%endif %}
 
 {%if facebook_publisher %}
-  <meta property="article:author" content="https://www.facebook.com/{{ facebook_publisher }}">
+  <meta property="article:publisher" content="https://www.facebook.com/{{ facebook_publisher }}">
 {%endif %}
+{%if facebook_authors %}
+  {% for author in facebook_authors %}
+    <meta property="article:author" content="https://www.facebook.com/{{ author }}">
+  {% endfor %}
+{%endif %}
+
 
 {%if page.tags %}
   {% for tag in page.tags %}
