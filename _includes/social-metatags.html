@@ -28,7 +28,7 @@
   {% assign page_image = site.url | append: site.baseurl | append: site.image %}
 {%endif %}
 
-{% assign canonical_url = page.url | replace:'index.html','' | prepend: site.url %}
+{% assign canonical_url = page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url %}
 
 <!-- Place this data between the <head> tags of your website -->
 {%if page_author %}
