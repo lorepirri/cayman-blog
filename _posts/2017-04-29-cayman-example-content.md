@@ -1,7 +1,9 @@
 ---
 layout: post
-title: "Example content"
+title: "範例 content"
 ---
+
+修改了中文
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
