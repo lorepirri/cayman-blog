@@ -41,8 +41,6 @@
   </head>
   <body>
 
-    {% include site-header.html %}
-
     {% if page.layout == 'home' %}
       {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
     {% endif %}
