@@ -5,7 +5,7 @@ tagline: "Exploit the opportunity to make great things"
 author: "Victor de Francisco"
 ---
 
-The most `productive` moments I have ever had were those where I followed that feeling of going ahead without requirements pressure and `didn’t pay too much time on details`.
+The most `productive` moments I have ever had were those where I followed that feeling of going ahead without requirements pressure and didn’t pay too much time on details. 
 
 I remember the words a teacher told me when I was studying the degree, “First let things working, then let things working right and then let things working fast”.
 
