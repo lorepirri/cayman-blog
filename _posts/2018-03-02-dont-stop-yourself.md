@@ -15,7 +15,7 @@ I remember the words a teacher told me when I was studying the degree, “First 
 
 I think when the whole image of what you are doing its ready, it's time to spend time on details because if you take that time in too many specific details at the very beginning, your motivation and feeling of advance will `dead almost before the start`, don't stop yourself.
 
-I think that is similar to the idea behind the MVP. Just start by the start point and don't pretend to reach the perfect image of the work from that at the first moment.
+I think that is similar to the idea behind the MVP. Just start by the start point and don't pretend to reach the perfect image of the work at the first moment.
 
 Think on `you` by this time, trust me, let you organise step by step, don't feel you are doing a bad job, don't assume you are making mistakes, that is for sure what you are making, but let them appear, meet them and probably is when you should fix them and decide how to prevent them.
 
