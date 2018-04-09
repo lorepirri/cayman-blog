@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "편안한 Jekyll 사용을 위한 마크다운(markdown) 문법"
 description: "Github을 한다면 피해갈 수 없고, 편안한 Jekyll 사용을 위한 마크다운(markdown) 문법 간단 요약"
 headline: 편안한 Jekyll 사용을 위한 마크다운(markdown) 문법

@@ -3,7 +3,7 @@ description: Connecting the Dots.
 show_downloads: false
 
 baseurl:  # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url:  # change this to the base hostname & protocol for your site
+url:      https://teddylee777.github.io
 
 google_analytics:
 # cayman-blog date format
@@ -15,6 +15,18 @@ theme:
 
 # social
 author: Teddy Lee
+disqus_shortname: teddylee777
+google_analytics:   UA-111508093-1
+
+timezone:    Asia/Seoul
+highlighter: rouge
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
+
+plugins:
+  - jekyll-seo-tag
+
 image: 
 # twitter:
 #   username: lorepirri
@@ -25,3 +37,7 @@ image:
   # app_id: 1798910940422432 # cayman-blog
   #authors: lorepirri
 #  admins:
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+
