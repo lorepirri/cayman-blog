@@ -56,7 +56,7 @@ Github Pages 운용을 위해서는 **markdown** 문법에 대한 이해도가 �
 ## 2. Links
 
 링크를 넣고 싶은 경우는 2가지 방법이 있다. (첫번째 방법이 개인적으로 좀 특이했다..)
-###
+
 ##### Syntax
 	Link: [참조 키워드][링크변수]
 	[링크변수]: WebAddress "Descriptions"
