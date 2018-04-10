@@ -24,19 +24,19 @@ repository: teddylee777/teddylee777.github.io
 
 highlighter: rouge
 markdown:    kramdown
-paginate: nil
-paginate_path: nil
-pagination:
-  enabled: true
-  per_page: 5
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+paginate:    5
+paginate_path: "page:num"
+# pagination:
+#   enabled: true
+#   per_page: 5
+#   limit: 0
+#   sort_field: 'date'
+#   sort_reverse: true
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate-v2
+  # - jekyll-paginate-v2
 
 
 # twitter:
