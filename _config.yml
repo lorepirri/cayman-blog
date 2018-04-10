@@ -26,18 +26,10 @@ highlighter: rouge
 markdown:    kramdown
 paginate:    5
 paginate_path: "page:num"
-# pagination:
-#   enabled: true
-#   per_page: 5
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  # - jekyll-paginate-v2
-
 
 # twitter:
 #   username: lorepirri
