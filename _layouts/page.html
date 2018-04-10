@@ -6,7 +6,8 @@ layout: default
   <div>
     {{ content }}
   </div>
-
-  {% include disqus_comments.html %}
+  {% if page.title != 'About' %}
+  	{% include disqus_comments.html %}
+  {% endif %}
 
 </article>
