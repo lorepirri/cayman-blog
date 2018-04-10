@@ -158,25 +158,308 @@ Link: [구글로 이동][a]
 코드 블락 닫은 후</pre>
 
 
-### - Syntax Highlight
+### - Syntax Highlight	
+
+Python
 
 ##### Syntax
 	```python
-	# change this code
-	number = 10
-	second_number = 10
-	first_array = []
-	second_array = [1,2,3]
+	   # This program adds up integers in the command line
+	import sys
+	try:
+	    total = sum(int(arg) for arg in sys.argv[1:])
+	    print 'sum =', total
+	except ValueError:
+	    print 'Please supply integer arguments'
 	```
 
 ##### Example
 ```python
-# change this code
-number = 10
-second_number = 10
-first_array = []
-second_array = [1,2,3]
+# This program adds up integers in the command line
+import sys
+try:
+    total = sum(int(arg) for arg in sys.argv[1:])
+    print 'sum =', total
+except ValueError:
+    print 'Please supply integer arguments'
 ```
+
+Ruby
+
+##### Syntax
+	```ruby
+	a = [ 45, 3, 19, 8 ]
+	b = [ 'sam', 'max', 56, 98.9, 3, 10, 'jill' ]
+	print (a + b).join(' '), "\n"
+	print a[2], " ", b[4], " ", b[-2], "\n"
+	print a.sort.join(' '), "\n"
+	a << 57 << 9 << 'phil'
+	print "A: ", a.join(' '), "\n"
+	```
+
+##### Example
+```ruby
+a = [ 45, 3, 19, 8 ]
+b = [ 'sam', 'max', 56, 98.9, 3, 10, 'jill' ]
+print (a + b).join(' '), "\n"
+print a[2], " ", b[4], " ", b[-2], "\n"
+print a.sort.join(' '), "\n"
+a << 57 << 9 << 'phil'
+print "A: ", a.join(' '), "\n"
+```
+
+C++
+
+##### Syntax
+	```c++
+	int str_equals(char *equal1, char *eqaul2)
+	{
+	   while(*equal1==*eqaul2)
+	   {
+	      if ( *equal1 == '\0' || *eqaul2 == '\0' ){break;}
+	      equal1++;
+	      eqaul2++;
+	   }
+	   if(*eqaul1 == '\0' && *eqaul2 == '\0' ){return 0;}
+	   else {return -1};
+	}
+	```
+
+##### Example
+```c++
+int str_equals(char *equal1, char *eqaul2)
+{
+   while(*equal1==*eqaul2)
+   {
+      if ( *equal1 == '\0' || *eqaul2 == '\0' ){break;}
+      equal1++;
+      eqaul2++;
+   }
+   if(*eqaul1 == '\0' && *eqaul2 == '\0' ){return 0;}
+   else {return -1};
+}
+```
+
+C#
+
+##### Syntax
+	```c#
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using System.Text;
+	
+	namespace Inheritance
+	{
+	
+	    class Program
+	    {
+	        static void Main(string[] args)
+	        {
+	            Teacher d = new Teacher();
+	            d.Teach();
+	            Student s = new Student();
+	            s.Learn();
+	            s.Teach();
+	            Console.ReadKey();
+	        }
+	        
+	        class Teacher
+	        {
+	            public void Teach()
+	            {
+	                Console.WriteLine("Teach");
+	            }
+	        }
+	
+	        class Student : Teacher
+	        {
+	            public void Learn()
+	            {
+	                Console.WriteLine("Learn");
+	            }
+	        }
+	    }
+	}
+	```
+
+##### Example
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Inheritance
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Teacher d = new Teacher();
+            d.Teach();
+            Student s = new Student();
+            s.Learn();
+            s.Teach();
+            Console.ReadKey();
+        }
+        
+        class Teacher
+        {
+            public void Teach()
+            {
+                Console.WriteLine("Teach");
+            }
+        }
+
+        class Student : Teacher
+        {
+            public void Learn()
+            {
+                Console.WriteLine("Learn");
+            }
+        }
+    }
+}
+```
+
+Java
+
+##### Syntax
+	```java
+	class DoWhileLoopExample {
+	    public static void main(String args[]){
+	         int i=10;
+	         do{
+	              System.out.println(i);
+	              i--;
+	         }while(i>1);
+	    }
+	}
+	```
+
+##### Example
+```java
+class DoWhileLoopExample {
+    public static void main(String args[]){
+         int i=10;
+         do{
+              System.out.println(i);
+              i--;
+         }while(i>1);
+    }
+}
+```
+
+Go
+
+##### Syntax
+	```go
+	package main
+	
+	import "fmt"
+	
+	func main() {
+	   var greeting =  "Hello world!"
+	   
+	   fmt.Printf("normal string: ")
+	   fmt.Printf("%s", greeting)
+	   fmt.Printf("\n")
+	   fmt.Printf("hex bytes: ")
+	   
+	   for i := 0; i < len(greeting); i++ {
+	       fmt.Printf("%x ", greeting[i])
+	   }
+	   
+	   fmt.Printf("\n")
+	   const sampleText = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98" 
+	   
+	   /*q flag escapes unprintable characters, with + flag it escapses non-ascii 
+	   characters as well to make output unambigous */
+	   fmt.Printf("quoted string: ")
+	   fmt.Printf("%+q", sampleText)
+	   fmt.Printf("\n")  
+	}
+	```
+
+##### Example
+```go
+package main
+
+import "fmt"
+
+func main() {
+   var greeting =  "Hello world!"
+   
+   fmt.Printf("normal string: ")
+   fmt.Printf("%s", greeting)
+   fmt.Printf("\n")
+   fmt.Printf("hex bytes: ")
+   
+   for i := 0; i < len(greeting); i++ {
+       fmt.Printf("%x ", greeting[i])
+   }
+   
+   fmt.Printf("\n")
+   const sampleText = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98" 
+   
+   /*q flag escapes unprintable characters, with + flag it escapses non-ascii 
+   characters as well to make output unambigous */
+   fmt.Printf("quoted string: ")
+   fmt.Printf("%+q", sampleText)
+   fmt.Printf("\n")  
+}
+```
+
+Swift
+
+##### Syntax
+	```swift
+	let password = "HelloWorld"
+	let repeatPassword = "HelloWorld"
+	if ((password.elementsEqual(repeatPassword)) == true)
+	{
+	   print("Passwords are equal")
+	} else {
+	   print("Passwords are not equal")
+	}
+	```
+
+##### Example
+```swift
+let password = "HelloWorld"
+let repeatPassword = "HelloWorld"
+if ((password.elementsEqual(repeatPassword)) == true)
+{
+   print("Passwords are equal")
+} else {
+   print("Passwords are not equal")
+}
+```
+
+Nodejs
+
+##### Syntax
+	```js
+	var http = require('http');
+	
+	http.createServer(function (req, res) {
+	    res.writeHead(200, {'Content-Type': 'text/plain'});
+	    res.end('Hello World!');
+	}).listen(8080); 
+	```
+
+##### Example
+```js
+var http = require('http');
+
+http.createServer(function (req, res) {
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.end('Hello World!');
+}).listen(8080); 
+```
+
 
 ## 7. Strikethrough (취소선)
 
