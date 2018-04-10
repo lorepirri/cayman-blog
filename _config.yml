@@ -1,5 +1,6 @@
 title: Teddy's DEV Note
 description: Connecting the Dots.
+
 url:   https://teddylee777.github.io
 image: images/logo.png
 
@@ -11,6 +12,8 @@ cayman-blog:
   date_format: "%b %-d, %Y"
 
 theme: 
+
+permalink: /:categories/:title
 
 # social
 author: Teddy Lee
