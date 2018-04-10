@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this author
+tagline: Who am I?
 permalink: /about.html
 ---
 
