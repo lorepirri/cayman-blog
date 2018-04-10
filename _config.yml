@@ -1,7 +1,10 @@
 title: Teddy's DEV Note
 description: Connecting the Dots.
+url:   https://teddylee777.github.io
+image: images/logo.png
+
 show_downloads: false
-url:      https://teddylee777.github.io
+future:         true
 
 cayman-blog:
   date_format: "%b %-d, %Y"
@@ -23,7 +26,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-image: 
+
 # twitter:
 #   username: lorepirri
 #  site:
