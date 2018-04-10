@@ -86,8 +86,7 @@ fn + Esc를 누르게 되면 Windows모드 / Mac모드 를 토글링할 수 있�
 
 하기 URL에서 펌웨어 업데이트를 통해 Mac 모드에서 ***Function Key를 활용할 수 있다.***
 
-**펌웨어 업데이트:**
-http://typoneshop.com/article/%EC%9E%90%EB%A3%8C%EC%8B%A4/7/122/
+[펌웨어 업데이트 링크](http://typoneshop.com/article/%EC%9E%90%EB%A3%8C%EC%8B%A4/7/122/)
 
 ![Mars Pro Firmware Updated]({{site.baseurl}}/images/2017-12-25-Typone-Mars-Pro-리뷰/Typone_Firmware_Update.png)
 
