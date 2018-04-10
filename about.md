@@ -1,13 +1,30 @@
 ---
 layout: page
 title: About
-tagline: A few more words about this theme
+tagline: A few more words about this author
 permalink: /about.html
 ---
 
-This is the _Cayman Blog_ Jekyll theme. You can find out more info about customizing this theme, as well as basic usage documentation, and source code at: [cayman-blog](https://github.com/lorepirri/cayman-blog)
+## Contact
++ [Blog](https://teddylee777.github.io)
++ [GitHub](https://github.com/teddylee777)
++ [LinkedIn](https://www.linkedin.com/in/teddy-lee/)
++ <teddylee777@gmail.com>
 
-You can find the source code for _Jekyll_ at [jekyll](https://github.com/jekyll/jekyll)
+## History
++ Majored in Econonomics @ University of Wisconsin - Madison
++ Worked as a Software Developer @ Samsung Electronics (Mobile Communication Business)
++ Co-founded [analogue plus](https://www.analogue-plus.com) and developed Bluetooth firmware, Android application, Windows applications.
 
+## Key Skills
++ Android / Java
++ C# / C++ / C
++ Bluetooth firmware / BLE
++ Data Science / Python
 
-[Go to the Home Page]({{ site.url }}{{ site.baseurl }})
+## Language
++ Korean (Native)
++ English (Fluent)
++ Chinese (Elementary proficiency)
+
+[Go to the Home]({{ site.url }}{{ site.baseurl }})
