@@ -195,9 +195,12 @@ a {
   h5,
   h6 {
     margin-top: 2rem;
+    margin-left:2rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: $section-headings-color;
+    display:inline-block;
+    background-color: $code-bg-color;
+    color: #ffffff;
   }
 
   p {
