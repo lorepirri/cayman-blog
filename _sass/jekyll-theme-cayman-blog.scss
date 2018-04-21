@@ -196,11 +196,9 @@ a {
   h6 {
     margin-top: 2rem;
     margin-bottom: 1rem;
-    padding: 2px 2px;
     font-weight: bold;
-    display:inline-block;
-    background-color: $code-bg-color;
-    color: #ffffff;
+    color: $header-font-color;
+    display: table;
   }
 
   p {
@@ -339,6 +337,11 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+}
+
+.post-link {
+  background-color: $code-bg-color;
+  padding: 2px 5px;
 }
 
 .site-footer {
