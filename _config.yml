@@ -15,13 +15,13 @@ theme: # leave it empty
 
 # social
 author:
-	name: "Sin Su Ung"
-	email: "workingssu@gmail.com"
-	url: "http://dailyworker.github.io"
+ name: "Sin Su Ung"
+ email: "workingssu@gmail.com"
+ url: "http://dailyworker.github.io"
 image: /thumbnail-jumbo.png
 twitter:
   username:
-#  site:
+#ㄴ  site:
 facebook:
   #publisher: 1592372034171500
   #profile_id: 1809805629
