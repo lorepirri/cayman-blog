@@ -2,7 +2,7 @@ title: 개발못하는 개발자
 description: 충북대학교 소프트웨어 학과 3학년
 show_downloads: true
 
-baseurl: "/" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+baseurl:  # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
 url: "https://dailyworker.github.io" # change this to the base hostname & protocol for your site
 
 google_analytics:
