@@ -1,5 +1,5 @@
-title: 개발못하는 개발자
-description: 충북대학교 소프트웨어 학과 3학년
+title: D4ilyworker Developement Blog
+description: 충북대학교 소프트웨어학과 3학년
 show_downloads: true
 
 baseurl:  # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
@@ -17,11 +17,11 @@ theme: # leave it empty
 author:
  name: "Sin Su Ung"
  email: "workingssu@gmail.com"
- url: "http://dailyworker.github.io"
-image: /thumbnail-jumbo.png
-twitter:
-  username:
-#ㄴ  site:
+ image: /thumbnail-jumbo.png
+ twitter:
+ username: "Dailyworker"
+
+# site:
 facebook:
   #publisher: 1592372034171500
   #profile_id: 1809805629
