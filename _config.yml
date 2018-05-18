@@ -30,6 +30,7 @@ paginate_path: "page:num"
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
 
 # twitter:
 #   username: lorepirri

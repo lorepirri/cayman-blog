@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "생소했던 안드로이드(Android) 1탄 - AsyncTask"
-description: "Android 개발을 하다보면 자주 보이지만, 아직 익숙하지는 않은 내용들을 다룰 다소 생소하고 어렵다고 생각하고 깊게 파보지 못한 내용을 선정해 한 번 파볼 예정입니다. 1탄 - AsyncTask입니다."
-headline: "생소한 안드로이드 시리즈 1찬 - AsyncTask에 대해 파보겠습니다."
+title: "안드로이드(Android) - AsyncTask"
+description: "Android 개발을 하다보면 자주 보이지만, 아직 익숙하지는 않은 내용들을 다룰 다소 생소하고 어렵다고 생각하고 깊게 파보지 못한 내용을 선정해 한 번 파볼 예정입니다. 이번 주제는 AsyncTask입니다."
+headline: "Android Util class 인 AsyncTask에 대해 파보겠습니다."
 tags: [android, asynctask, backgroud, java, util, varargs]
 comments: true
 published: true
