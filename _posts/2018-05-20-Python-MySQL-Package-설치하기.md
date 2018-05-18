@@ -10,7 +10,7 @@ categories:
   - python
 ---
 
-Python 개발시 MySQL Client 설치 방법에 대해 알아보겠다.
+Python(파이썬) 개발시 MySQL Client 설치 방법에 대해 알아보겠다.
 
 나와 같은 경우는, remote PC에 설치된 MySQL DB 에 Client 로 붙어야하는데, 이때 필요한 패키지가 바로 이 포스팅에 소개할 **mysqlclient** 패키지 이다.
 
