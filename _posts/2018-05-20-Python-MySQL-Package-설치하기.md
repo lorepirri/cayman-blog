@@ -47,19 +47,16 @@ $ which mysql_config
 
 해당의 내용을 찾은 뒤,
 
-<code>
-# Create options 
-libs="-L$pkglibdir"
-libs="$libs -l "
-</code>
+    # Create options 
+    libs="-L$pkglibdir"
+    libs="$libs -l "
 
 다음과 같이 바꿔준다
 
-<code>
-# Create options
-libs="-L$pkglibdir"
-libs="$libs -lmysqlclient -lssl -lcrypto"
-</code>
+
+    # Create options
+    libs="-L$pkglibdir"
+    libs="$libs -lmysqlclient -lssl -lcrypto"
 
 >
 >
