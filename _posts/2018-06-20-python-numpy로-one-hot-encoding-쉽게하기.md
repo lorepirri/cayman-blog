@@ -74,7 +74,7 @@ categories:
 
 
 
-1. Load Dataset
+#### Load Dataset
 
 ```python
 import numpy as np
@@ -87,7 +87,7 @@ iris = load_iris()
 
 
 
-2. One-hot encoding
+#### One-hot encoding
 
 ```python
 target = iris['target']
@@ -100,7 +100,7 @@ encoding = np.eye(num)[target]
 
 
 
-3. Result
+#### Result
 
 ```python
 encoding
