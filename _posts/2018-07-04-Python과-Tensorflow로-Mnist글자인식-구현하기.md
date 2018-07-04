@@ -67,7 +67,7 @@ for i in range(10):
 
 **결과**
 
-![image-20180704141344201](/Users/teddylee/dev/90_blog/teddylee777.github.io/images/2018-07-04-Mnist/image-20180704141344201.png)
+![image-20180704141344201]({{site.baseurl}}/images/2018-07-04-Mnist/image-20180704141344201.png)
 
 
 
