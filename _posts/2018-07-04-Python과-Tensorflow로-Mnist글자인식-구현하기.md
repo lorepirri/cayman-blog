@@ -27,7 +27,7 @@ Multi-class Classification이란, 주어진 데이터를 Multi-class로 분류,
 
 Mnist는 ***Mixed National Institute of Standards and Technology database***의 약어로 **손글씨 숫자 이미지들을 모아놓은 데이터**이다. 28 * 28 의 매트릭스안에 색상 (밝기)값으로 정의 되어 있다.
 
-![image-20180704141344201](/Users/teddylee/dev/90_blog/teddylee777.github.io/images/2018-07-04-Mnist/image-20180704141344201.png)
+![image-20180704141344201]({{site.baseurl}}/images/2018-07-04-Mnist/image-20180704141344201.png)
 
 
 
