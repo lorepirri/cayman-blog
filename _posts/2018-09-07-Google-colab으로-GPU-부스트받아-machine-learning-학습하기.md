@@ -196,7 +196,7 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
 
 	이경우는 id 값이 **'1XknZ3828-a0ALIM06yjgglddTJ'** 가 되겠네요.
-
+	
 	폴더의 id 값을 잘 저장해 놓습니다
 
 
@@ -277,63 +277,61 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
 
 
-**코드를 종합해보면 이렇게 되겠네요**
+   **코드를 종합해보면 이렇게 되겠네요**
 
-```python
-# code for importing samples from Google Drive
-!pip install -U -q PyDrive
-
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
-from google.colab import auth
-from oauth2client.client import GoogleCredentials
-import os
-
-# PyDrive Authentication
-auth.authenticate_user()
-gauth = GoogleAuth()
-gauth.credentials = GoogleCredentials.get_application_default()
-drive = GoogleDrive(gauth)
-
-# define folder id
-folder_id = '1XknZwYTI-EbO5JEtwa0ALIM06yjOadTJ'
-
-# file_lists will be my list of files from folder
-file_lists = []
-
-# get lists of files from Google Drive folder
-def ListFolder(parent):
-    filelist=[]
-    file_list = drive.ListFile({'q': "'%s' in parents and trashed=false" % parent}).GetList()
-    for f in file_list:
-        if f['mimeType']=='application/vnd.google-apps.folder': # if folder
-            filelist.append({"id":f['id'],"title":f['title'],"list":ListFolder(f['id'])})
-        else:
-            filelist.append({"title":f['title'],"id":f['id']})
-    return filelist
-
-file_lists_from_drive = ListFolder(folder_id)
-
-# choose a local (colab) directory to store the data.
-local_download_path = os.path.expanduser('~/my_sample_data')
-try:
-    os.makedirs(local_download_path)
-except: pass
-
-for file in file_lists_from_drive:
-    print('title: %s, id: %s' % (file['title'], file['id']))
-    fname = os.path.join(local_download_path, file['title'])
-    print('downloading to {}'.format(fname))
-    f_ = drive.CreateFile({'id': file['id']})
-    f_.GetContentFile(fname)
-    print(fname)
-    file_lists.append(fname)
-
-# print file lists
-print(file_lists)
-```
-
-
+   ```python
+   # code for importing samples from Google Drive
+   !pip install -U -q PyDrive
+   
+   from pydrive.auth import GoogleAuth
+   from pydrive.drive import GoogleDrive
+   from google.colab import auth
+   from oauth2client.client import GoogleCredentials
+   import os
+   
+   # PyDrive Authentication
+   auth.authenticate_user()
+   gauth = GoogleAuth()
+   gauth.credentials = GoogleCredentials.get_application_default()
+   drive = GoogleDrive(gauth)
+   
+   # define folder id
+   folder_id = '1XknZwYTI-EbO5JEtwa0ALIM06yjOadTJ'
+   
+   # file_lists will be my list of files from folder
+   file_lists = []
+   
+   # get lists of files from Google Drive folder
+   def ListFolder(parent):
+       filelist=[]
+       file_list = drive.ListFile({'q': "'%s' in parents and trashed=false" % parent}).GetList()
+       for f in file_list:
+           if f['mimeType']=='application/vnd.google-apps.folder': # if folder
+               filelist.append({"id":f['id'],"title":f['title'],"list":ListFolder(f['id'])})
+           else:
+               filelist.append({"title":f['title'],"id":f['id']})
+       return filelist
+   
+   file_lists_from_drive = ListFolder(folder_id)
+   
+   # choose a local (colab) directory to store the data.
+   local_download_path = os.path.expanduser('~/my_sample_data')
+   try:
+       os.makedirs(local_download_path)
+   except: pass
+   
+   for file in file_lists_from_drive:
+       print('title: %s, id: %s' % (file['title'], file['id']))
+       fname = os.path.join(local_download_path, file['title'])
+       print('downloading to {}'.format(fname))
+       f_ = drive.CreateFile({'id': file['id']})
+       f_.GetContentFile(fname)
+       print(fname)
+       file_lists.append(fname)
+   
+   # print file lists
+   print(file_lists)
+   ```
 
   
 
