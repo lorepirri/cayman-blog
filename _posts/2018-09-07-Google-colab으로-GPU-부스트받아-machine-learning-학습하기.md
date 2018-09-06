@@ -278,11 +278,14 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
 ### 마무리
 
-Google Colaboratory는 Jupiter notebook에 GPU부스팅을 받을 수 있다는 큰 이점이 있다. Kaggle을 할 때 유용하게 쓰일 것 같다. 앞으로 점점 colab플랫폼을 활용하는 사용자들이 늘어날 것 같다. (물론 이미 장비를 갖춘 사람이라면 필요 없겠지만..) 아무튼, 이제 막 machine-learning / deep-learning 을 시작하는 입문자들에게는 최고의 tool이 아닐까 생각한다.
+Google Colaboratory는 Jupiter notebook에 GPU부스팅을 받을 수 있다는 큰 이점이 있습니다. Kaggle을 할 때 유용하게 쓰일 것 같다. 앞으로 점점 colab플랫폼을 활용하는 사용자들이 늘어날 것 같습니다. (물론 이미 장비를 갖춘 사람이라면 필요 없겠지만..) 아무튼, 이제 막 machine-learning / deep-learning 을 시작하는 입문자들에게는 최고의 tool이 아닐까 생각합니다.
 
 
 
-[Colaboratory 튜토리얼 페이지](https://colab.research.google.com/notebooks/welcome.ipynb#scrollTo=-UoJLxd348za)에서 더욱 자세한 내용들을 확인할 수 있다.
+[Colaboratory 튜토리얼 페이지](https://colab.research.google.com/notebooks/welcome.ipynb#scrollTo=-UoJLxd348za)에서 더욱 자세한 내용들을 확인할 수 있습니다.
+
+[참고 문헌] [Colaboratory's Free GPU](https://medium.com/@_NicT_/colaboratorys-free-gpu-72ebc9272933)
+
 
 
 
