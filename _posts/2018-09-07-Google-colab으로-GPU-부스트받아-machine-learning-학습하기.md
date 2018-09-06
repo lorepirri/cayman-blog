@@ -192,6 +192,8 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
   이경우는 id 값이 **'1XknZ3828-a0ALIM06yjgglddTJ'** 가 되겠네요. 폴더의 id 값을 잘 저장해 놓습니다.
 
+--------
+
 
 
 1. Google Drive api를 활용하기 위하여 PyDrive package를 인스톨 합니다.
