@@ -329,6 +329,28 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
   
 
+### 꿀팁 하나 더 - GitHub에 커밋된 notebook을 colab에서 바로 열고 실행하기
+
+GitHub에 커밋된 소스를 colab 에서 매우 쉽게 바로 열 수 있습니다.
+
+**주소만 바꾸어** 주면 되는데요
+
+
+
+예를 들어,
+
+https://**github.com**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
+
+
+
+https://**colab.research.google.com/github**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
+
+
+
+주소만 이렇게 바꾸어 주면 colab에서 바로 열어 볼 수 있습니다!
+
+
+
 ### 마무리
 
 Google Colaboratory는 Jupiter notebook에 GPU부스팅을 받을 수 있다는 큰 이점이 있습니다. Kaggle을 할 때 유용하게 쓰일 것 같다. 앞으로 점점 colab플랫폼을 활용하는 사용자들이 늘어날 것 같습니다. (물론 이미 장비를 갖춘 사람이라면 필요 없겠지만..) 아무튼, 이제 막 machine-learning / deep-learning 을 시작하는 입문자들에게는 최고의 tool이 아닐까 생각합니다.
