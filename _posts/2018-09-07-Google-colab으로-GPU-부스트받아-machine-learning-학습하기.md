@@ -171,6 +171,28 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
 
 
 
+### GitHub에 커밋된 notebook을 colab에서 바로 열고 실행하기
+
+GitHub에 커밋된 소스를 colab 에서 매우 쉽게 바로 열 수 있습니다.
+
+**주소만 바꾸어** 주면 되는데요
+
+
+
+예를 들어,
+
+https://**github.com**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
+
+
+
+https://**colab.research.google.com/github**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
+
+
+
+주소만 이렇게 바꾸어 주면 colab에서 바로 열어 볼 수 있습니다!
+
+
+
 ### Google Drive에 저장한 Sample Data로 Training 하기
 
 앞서, Colaboratory의 거의 유일한 단점인 **샘플 데이터가 날라갈 수 있다는 점을 언급**했습니다. 트레이닝한 모델에 대해서는 model save를 통해 나중에 복구할 수 있다고는 하지만, 몇 Mb가 되는 샘플데이터를 매번 업로드 해야 하는데, Colaboratory에 file 업로드 하는 기능이 있기는 하지만...
@@ -326,28 +348,6 @@ File 탭에 보시면 Python버젼을 2를 쓸 것인지 3을 쓸 것인지 선�
    # print file lists
    print(file_lists)
    ```
-
-  
-
-### 꿀팁 하나 더 - GitHub에 커밋된 notebook을 colab에서 바로 열고 실행하기
-
-GitHub에 커밋된 소스를 colab 에서 매우 쉽게 바로 열 수 있습니다.
-
-**주소만 바꾸어** 주면 되는데요
-
-
-
-예를 들어,
-
-https://**github.com**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
-
-
-
-https://**colab.research.google.com/github**/teddylee777/machine-learning/blob/master/TensorFlow/05_Convolution_Neural_Network_With_Mnist_Dataset.ipynb
-
-
-
-주소만 이렇게 바꾸어 주면 colab에서 바로 열어 볼 수 있습니다!
 
 
 
