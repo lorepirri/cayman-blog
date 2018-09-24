@@ -2,11 +2,10 @@
 layout: page
 title: "Google Colaboratory에 대한 간단 팁과 활용법"
 description: "Google colaboratory를 활용하여 GPU부스트 받아 machine learning 학습하는 방법에 대하여 알아보겠습니다."
-tags: [python, google, colab, colaboratory, machine-learning, deep-learning, cnn]
+categories: machine-learning
+tags: [colaboratory, cnn]
 comments: true
 published: true
-categories:
-  - python
 ---
 
 이번 포스팅에서는 Google Colaboratory (colab)을 활용하여 jupyter notebook을 구글 플랫폼 내에서 활용하는 방법에 대하여 팁을 드리도록 하겠습니다.

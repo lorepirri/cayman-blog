@@ -3,11 +3,11 @@ layout: page
 title: "Python - Simple Gradient Descent on predicting Boston Housing"
 description: "Let's practice on predicting Bostong Housing prices (Gradient Descent)"
 headline: "Let's practice on predicting Bostong Housing prices (Gradient Descent)"
-tags: [python, machine-learning, deep-learning, gradient-descent]
+categories: machine-learning
+tags: boston-housing-dataset
 comments: true
 published: true
-categories:
-  - python
+
 ---
 
 SImple  Gradient Descent implementations Examples

@@ -2,11 +2,10 @@
 layout: page
 title: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다뤄보기"
 description: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다뤄보기"
-tags: [python, machine-learning, deep-learning, xor]
+categories: machine-learning
+tags: [tensorflow, xor]
 comments: true
 published: true
-categories:
-  - python
 ---
 
 Single-Layer Neural Network 에서 풀 수 없는 문제인 XOR Problem을 Tensorflow를 활용하여 Multi-Layer Neural Network로 구현해 보도록 하겠다.

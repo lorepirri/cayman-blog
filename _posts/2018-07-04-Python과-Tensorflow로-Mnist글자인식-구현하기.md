@@ -2,11 +2,10 @@
 layout: page
 title: "Machine Learning - 쌩 Python / Tensorflow로 Mnist 글자인식 구현하기"
 description: "Machine Learning - 쌩 Python / Tensorflow로 Mnist 글자인식 구현하기"
-tags: [python, machine-learning, deep-learning, mnist]
+categories: machine-learning
+tags: [tensorflow, mnist]
 comments: true
 published: true
-categories:
-  - python
 ---
 
 이번 포스팅에서는 Mnist 데이터를 땡파이썬으로 구현해봄과 동시에 Tensorflow 를 활용하여 구현해 보겠다.

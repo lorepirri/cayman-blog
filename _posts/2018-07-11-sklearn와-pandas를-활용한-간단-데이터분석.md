@@ -2,11 +2,10 @@
 layout: page
 title: "Pandas와 scikit-learn으로 정말 간단한 pre-processing 몇 가지 팁"
 description: "pandas, scikit-learn을 활용한 정말 간단한 pre-processing 몇 가지 팁에 대하여 알아보겠습니다."
-tags: [python, machine-learning, pre-processing, scikit-learn, pandas]
+categories: machine-learning
+tags: [pre-processing, scikit-learn, pandas]
 comments: true
 published: true
-categories:
-  - python
 ---
 
 캐글 (Kaggle) 의 [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic) 의 train 데이터를 활용해 간단한 시각화 및 빠진 데이터 pre-processing 그리고 간단한 Normalization까지 해보도록 하겠습니다. Train 데이터는 윗 줄의 링크에서 Data탭에서 받아볼 수 있습니다.

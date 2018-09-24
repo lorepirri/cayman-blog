@@ -1,17 +1,12 @@
 ---
 layout: default
 ---
+<h1> {{ page.category }} </h1>
+<br>
+<ul class="posts-list"> 
 
-<div>
-
-  {{ content }}
-
-  <h1>Latest Posts</h1>
-
-  <div>&nbsp;</div>
-
-  <ul class="post-list">
-  {% for post in site.posts %}
+  {% assign category = page.category | default: page.title %}
+  {% for post in site.categories[category] %}
     <li>
 
       {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
@@ -25,8 +20,8 @@ layout: default
 
     </li>
   {% endfor %}
-  </ul>
+  
+</ul>
 
-</div>
 
 

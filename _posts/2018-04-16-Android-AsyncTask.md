@@ -3,11 +3,10 @@ layout: page
 title: "안드로이드(Android) - AsyncTask"
 description: "Android 개발을 하다보면 자주 보이지만, 아직 익숙하지는 않은 내용들을 다룰 다소 생소하고 어렵다고 생각하고 깊게 파보지 못한 내용을 선정해 한 번 파볼 예정입니다. 이번 주제는 AsyncTask입니다."
 headline: "Android Util class 인 AsyncTask에 대해 파보겠습니다."
-tags: [android, asynctask, backgroud, java, util, varargs]
+tags: android
 comments: true
 published: true
-categories:
-  - android
+categories: android
 ---
 
 우연치 않은 계기로 안드로이드에서 Open Source로 올려놓은 [Bitmap Displaying](https://github.com/googlesamples/android-DisplayingBitmaps)을 그대로 따라 구현해 보려고, 소스코드를 import 시킨 후, 분석을 시작했다.

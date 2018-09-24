@@ -3,11 +3,11 @@ layout: page
 title: "파이썬(Python) - MySQL 패키지 (Client) 설치"
 description: "Python 용 MySQL 패키지 (Client) 설치"
 headline: "Python 용 MySQL 패키지 (Client) 설치방법에 대해 알아보겠습니다."
-tags: [python, MySQL, package, mysqlclient]
+categories: python
+tags: mysql
 comments: true
 published: true
-categories:
-  - python
+
 ---
 
 Python(파이썬) 개발시 MySQL Client 설치 방법에 대해 알아보겠다.

@@ -2,11 +2,10 @@
 layout: page
 title: "python - Numpy로 One-hot Encoding 쉽게 하기"
 description: "python - Numpy로 One-hot Encoding 쉽게 하기"
-tags: [python, machine-learning, deep-learning, one-hot-encoding]
+categories: machine-learning
+tags: one-hot-encoding
 comments: true
 published: true
-categories:
-  - python
 ---
 
 

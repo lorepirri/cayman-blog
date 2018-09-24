@@ -29,7 +29,7 @@
       <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
     {% endif %}
 
-    <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+    <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico">
     <meta name="robots" content="noarchive">
 
     <!-- <link rel="alternate" media="only screen and (max-width: 640px)" href="">
@@ -41,21 +41,16 @@
   </head>
   <body>
 
-    {% include site-header.html %}
-
-    {% if page.layout == 'home' %}
+    {% if page.layout != 'page' %}
       {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
     {% endif %}
-    {% if page.layout == 'page' %}
-      {% assign page-tagline = page.tagline | escape %}
-    {% endif %}
-    {% if page.layout == 'post' %}
-      {% assign page-tagline = page.tagline | escape  %}
-    {% endif %}
 
+    {% if page.layout != 'page' %}
     <section class="page-header">
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ page-tagline }}</h2>
+
+        <h1 class="project-name">{{ site.title }}</h1>
+        <h2 class="project-tagline">{{ page-tagline }}</h2>
+      
       <!-- {% if page.layout == 'home' and site.github.is_project_page %}
           <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% if site.show_downloads %}
@@ -64,7 +59,7 @@
         {% endif %}
       {% endif %} -->
       <!-- Post tagline -->
-      {% if page.layout == 'post' %}
+      {% if page.layout == 'page' %}
         <h2 class="project-date">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
@@ -78,6 +73,7 @@
       {% endif %}
       <!-- End: Post tagline -->
     </section>
+    {% endif %}
 
     <section class="main-content">
 
@@ -112,6 +108,86 @@
         {% endif %}
 
       </footer>
+    </section>
+
+    <section class="sidebar-menu">
+      
+      <div>
+        <div class="sidebar-nav-item"> 
+          Site
+        </div>
+        <br>
+        <nav class="content-ul">
+          <a href="{{ "/" | relative_url }}">{{ "Home" | escape }}</a>
+          <a href="{{ "/about" | relative_url }}">{{ "About" | escape }}</a>
+          <a href="https://github.com/teddylee777">{{ "Github" | escape }}</a>
+          <a href="mailto:teddylee777@gmail.com">{{ "Contact" | escape }}</a>
+        </nav>
+
+        <br>
+        <div class="sidebar-nav-item"> 
+          Category
+        </div>
+        <br>
+        <nav class="content-ul">
+          {% for category in site.categories %}
+          <a href="{{ root_url }}/{{ site.category_dir }}{{ category | first }}"
+             class="sidebar-nav-item pl-3rem">
+                   
+                                    {{ category | first }}
+           
+            <span class="badge">({{ category | last | size }})</span>
+          </a>
+          {% endfor %}
+        </nav>
+
+      </div>
+
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+
+      <!-- <div>
+        <div class="sidebar-menu-item">Tags</div>
+        <div class="tags-cloud">
+          <div>
+            {% assign first = site.tags.first %}
+            {% assign max = first[1].size %}
+            {% assign min = max %}
+            {% for tag in site.tags offset:1 %}
+            {% if tag[1].size > max %}
+            {% assign max = tag[1].size %}
+            {% elsif tag[1].size < min %}
+            {% assign min = tag[1].size %}
+            {% endif %}
+            {% endfor %}
+
+            {% if max == min %}
+            {% assign diff = 1 %}
+            {% else %}
+            {% assign diff = max | minus: min %}
+            {% endif %}
+
+            {% for tag in site.tags %}
+            {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
+            {% assign base = temp | divided_by: 4 %}
+            {% assign remain = temp | modulo: 4 %}
+            {% if remain == 0 %}
+            {% assign size = base | plus: 9 %}
+            {% elsif remain == 1 or remain == 2 %}
+            {% assign size = base | plus: 9 | append: '.5' %}
+            {% else %}
+            {% assign size = base | plus: 10 %}
+            {% endif %}
+            {% if remain == 0 or remain == 1 %}
+            {% assign color = 9 | minus: base %}
+            {% else %}
+            {% assign color = 8 | minus: base %}
+            {% endif %}
+            <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ 9 | minus: color }}{{ 9 | minus: color }}{{ 9 | minus: color }};">{{ tag[0] }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div> -->
     </section>
 
     {% if site.google_analytics %}

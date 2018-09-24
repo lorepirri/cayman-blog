@@ -27,7 +27,6 @@
 
 body {
   padding: 0;
-  margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -160,8 +159,35 @@ a {
   }
 }
 
+.sidebar-menu {
+  float: right;
+  width: 20%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 9rem;
+}
+
+.sidebar-menu a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1.0rem;
+  color: $sidebar-header-font-color;
+  display: block;
+}
+
+.sidebar-nav-item {
+  color: $sidebar-header-font-color;
+  font-size: 1.5rem;
+}
+
+.sidebar-menu a:hover {
+  color: #a1a1a1;
+}
+
 .main-content {
   word-wrap: break-word;
+  float: left;
 
   :first-child {
     margin-top: 0;
@@ -170,7 +196,6 @@ a {
   @include large {
     max-width: 64rem;
     padding: 3rem 6rem;
-    margin: 0 auto;
     font-size: 1.1rem;
   }
 
