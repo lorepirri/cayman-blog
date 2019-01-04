@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-cayman-blog"
-  s.version       = "0.0.6"
+  s.version       = "0.0.7"
   s.license       = "CC0-1.0"
   s.authors       = ["Lorenzo Pirritano"]
   s.email         = ["lorepirri@gmail.com"]
@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   end
 
   s.platform      = Gem::Platform::RUBY
-  s.add_runtime_dependency "jekyll", "~> 3.3"
+  s.add_runtime_dependency "jekyll", "~> 3.6.3"
+  s.add_runtime_dependency "jekyll-target-blank"
 end
