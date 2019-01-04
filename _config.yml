@@ -18,10 +18,9 @@ author: "Lore Pirri"
 image: /thumbnail-jumbo.png
 twitter:
   username: lorepirri
-#  site:
-facebook:
-  #publisher: 1592372034171500
-  #profile_id: 1809805629
-  app_id: 1798910940422432 # cayman-blog
-  #authors: lorepirri
-#  admins:
+
+plugins:
+  - jekyll-target-blank
+
+target-blank:
+    rel: nofollow
