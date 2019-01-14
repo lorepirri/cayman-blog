@@ -34,16 +34,11 @@ If you’re running Jekyll v3.3+ and **self-hosting** you can quickly install th
 
 ## Hosting with GitHub Pages
 
-If you’re *hosting your blog with GitHub Pages* you’ll have to consider this:
+To use Cayman Blog with GitHub pages, navigate to your _config.yml file and add the following line.
 
-:warning: As stated in the official [Jekyll documentation](https://jekyllrb.com/docs/themes/#installing-a-theme):
+`remote_theme: lorepirri/cayman-blog`
 
-> If you’re publishing your Jekyll site on [GitHub Pages](https://pages.github.com/), note that GitHub Pages supports only some gem-based themes. See [Supported Themes](https://pages.github.com/themes/) in GitHub’s documentation to see which themes are supported.
-
-Therefore, this theme, as well as many others, can not be installed in the same way as the ones officially supported by GitHub Pages (e.g. Cayman, Minima), a bit more effort has to be put on.
-
-The easiest way I found to install _Cayman Blog Theme_, is [installing the theme gem](gem-install), and then [converting the gem-based theme to regular theme](https://jekyllrb.com/docs/themes/#converting-gem-based-themes-to-regular-themes).
-
+Now your page should have the Cayman Blog working.
 Alternatively, for new projects, one could fork the whole theme, and keep only the interesting files.
 
 
