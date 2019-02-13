@@ -71,9 +71,9 @@ tmux 문법은 심플 합니다. (사용법이 복잡하지 않아요)
 
 이 정도면, 가볍게 tmux를 활용하기에는 충분할 것 같습니다^^
 
+보다 더 자세한 내용은 아래 레퍼런스에서 확인해 보실 수 있습니다.
 
-
-
+[Reference] [tmux cheatsheet](https://gist.github.com/henrik/1967800)
 
 
 
