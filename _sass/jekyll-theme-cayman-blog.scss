@@ -27,8 +27,8 @@
 
 body {
   padding: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-size: 17px;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -299,6 +299,7 @@ a {
   ul,
   ol {
     margin-top: 0;
+    margin-bottom: 15px;
   }
 
   blockquote {
