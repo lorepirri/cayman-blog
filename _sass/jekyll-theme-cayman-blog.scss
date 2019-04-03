@@ -36,7 +36,6 @@ body {
 
 a {
   color: $body-link-color;
-  text-decoration: none;
 }
 
 .btn {
@@ -282,6 +281,10 @@ a {
     -webkit-overflow-scrolling: touch;
   }
 
+  u {
+    text-underline-position: under;
+  }
+
   pre code,
   pre tt {
     display: inline;
@@ -377,6 +380,7 @@ a {
 
   a {
     text-decoration: underline;
+    text-underline-position: under;
     font-weight: normal;
   }
 }
