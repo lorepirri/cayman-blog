@@ -28,6 +28,7 @@
 body {
   padding: 0;
   font-family: "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: 400;
   font-size: 17px;
   line-height: 1.5;
   color: $body-text-color;
@@ -217,13 +218,13 @@ a {
   h6 {
     margin-top: 60px;
     margin-bottom: 15px;
-    font-weight: 900;
+    font-weight: bold;
     color: $header-font-color;
     display: table;
   }
 
   p {
-    margin-bottom: 1em;
+    margin-bottom: 15px;
   }
 
   code {
@@ -239,7 +240,7 @@ a {
   pre {
     padding: 0.8rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
@@ -339,7 +340,7 @@ a {
 
   strong {
     color: $body-strong-color;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   dl {
@@ -368,7 +369,7 @@ a {
 
   a {
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: normal;
   }
 }
 
