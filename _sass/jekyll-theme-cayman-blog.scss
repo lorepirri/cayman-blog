@@ -36,10 +36,6 @@ body {
 a {
   color: $body-link-color;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .btn {
@@ -219,9 +215,9 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-weight: 900;
     color: $header-font-color;
     display: table;
   }
@@ -341,7 +337,8 @@ a {
 
 
   strong {
-    color: #bf0000;
+    color: $body-strong-color;
+    font-weight: normal;
   }
 
   dl {
@@ -367,11 +364,16 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
 
 .post-link {
-  background-color: $code-bg-color;
-  padding: 2px 5px;
+  padding: 5px 0px;
+  font-size: 1.8rem;
 }
 
 .site-footer {

@@ -6,7 +6,7 @@ $medium-breakpoint: 42em !default;
 $header-heading-color: #fff !default;
 $header-bg-color: #8b8c80 !default;
 $header-bg-color-secondary: #011526 !default;
-$header-font-color: #011526 !default;
+$header-font-color: #000 !default;
 
 // Sidebar
 $sidebar-header-font-color: #032180 !default;
@@ -14,15 +14,20 @@ $sidebar-font-color: #f2c500 !default;
 
 // Text
 $section-headings-color: #003d50 !default;
-$body-text-color: #27627f !default;
-$body-link-color: #f2c500 !default;
-$blockquote-text-color: #819198 !default;
+$section-title-color: #212121 !default;
+$section-title-desc-color: #424242 !default;
+$body-text-color: #000 !default;
+$body-link-color: #003d50 !default;
+$body-strong-color: #ff0033 !default;
+$blockquote-text-color: #666 !default;
 
 // Code
-$code-bg-color: #011526 !default;
+$code-bg-color: #000 !default;
 $code-text-color: #d7d9d8 !default;
 
 // Borders
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
+
+// f2c500

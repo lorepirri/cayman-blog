@@ -138,5 +138,12 @@
 
 .post-link {
   display: block;
+  color: $section-title-color;
+  text-decoration: none !important;
   @include relative-font-size(1.5);
+}
+
+.post-description {
+  color: $section-title-desc-color;
+  text-decoration: none !important;
 }
