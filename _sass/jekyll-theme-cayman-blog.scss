@@ -27,9 +27,9 @@
 
 body {
   padding: 0;
-  font-family: "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-family: "Nanum Gothic Coding", "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size:18px/1.8;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -224,7 +224,10 @@ a {
   }
 
   p {
-    margin-bottom: 15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
 
   code {
@@ -299,8 +302,13 @@ a {
 
   ul,
   ol {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    display: block;
+    list-style-type: disc;
   }
 
   blockquote {
