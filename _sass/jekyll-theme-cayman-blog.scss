@@ -27,9 +27,11 @@
 
 body {
   padding: 0;
-  font-family: "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
-  font-weight: 400;
-  font-size:18px/1.8;
+  font-family: "Nanum Barun Gothic", "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -157,7 +159,7 @@ a {
 
 .sidebar-menu {
   float: right;
-  width: 20%;
+  width: 25%;
   top: 0;
   left: 0;
   overflow-x: hidden;
@@ -223,6 +225,7 @@ a {
   }
 
   p {
+    color: $body-text-color;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -386,7 +389,7 @@ a {
 
 .post-link {
   padding: 5px 0px;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .site-footer {
