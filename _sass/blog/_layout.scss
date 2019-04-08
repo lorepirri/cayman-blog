@@ -117,7 +117,9 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit * 1.5;
+    list-style-type: none;
+    margin-top: $spacing-unit * 1.0;
+    margin-bottom: $spacing-unit * 1.0;
   }
 
   > li > h2 {
