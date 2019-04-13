@@ -27,62 +27,70 @@
 
 body {
   padding: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Nanum Barun Gothic", "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
   line-height: 1.5;
   color: $body-text-color;
 }
 
 a {
   color: $body-link-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
+.site-header-wrapper {
+  position: fixed;
+  height: $site-header-height;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  padding-left: 30px;
+  border-bottom: 1px solid $grey-color-light;
+  
+}
+.site-header {
+  max-width: 980px;
+  margin: auto;
+  a {
+    font-size: 1.8rem;
+    color: $section-headings-color;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
   }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
+  // padding: 1rem 2rem 0px;
   @include large {
-    padding: 0.75rem 1rem;
+    padding: 1rem 2rem 0px;
   }
 
   @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
+    padding: 1rem 1rem 0px;
   }
 
   @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
+    padding: 1rem 0rem 0px;
+  }
+}
 
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
+.page-content-header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+  border: 2px solid #000;
+  .page-content-header-title{
+    font-size: 2.2rem;
+    margin: 0px;
+    font-weight: bold;
+    word-break: keep-all;
+  }
+  .page-content-header-date {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    margin: 0px;
+    font-weight: normal;
   }
 }
 
@@ -91,6 +99,7 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(180deg, $header-bg-color-secondary, $header-bg-color);
+  margin-top: $site-header-height;
 
   @include large {
     padding: 5rem 6rem;
@@ -105,6 +114,7 @@ a {
   }
 }
 
+// project title on main page
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
@@ -122,6 +132,7 @@ a {
   }
 }
 
+// project tagline on main page
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
@@ -140,25 +151,6 @@ a {
   }
 }
 
-.project-date {
-  margin-bottom: 0rem;
-  font-weight: normal;
-  opacity: 0.7;
-  font-style: italic;
-
-  @include large {
-    font-size: 1.0rem;
-  }
-
-  @include medium {
-    font-size: 0.95rem;
-  }
-
-  @include small {
-    font-size: 0.75rem;
-  }
-}
-
 .sidebar-menu {
   float: right;
   width: 20%;
@@ -168,26 +160,86 @@ a {
   padding-top: 9rem;
 }
 
-.sidebar-menu a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 1.0rem;
-  color: $sidebar-header-font-color;
-  display: block;
-}
-
 .sidebar-nav-item {
   color: $sidebar-header-font-color;
+  font-family: "Nanum Barun Gothic", "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
+}
+
+.sidebar-menu a {
+  padding: 6px 8px 6px 16px;
+  font-family: "Nanum Barun Gothic", "Nanum Gothic", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-size: 1.0rem;
+  font-weight: normal;
+  color: $sidebar-font-color;
+  display: block;
+  text-decoration: none;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
 }
 
 .sidebar-menu a:hover {
   color: #a1a1a1;
 }
 
-.main-content {
+.main-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: $site-header-height;
+}
+
+.main-content{
   word-wrap: break-word;
   float: left;
+  width: 80%; 
+
+  @include large {
+    max-width: 64rem;
+    padding: 2rem 3rem;
+    font-size: 1.1rem;
+  }
+
+  @include medium {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  @include small {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+
+  a, strong, b, span, strong, u{
+    text-decoration: none !important;
+    font-weight: normal;
+    color: $main-describe-color;
+    word-break: keep-all;
+  }
+
+  h2{
+    word-break: keep-all;
+  }
+}
+
+.page-wrapper {
+  margin-bottom: 7rem;
+}
+
+// define main-content html attributs 
+.page-content {
+  word-wrap: break-word;
+  float: left;
+  width: 100%;  
 
   :first-child {
     margin-top: 0;
@@ -195,20 +247,20 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 3rem 6rem;
+    padding: 2rem 3rem;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
   }
-
+  
   img {
     max-width: 100%;
   }
@@ -219,22 +271,29 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 60px;
+    margin-bottom: 15px;
     font-weight: bold;
     color: $header-font-color;
     display: table;
   }
 
   p {
-    margin-bottom: 1em;
+    color: $body-text-color;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  blockquote > p{
+    color: $blockquote-text-color;
   }
 
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-style: normal;
-    font-size: 0.9rem;
+    font-size: 15.75px;
     color: $code-text-color;
     background-color: $code-bg-color;
     border-radius: 0.3rem;
@@ -243,7 +302,7 @@ a {
   pre {
     padding: 0.8rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
@@ -254,7 +313,7 @@ a {
     > code {
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 15.75px;
       color: $code-text-color;
       word-break: normal;
       white-space: pre;
@@ -282,6 +341,10 @@ a {
     -webkit-overflow-scrolling: touch;
   }
 
+  u {
+    text-underline-position: under;
+  }
+
   pre code,
   pre tt {
     display: inline;
@@ -302,7 +365,13 @@ a {
 
   ul,
   ol {
-    margin-top: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    display: block;
+    list-style-type: disc;
   }
 
   blockquote {
@@ -339,9 +408,9 @@ a {
     }
   }
 
-
   strong {
-    color: #bf0000;
+    color: $body-strong-color;
+    font-weight: bold;
   }
 
   dl {
@@ -367,11 +436,17 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
+  a {
+    text-decoration: underline;
+    text-underline-position: under;
+    font-weight: normal;
+  }
 }
 
 .post-link {
-  background-color: $code-bg-color;
-  padding: 2px 5px;
+  padding: 5px 0px;
+  font-size: 2rem;
 }
 
 .site-footer {

@@ -1,17 +1,22 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<hr>
+<div class="page-content-header">
+  <div class="page-content-header-title">{{ page.title }}</div>
+  <div class="page-content-header-date">
+    {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+    {{ page.date | date: date_format }}
+  </div>
+</div>
+<!-- <hr> -->
 <br>
 
 <article>
-
-  <div>
+  <div class="page-wrapper">
     {{ content }}
   </div>
   {% if page.title != 'About' %}
-  	{% include disqus_comments.html %}
+  {% include disqus_comments.html %}
   {% endif %}
 
 </article>
