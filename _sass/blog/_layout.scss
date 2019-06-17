@@ -25,6 +25,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  .sidebar-menu {
+    display: none !important;
+  }
+  .main-content {
+    width: 100% !important;
+  }
+}
+
 .site-nav {
   width: 20%;
   padding: 30px;
