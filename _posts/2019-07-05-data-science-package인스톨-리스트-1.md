@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Data Science (데이터 분석)을 위한 python package 리스트(2) - 필수 패키지"
+title: "Data Science (데이터 분석)을 위한 python package 리스트(1) - 필수 패키지"
 description: "Data Science (데이터 분석)을 위한 python package 리스트 모음에 대하여 알아보겠습니다."
 tags: [aws]
 comments: true
@@ -135,6 +135,10 @@ pip install scipy
 # anaconda는 기본 설치 되어 있음
 conda install -c conda-forge scipy
 ```
+
+
+
+
 
 
 
