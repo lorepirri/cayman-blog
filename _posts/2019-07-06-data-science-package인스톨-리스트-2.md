@@ -92,4 +92,4 @@ conda install bokeh
 
 
 
-##### #flask #aws #nginx #uwsgi
+##### #python #package #matplotlib #seaborn #bokeh
