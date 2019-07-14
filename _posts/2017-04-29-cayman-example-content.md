@@ -5,7 +5,7 @@ title: "Example content"
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page: About]({{ site.baseurl }}/about).
+[Link to another page: About]({{ '/about.html' | absolute_url }}).
 
 There should be whitespace between paragraphs.
 
@@ -95,11 +95,11 @@ end
 
 ### Small image
 
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
+![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
 
 ### Large image
 
-![](https://guides.github.com/activities/hello-world/branching.png)
+![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
