@@ -1,8 +1,9 @@
 # encoding: utf-8
+# frozen_string_literal: true
 
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-cayman-blog"
-  s.version       = "0.0.7"
+  s.version       = "0.0.8"
   s.license       = "CC0-1.0"
   s.authors       = ["Lorenzo Pirritano"]
   s.email         = ["lorepirri@gmail.com"]
@@ -16,4 +17,8 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.add_runtime_dependency "jekyll", "~> 3.6.3"
   s.add_runtime_dependency "jekyll-target-blank"
+  # s.add_runtime_dependency 'jekyll-seo-tag', '~> 2.0'
+  s.add_development_dependency 'html-proofer', '~> 3.0'
+  s.add_development_dependency 'rubocop', '~> 0.50'
+  s.add_development_dependency 'w3c_validators', '~> 1.3'
 end
