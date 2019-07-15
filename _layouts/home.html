@@ -21,7 +21,7 @@ layout: default
           <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
         </h2>
 
-        <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
+        {{ post.excerpt | markdownify | truncatewords: 30 }}
 
       </li>
     {% endfor %}
