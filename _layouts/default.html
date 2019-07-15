@@ -37,10 +37,10 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
     {% if site.gems contains "jekyll-feed" %}
-      <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+      <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
     {% endif %}
 
-    <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | absolute_url }}" crossorigin="anonymous" integrity="sha384-/z/GMrOh1FWpCS6gpLaO7Cqs4oHZ93jUG3tNJqe+I8dk+ExdpFpwpA7BOWO905QF">
 
     <meta name="robots" content="noarchive">
 
@@ -48,7 +48,7 @@
     <link rel="alternate" media="handheld" href=""> -->
 
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}" crossorigin="anonymous" integrity="sha384-Y8998B47FyfKJAqW6gtsYA0aMiymGJw3NJo+coORM8LItRFEUSMyLaefd7iDHi9a">
   </head>
   <body>
 
@@ -114,7 +114,7 @@
         <!-- RSS icon -->
         {% if site.gems contains "jekyll-feed" %}
           <span class="my-span-icon">
-            <a href="{{ "/feed.xml" | relative_url }}" aria-label="RSS feed" title="{{ site.github.owner_name }}'s RSS feed">
+            <a href="{{ "/feed.xml" | absolute_url }}" aria-label="RSS feed" title="{{ site.github.owner_name }}'s RSS feed">
               <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.374 17c-.897 0-1.626-.727-1.626-1.624s.729-1.624 1.626-1.624 1.626.727 1.626 1.624-.729 1.624-1.626 1.624zm3.885 0c-.03-3.022-2.485-5.474-5.511-5.504v-2.406c4.361.03 7.889 3.555 7.92 7.91h-2.409zm4.081 0c-.016-5.297-4.303-9.571-9.592-9.594v-2.406c6.623.023 11.985 5.384 12 12h-2.408z"/></svg>
             </a>
           </span>
@@ -124,7 +124,7 @@
         {% assign contact_page = site.pages | where: "path", "contact.md" | first %}
         {% if contact_page.title %}
           <span class="my-span-icon">
-            <a href="{{ contact_page.url | relative_url }}" aria-label="Contact" title="Contact {{ site.github.owner_name }}">
+            <a href="{{ contact_page.url | absolute_url }}" aria-label="Contact" title="Contact {{ site.github.owner_name }}">
               <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
             </a>
           </span>

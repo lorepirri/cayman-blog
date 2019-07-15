@@ -5,7 +5,7 @@
     {% assign page_paths = site.header_pages | default: default_paths %}
 
     {% if page.layout != 'home' %}
-      <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+      <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
     {% endif %}
 
     {% if page_paths %}
@@ -27,7 +27,7 @@
             {% if my_page.title %}
               {% if my_page.title contains "404" %}
               {% else %}
-                <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                <a class="page-link" href="{{ my_page.url | absolute_url }}">{{ my_page.title | escape }}</a>
               {% endif %}
             {% endif %}
           {% endfor %}
