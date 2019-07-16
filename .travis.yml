@@ -9,3 +9,7 @@ before_install:
     - gem update --system
     - gem install bundler
     - sudo update-ca-certificates
+addons:
+  apt:
+    packages:
+    - libcurl4-openssl-dev
