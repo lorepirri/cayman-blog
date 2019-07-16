@@ -201,6 +201,12 @@ a {
   @include small {
     padding: 2rem 1rem;
     font-size: 1rem;
+
+    ul,
+    ol {
+      margin-top: 0;
+      padding-left: 0;
+    }    
   }
 
   kbd {
