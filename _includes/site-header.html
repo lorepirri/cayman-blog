@@ -1,14 +1,14 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+    {% assign default_refs = site.pages | sort:"order" | map: "ref" %}
+    {% assign page_refs = site.header_page_refs | default: default_refs %}
 
     {% if page.layout != 'home' %}
       <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
     {% endif %}
 
-    {% if page_paths %}
+    {% if page_refs %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -22,8 +22,8 @@
         </label>
 
         <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
+          {% for ref in page_refs %}
+            {% assign my_page = site.pages | where: "ref", ref | first %}
             {% if my_page.title %}
               {% if my_page.title contains "404" %}
               {% else %}
