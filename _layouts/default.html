@@ -133,17 +133,16 @@
             </footer>
         </section>
         
-        <script type="text/javascript">
+        <script>
             var menu = document.querySelector("nav.site-nav");
             var checkbox = document.getElementById("nav-trigger");
             
             // close menu if click outside menu
             document.addEventListener("click", function(e) {
                 if (menu != e.target &&
-                ! isDescendant(menu, e.target)) {
+                        !isDescendant(menu, e.target)) {
                     checkbox.checked = false;
                 }
-                
             }, false);
             
             function isDescendant(parent, child) {
