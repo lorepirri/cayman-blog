@@ -8,3 +8,4 @@ script: script/cibuild
 before_install:
     - gem update --system
     - gem install bundler
+    - sudo update-ca-certificates
