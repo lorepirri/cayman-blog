@@ -122,6 +122,10 @@
     margin-top: 0rem;
     margin-bottom: 0.4rem;
   }
+
+  > li > p {
+    margin-top: 0rem;
+  }  
 }
 
 @include media-query($on-palm) {
