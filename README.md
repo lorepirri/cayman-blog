@@ -72,8 +72,8 @@ This method is preferred for existing _Jekyll blogs_, as well as newly created o
 3. Delete the `screenshot.png` and `screenshot-mobile.png` files
 3. Empty the `_posts` folder
 4. Install bundler and gems with `$ script/bootstrap`
-5. Run Jekyll with `$ script/server`
-6. Modify `_config.yml`, `about.md`, `contact.md` for your project
+5. Run Jekyll with `$ bundle exec jekyll serve`
+6. Modify `_config.yml`, `about.md`, `contact.md`, and `now.md` for your project
 7. [Customize the theme](customizing)
 
 ## Customizing
