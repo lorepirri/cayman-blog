@@ -9,7 +9,7 @@ categories: python
 typora-copy-images-to: ../images/2019-07-26
 ---
 
-Data 분석을 위해서는 **pandas**는 당연히 __기본__입니다.
+Data 분석을 위해서는 **pandas**는 당연히 **기본**입니다.
 
 문법이 어렵거나 하지 않아서 코딩을 전혀 해보지 않은 사람들도 pandas를 활용하여 손쉽게 데이터 분석을 할 수 있도록 만들어 놓은 library 입니다.
 
