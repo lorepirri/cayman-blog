@@ -17,6 +17,16 @@ pandas의 기본 문법을 pandas에서 제공하는 [10 minutes to pandas](<htt
 
 더욱 자세한 API Documentation 은 [이곳](https://pandas.pydata.org/pandas-docs/version/0.24/reference/index.html)에 있습니다.
 
+
+
+## 데이터 준비하기
+
+활용한 데이터는 [전국 신규 민간 아파트 분양가격 동향](https://www.data.go.kr/dataset/3035522/fileData.do)이라는 공공데이터 포탈에서 .csv로 다운로드 받은 데이터 입니다. 자료는 언제든 최신 csv로 다운로드 받으실 수 있습니다.
+
+여기서 간혹 __csv파일을 못불러오는 에러가 뜨는 경우가 있는데__, csv 파일 타입을 반드시 utf-8 csv 파일 타입으로 변경을 해야 제대로 pandas에서 불러올 수 있으며, excel로 먼저 파일을 여신 후에 "다른 이름으로 저장" - **UTF-8 CSV** 로 저장하시면 제대로 불러올 수 있습니다.
+
+
+
 ## pandas module import
 
 
