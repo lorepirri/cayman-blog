@@ -2,7 +2,7 @@
 layout: page
 title: "Conv2d layer를 겹겹이 쌓을 때 최종 output volume 계산법"
 description: "Conv2d layer를 겹겹이 쌓을 때 최종 output volume 계산법을 알아보겠습니다."
-tags: [torch, conv2d]
+tags: [torch, conv2d, machine-learning]
 comments: true
 published: true
 categories: machine-learning
