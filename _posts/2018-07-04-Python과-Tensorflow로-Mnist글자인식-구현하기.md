@@ -3,7 +3,7 @@ layout: page
 title: "Machine Learning - 쌩 Python / Tensorflow로 Mnist 글자인식 구현하기"
 description: "Machine Learning - 쌩 Python / Tensorflow로 Mnist 글자인식 구현하기"
 categories: machine-learning
-tags: [tensorflow, mnist]
+tags: [tensorflow, mnist, machine-learning]
 comments: true
 published: true
 ---

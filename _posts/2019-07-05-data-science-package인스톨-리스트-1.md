@@ -2,10 +2,10 @@
 layout: page
 title: "Data Science (데이터 분석)을 위한 python package 리스트(1) - 필수 패키지"
 description: "Data Science (데이터 분석)을 위한 python package 리스트 모음에 대하여 알아보겠습니다."
-tags: [aws]
+tags: [data_science, python]
 comments: true
 published: true
-categories: python
+categories: data_science
 typora-copy-images-to: ../images/2019-07-05
 ---
 

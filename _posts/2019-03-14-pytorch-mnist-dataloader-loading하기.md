@@ -5,7 +5,7 @@ description: "MNIST dataset loading 하는 방법에 대하여 알아보겠습�
 tags: [pytorch]
 comments: true
 published: true
-categories: linux
+categories: machine-learning
 typora-copy-images-to: ../images/2019-03-14
 ---
 

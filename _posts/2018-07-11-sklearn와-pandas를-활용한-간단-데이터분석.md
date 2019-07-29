@@ -3,7 +3,7 @@ layout: page
 title: "Pandas와 scikit-learn으로 정말 간단한 pre-processing 몇 가지 팁"
 description: "pandas, scikit-learn을 활용한 정말 간단한 pre-processing 몇 가지 팁에 대하여 알아보겠습니다."
 categories: machine-learning
-tags: [pre-processing, scikit-learn, pandas]
+tags: [pre-processing, scikit-learn, pandas, machine-learning]
 comments: true
 published: true
 ---
