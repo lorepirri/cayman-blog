@@ -2,7 +2,7 @@
 layout: page
 title: "jupyter notebook remote 접속 허용 설정"
 description: "jupyter notebook remote 접속 허용 설정하는 방법에 대하여 알아보겠습니다"
-tags: [python]
+tags: [data_science, python]
 comments: true
 published: true
 categories: python
