@@ -13,10 +13,29 @@ layout: default
 
 <article>
   <div class="page-wrapper">
+    {% if page.title != 'About' %}
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- below website -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5548835221228418" data-ad-slot="1481048616"
+      data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    {% endif %}
     {{ content }}
   </div>
 
   {% if page.title != 'About' %}
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- below website -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5548835221228418" data-ad-slot="1481048616"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
   {% include disqus_comments.html %}
   {% endif %}
 
