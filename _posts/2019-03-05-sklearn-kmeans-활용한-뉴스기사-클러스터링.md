@@ -21,6 +21,10 @@ typora-copy-images-to: ../images/2019-03-05
 
 
 
+원본 소스에 대한 repo는 [여기](https://github.com/teddylee777/korean_news_categorization)에서 보실 수 있습니다.
+
+
+
 ## 뉴스기사 Dataset (sklearn.datasets)
 
 sklearn 라이브러리에서 뉴스기사 dataset을 제공합니다.
