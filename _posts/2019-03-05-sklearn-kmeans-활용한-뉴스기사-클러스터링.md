@@ -165,6 +165,10 @@ X = normalize(X)
 # k-means 알고리즘 적용
 kmeans = KMeans(n_clusters=n_clusters).fit(X)
 
+# trained labels and cluster centers
+labels = kmeans.labels_
+centers = kmeans.cluster_centers_
+
 # labels에 merge
 df['labels'] = labels
 ```
