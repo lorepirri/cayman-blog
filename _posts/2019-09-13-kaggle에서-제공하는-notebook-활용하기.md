@@ -174,7 +174,7 @@ submission.to_csv('sampleSubmission.csv', index=False)
 
 Commit을 하면, 내가 이전에 Commit한 Notebook을 Version으로 보관하여줍니다.
 
-<이전 Version과 현재 Version의 diff를 볼 수 있습니다>
+**<u>이전 Version과 현재 Version의 diff를 볼 수 있습니다</u>**
 
 
 
