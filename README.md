@@ -107,9 +107,11 @@ gem 'jekyll-feed'
 And then add this line to your site's `_config.yml`:
 
 ```yml
-gems:
+plugins:
   - jekyll-feed
 ```
+
+:warning: If you are using Jekyll < 3.5.0 use the `gems` key instead of `plugins`.
 
 For more information about configuring this plugin, see the official [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed) page.
 
@@ -130,7 +132,7 @@ To switch to a better SEO tags however, one should install [Jekyll Feed plugin](
 2. And then add this line to your site's `_config.yml`:
 
     ```yml
-    gems:
+    plugins:
       - jekyll-seo-tag
     ```
 
