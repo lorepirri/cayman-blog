@@ -121,7 +121,7 @@ Cayman Blog includes simple SEO tags from [jekyll-social-metatags](https://githu
 
 The usage is compatible with the plugin [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag), which provides a battle-tested template of crowdsourced best-practices.
 
-To switch to a better SEO tags however, one should install [Jekyll Feed plugin](https://github.com/jekyll/jekyll-feed):
+To switch to a better SEO tags however, one should install [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag):
 
 1. Add this line to your site's Gemfile:
 
