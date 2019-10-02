@@ -247,12 +247,6 @@ mpl.matplotlib_fname()
 #font.variant        : normal
 #font.weight         : normal
 #font.stretch        : normal
-## note that font.size controls default text sizes.  To configure
-## special text sizes tick labels, axes, labels, title, etc, see the rc
-## settings for axes and ticks. Special text sizes can be defined
-## relative to font.size, using the following values: xx-small, x-small,
-## small, medium, large, x-large, xx-large, larger, or smaller
-#font.size           : 10.0
 ```
 
 
