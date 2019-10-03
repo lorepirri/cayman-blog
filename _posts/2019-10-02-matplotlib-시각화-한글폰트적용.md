@@ -58,7 +58,7 @@ import seaborn as sns
 %matplotlib inline
 
 # unicode minus를 사용하지 않기 위한 설정 (minus 깨짐현상 방지)
-matplotlib.rcParams['axes.unicode_minus'] = False
+plt.rcParams['axes.unicode_minus'] = False
 ```
 
 
