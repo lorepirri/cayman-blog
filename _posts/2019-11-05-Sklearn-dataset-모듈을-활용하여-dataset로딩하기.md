@@ -35,8 +35,9 @@ document에서 긁어온 dataset의 종류입니다.
 
 우측에는 regression/classification 에 적합한 dataset인지 친절하게 표기해 주고 있습니다.
 
+| dataset 이름 (리턴값)                                        | Load and return the boston house-prices dataset (regression). |
+| :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [`load_boston`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston)([return_X_y]) | Load and return the boston house-prices dataset (regression). |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [`load_iris`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris)([return_X_y]) | Load and return the iris dataset (classification).           |
 | [`load_diabetes`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html#sklearn.datasets.load_diabetes)([return_X_y]) | Load and return the diabetes dataset (regression).           |
 | [`load_digits`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits)([n_class, return_X_y]) | Load and return the digits dataset (classification).         |
@@ -44,13 +45,15 @@ document에서 긁어온 dataset의 종류입니다.
 | [`load_wine`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html#sklearn.datasets.load_wine)([return_X_y]) | Load and return the wine dataset (classification).           |
 | [`load_breast_cancer`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html#sklearn.datasets.load_breast_cancer)([return_X_y]) | Load and return the breast cancer wisconsin dataset (classification). |
 
+
+
 ## sklearn.datasets 활용법
 
 
 
 제가 sklearn을 스터디 하면서 가장 좋았던 부분은 api interface가 굉장히 깔끔했다는 점입니다. 
 
-공통으로 사용되는 api method가 매우 명확하고 통일성을 갖추고 있습니다.
+공통으로 사용되는 api method가 **매우 명확하고 통일성**을 갖추고 있습니다.
 
 가령, 모든 machine-learning 알고리즘의 fit/predict/score는 공통으로 사용되기 때문에 다른 알고리즘을 사용한다고 해서 다른 method를 호출해야하는 번거로움이 없고 매우 직관적입니다.
 
