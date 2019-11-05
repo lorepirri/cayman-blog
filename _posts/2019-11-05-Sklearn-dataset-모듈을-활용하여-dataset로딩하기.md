@@ -35,7 +35,7 @@ document에서 긁어온 dataset의 종류입니다.
 
 우측에는 regression/classification 에 적합한 dataset인지 친절하게 표기해 주고 있습니다.
 
-| dataset 이름 (리턴값)                                        | Load and return the boston house-prices dataset (regression). |
+| dataset 이름 (리턴값)                                        | 데이터 셋에 대한 설명 (적합한 모델) |
 | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | [`load_boston`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston)([return_X_y]) | Load and return the boston house-prices dataset (regression). |
 | [`load_iris`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris)([return_X_y]) | Load and return the iris dataset (classification).           |
