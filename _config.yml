@@ -1,8 +1,8 @@
 title: Teddy's DEV Note
 description: Connecting the Dots.
 
-url:   https://teddylee777.github.io
-image: images/logo.png
+url:   //teddylee777.github.io
+image: /images/logo.png
 
 show_downloads: false
 future:         true
@@ -25,6 +25,7 @@ repository: teddylee777/teddylee777.github.io
 highlighter: rouge
 markdown:    kramdown
 
+# root_dir: http://localhost:4000
 category_dir: categories/
 tag_dir: tag/
 
@@ -32,16 +33,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-
-# twitter:
-#   username: lorepirri
-#  site:
-# facebook:
-  #publisher: 1592372034171500
-  #profile_id: 1809805629
-  # app_id: 1798910940422432 # cayman-blog
-  #authors: lorepirri
-#  admins:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
