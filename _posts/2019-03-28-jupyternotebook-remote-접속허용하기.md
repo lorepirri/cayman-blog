@@ -37,6 +37,14 @@ conda install -c anaconda notebook
 
 
 
+## 방화벽 개방 (8888포트 기준)
+
+```bash
+sudo ufw allow 8888
+```
+
+
+
 ## Config 생성
 
 ```bash
