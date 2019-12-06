@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Kaggle API 사용법"
+title: "Kaggle(캐글) API 사용법 - 데이터셋 다운로드와 제출을 손쉽게"
 description: "Kaggle API를 활용하여 데이터셋 다운로드와 바로 제출하는 방법에 대하여 알아보겠습니다."
 headline: "Kaggle API를 활용하여 데이터셋 다운로드와 바로 제출하는 방법에 대하여 알아보겠습니다."
 tags: [kaggle, data_science]
