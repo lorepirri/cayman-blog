@@ -414,6 +414,18 @@ gender_submission.to_csv('titanic-submission.csv',index=False)
 
 
 
+## 그 밖에..
+
+[**sklearn 라이브러리를 활용한 mnist 손글씨 10분만에 70,000개 분류하기**](https://teddylee777.github.io/machine-learning/sklearn으로-mnist-손글씨분류하기)
+
+[**sklearn의 KMeans 모듈을 활용한 뉴스 클러스터링**](https://teddylee777.github.io/machine-learning/sklearn-kmeans-활용한-뉴스기사-클러스터링)
+
+[**Tensorflow를 활용하여 Mnist data classification을 CNN으로 구현**](https://teddylee777.github.io/machine-learning/Mnist-Classification을-tensorflow로-구현하기)
+
+[**Google Colaboratory에 대한 간단 팁과 활용법**](https://teddylee777.github.io/machine-learning/Google-colab으로-GPU-부스트받아-machine-learning-학습하기)
+
+
+
 <br>
 
 <br>
