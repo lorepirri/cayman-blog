@@ -238,21 +238,3 @@ Open Version을 클릭하시면, 현재 Commit한 Version의 Notebook을 Preview
 
 [**Google Colaboratory에 대한 간단 팁과 활용법**](https://teddylee777.github.io/machine-learning/Google-colab으로-GPU-부스트받아-machine-learning-학습하기)
 
-
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #kaggle #notebook #jupyternotebook #bikesharingdemand
-
-
-

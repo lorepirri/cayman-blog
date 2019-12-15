@@ -266,8 +266,3 @@ acc
 ##### 참고 (Reference): 김성훈 교수님의 "모두를 위한 딥러닝 시즌1"을 참고하여 Tensorflow를 구현하였습니다.
 
 
-
-##### #딥러닝 #머신러닝 #tensorflow #mnist_dataset
-
-
-

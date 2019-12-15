@@ -171,5 +171,3 @@ task의 실행은 한 번만 호출되어야 한다고 명시하고 있다.
 
 참고: [AsyncTask - Android Developer](https://developer.android.com/reference/android/os/AsyncTask.html)
 
-
-### #android #asynctask #backgroud #java #util #varargs

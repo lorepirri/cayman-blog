@@ -201,24 +201,3 @@ y_test.shape
 [**Google Colaboratory에 대한 간단 팁과 활용법**](https://teddylee777.github.io/machine-learning/Google-colab으로-GPU-부스트받아-machine-learning-학습하기)
 
 
-
-<br>
-
-<br>
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #sklearn #train_test_split #dataset #머신러닝
-
-
-

@@ -22,37 +22,43 @@ layout: default
     <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
+
     {% endif %}
+
     {{ content }}
-  </div>
 
-  {% for cat in page.categories %}
-  <h1>관련 글 더보기</h1>
-  {% for post in site.categories[cat] %}
-  {% if post.url == page.url %}
-  {% assign current_index = forloop.index %}
-  {% endif %}
-  {% endfor %}
+    <br>
+    <hr/>
+    {% for cat in page.categories %}
+    {% for post in site.categories[cat] %}
+    {% if post.url == page.url %}
+    {% assign current_index = forloop.index %}
+    {% endif %}
+    {% endfor %}
 
-  {% assign start_index = current_index | minus: 3 %}
-  {% if start_index < 1 %}
-  {% assign start_index = 1 %}
-  {% endif %}
+    {% if site.categories[cat].size > 1 %}
+    <h2>관련 글 더보기</h2>
+    {% endif %}
 
-  {% assign end_index = start_index | plus: 5 %}
+    {% assign start_index = current_index | minus: 3 %}
+    {% if start_index < 1 %}
+    {% assign start_index = 1 %}
+    {% endif %}
 
+    {% assign end_index = start_index | plus: 5 %}
 
-  <div>
-  {% for post in site.categories[cat] %}
-  {% if forloop.index >= start_index %}
-  {% if forloop.index <= end_index %}
-  {% if post.url != page.url %}
-  <p>- <a href="{{ post.url }}" class="recommendations">{{ post.title }}</a></p>
-  {% endif %}
-  {% endif %}
-  {% endif %}
-  {% endfor %}
-  {% endfor %}
+    {% for post in site.categories[cat] %}
+    {% if forloop.index >= start_index %}
+    {% if forloop.index <= end_index %}
+    {% if post.url != page.url %}
+    <p>- <a href="{{ post.url }}" class="recommendations">{{ post.title }}</a></p>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+
   </div>
 
   <div class='last-comment'>

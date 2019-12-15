@@ -126,7 +126,3 @@ W2의 shape을 [2, 1]
 
 ##### 참고: [김성훈 교수님의 "모두를 위한 딥러닝 시즌 1"](https://www.youtube.com/playlist?list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm)
 
-
-
-##### #딥러닝 #머신러닝 #XOR문제 #Multi_Layer_Neural_Network #Tensorflow
-

@@ -205,22 +205,3 @@ for i in range(10):
 ![1567492413835](../images/2019-09-03/1567492413835.png)
 
 
-
-
-
-
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #sklearn #mnist #randomforestclassifier #machine-learning #python
-

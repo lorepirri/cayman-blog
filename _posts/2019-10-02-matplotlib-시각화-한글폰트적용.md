@@ -275,23 +275,4 @@ font.family         : NanumGothic
 
 
 
-<br>
-
-<br>
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #seaborn #matplotlib #jupyternotebook #한글폰트깨짐
-
-
 
