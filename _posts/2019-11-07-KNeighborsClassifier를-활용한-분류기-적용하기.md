@@ -203,23 +203,7 @@ KNN의 장단점 그리고 언제 활용을 해야하는지 다음과 같이 심
 
 
 
-<br>
 
-<br>
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #sklearn #data_science #iris #kneighborsclassifier
 
 
 

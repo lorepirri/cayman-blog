@@ -75,19 +75,3 @@ torch.cuda.is_available()
 ```
 
 
-
-<br>
-
-<br>
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #tensorflow #keras #pytorch #gpu

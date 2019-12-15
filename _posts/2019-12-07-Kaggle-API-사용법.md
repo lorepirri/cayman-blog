@@ -177,18 +177,3 @@ kaggle competitions download -c titanic
 
 이제 더 이상 파일을 드래그 앤 드롭으로 제출하는 번거로움은 더 이상 없습니다.
 
-<br>
-
-<br>
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #kaggle #kaggle_api #kaggle_tip #pip

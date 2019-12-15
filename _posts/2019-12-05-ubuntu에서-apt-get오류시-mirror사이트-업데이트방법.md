@@ -60,21 +60,3 @@ sudo apt-get update
 
 
 
-<br>
-
-<br>
-
-
-
-<hr>
-
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #ubuntu #mirror #kakao #apt-get

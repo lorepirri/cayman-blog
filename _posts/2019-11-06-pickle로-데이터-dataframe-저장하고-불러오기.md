@@ -86,23 +86,6 @@ with open( "my_dataframe", "rb" ) as file:
 
 
 
-<br>
-
-<br>
-
-
-
-<hr>
-
-## 끝!
-
-
-
-읽어 주셔서 감사합니다.
-
-
-
-##### #pickle #python #pandas
 
 
 
