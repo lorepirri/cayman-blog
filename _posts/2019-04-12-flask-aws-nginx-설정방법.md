@@ -247,5 +247,3 @@ uwsgi --ini myflask.ini
 `/tmp/uwsgi.log`를 확인해 보면 됩니다.
 
 
-
-##### #flask #aws #nginx #uwsgi

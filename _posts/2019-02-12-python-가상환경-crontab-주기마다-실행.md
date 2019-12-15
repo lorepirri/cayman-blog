@@ -129,5 +129,3 @@ command는 `python test.py`
 ```
 
 
-
-##### #amazon_aws #ec2instance #linux #crontab

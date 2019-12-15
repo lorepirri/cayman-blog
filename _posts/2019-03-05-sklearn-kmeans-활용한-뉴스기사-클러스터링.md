@@ -252,5 +252,3 @@ df.loc[df['labels']==7,['content_cleaned', 'labels']]
 2. KMeans 알고리즘의 최대 약점 중의 하나는 n_cluster를 미리 알고 정의해 줘야한다는 점입니다. 방대한 뉴스기사의 데이터가 몇 개의 그룹으로 정의되어야 하는지 미리 알기는 어렵습니다. 또한 중심점(center)의 이 global optimum 이 아닌 local optimum에 빠질 수도 있습니다. 이렇게 되면, 군집화 퍼포먼스가 엉터리로 될 수 있습니다.
 
 
-
-##### #kmeas #sklearn #news #clustering #unsupervised_learning #python

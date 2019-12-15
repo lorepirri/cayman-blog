@@ -139,5 +139,3 @@ for batch_idx, (x, target) in enumerate(train_loader):
 ```
 
 
-
-##### #pytorch #datasets #MNIST #dataloader

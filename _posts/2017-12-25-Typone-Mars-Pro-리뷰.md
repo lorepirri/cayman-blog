@@ -145,10 +145,3 @@ caps lock led도 *caps lock 설정이 되어 있지 않음에도 불구하고 �
 앞으로 꾸준한 업데이트를 기대해본다.
 
 
-
-
-
-
-
-
-### #Typone Mars Pro #기계식키보드 #Mac #맥

@@ -134,5 +134,3 @@ with tf.Session() as sess:
 참고 문헌: https://www.tensorflow.org/tutorials/estimators/cnn
 
 
-
-##### #tensorflow #mnist #cnn #deep_learning

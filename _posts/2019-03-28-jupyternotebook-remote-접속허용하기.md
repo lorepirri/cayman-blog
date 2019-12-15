@@ -107,5 +107,3 @@ c.NotebookApp.port = 8888
 iptime 을 사용하는 경우에는 192.168.0.1 로 접속해서 port forwarding 메뉴 중 8888번 포트를 연결해 주면 된다.
 
 
-
-##### #jupyter #notebook #remote_access

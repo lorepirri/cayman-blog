@@ -127,10 +127,3 @@ maxpooling 을 2로 하게 되면 input_filter_size의 값을 2로 나눈 값이
 
 가령, maxpooling 을 4로 하게 되면, output_filter_size는 4로 나눈 값이 되겠죠?
 
-
-
-### 끝!
-
-
-
-##### #torch, #conv2d, #CNN

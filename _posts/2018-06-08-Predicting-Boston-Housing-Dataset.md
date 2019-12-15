@@ -104,5 +104,3 @@ print("{0} epoch, error={1}".format(epoch, error))
 25569 epoch, error=4.999989852544409
 ```
 
-
-##### #Python #Gradient_Descent #Prediction #Machine_Learning

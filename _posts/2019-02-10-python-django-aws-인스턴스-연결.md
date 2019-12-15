@@ -123,6 +123,3 @@ python manage.py runserver 0.0.0.0:8000
 
 
 
-
-
-##### #amazon_aws #ec2instance #domain #django #python

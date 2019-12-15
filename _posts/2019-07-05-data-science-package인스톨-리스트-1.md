@@ -145,5 +145,3 @@ conda install -c conda-forge scipy
 다음 포스팅에서는 이어서 머신러닝/딥러닝에 활용하는 패키지에 대하여 설명드리도록 하겠습니다.
 
 
-
-##### #python #package #pandas #numpy #scipy #jupyter

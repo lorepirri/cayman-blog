@@ -76,5 +76,3 @@ tmux 문법은 심플 합니다. (사용법이 복잡하지 않아요)
 [Reference] [tmux cheatsheet](https://gist.github.com/henrik/1967800)
 
 
-
-##### #amazon_aws #ec2instance #linux #tmux

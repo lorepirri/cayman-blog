@@ -64,5 +64,3 @@ $ which mysql_config
 >
 >
 
-
-### #python #mysqlclient #mysql

@@ -123,6 +123,3 @@ AWS 의 EC2 인스턴스가 2개일 경우, 다음과 같이 json 형태의 설�
 
 앞으로는 Visual Studio Code를 열고 remote workspace에서 직접 코드 수정을 하면, 로컬에서 git push한 다음에 AWS EC2 instance에서 pull해서 코드 업데이트를 하는 멍청한 번거로움은 없앨 수 있겠다.
 
-
-
-##### #amazon_aws #ec2instance #ftpsimple #visual_studio_code

@@ -360,7 +360,3 @@ Google Colaboratory는 Jupiter notebook에 GPU부스팅을 받을 수 있다는 
 
 [참고 문헌] [Colaboratory's Free GPU](https://medium.com/@_NicT_/colaboratorys-free-gpu-72ebc9272933)
 
-
-
-
-##### #colab #deep-learning #machine-learning #jupyter_notebook

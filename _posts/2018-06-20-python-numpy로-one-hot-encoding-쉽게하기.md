@@ -152,9 +152,3 @@ array([[1., 0., 0.],
        [0., 0., 1.],
        [0., 0., 1.]])
 ```
-
-
-
-
-
-##### #python #one_hot_encoding #machine_learning #numpy

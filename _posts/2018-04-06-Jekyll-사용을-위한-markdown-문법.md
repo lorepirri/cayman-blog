@@ -511,9 +511,3 @@ http.createServer(function (req, res) {
 ![Alt text]({{site.baseurl}}/images/logo.png "Optional title")
 
 
-
-
-
-
-
-### #markdown #githubpages #syntax #md #jekyll
