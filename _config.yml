@@ -28,6 +28,7 @@ markdown:    kramdown
 # root_dir: http://localhost:4000
 category_dir: categories/
 tag_dir: tag/
+categories: [android, aws, data_science, git, jekyll, linux, machine-learning, python, pytorch, review, synology, thoughts]
 
 paginate: 5
 paginate_path: "/posts/page:num/"

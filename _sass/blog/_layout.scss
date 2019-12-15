@@ -177,6 +177,19 @@
   color: $highlight-font-color !important;
 }
 
+.recommendations {
+  text-decoration: none !important;
+  font-size: 1.2rem !important;
+}
+
+.last-comment{
+  margin-top: 3rem;
+  p {
+    font-size: 16px !important;
+    margin: 1rem;
+  }
+}
+
 table.dataframe {
   white-space: normal;
   width: 100%;
