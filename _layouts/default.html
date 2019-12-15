@@ -47,28 +47,6 @@
   {% assign page-tagline = site.description | default: site.github.project_tagline | escape %}
   {% endif %}
 
-  {% if page.layout != 'page' %}
-  <section class="page-header">
-
-    <h1 class="project-name">기록으로 남기기 위한 공간.</h1>
-    <h2 class="project-tagline">Noted by Teddy</h2>
-
-    {% if page.layout == 'page' %}
-    <h2 class="project-date">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% assign page_author = page.author | default: site.author | default: nil | escape %}
-      {% if page_author %}
-      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span
-          itemprop="name">{{ page_author }}</span></span>
-      {% endif %}
-    </h2>
-    {% endif %}
-  </section>
-  {% endif %}
-
   <section class="main-wrapper">
     {% if page.layout != 'page' %}
     <section class="main-content">

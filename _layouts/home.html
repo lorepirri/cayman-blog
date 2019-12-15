@@ -6,16 +6,32 @@ layout: default
 
   {{ content }}
 
-  <h1>Latest Posts</h1>
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}" class="paginator-indicator">&laquo; Prev</a>
+  {% else %}
+  {% endif %}
 
-  <div>&nbsp;</div>
+  {% if paginator.previous_page %}
+  {% if paginator.next_page %}
+  |
+  {% endif %}
+  {% endif %}
 
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}" class="paginator-indicator">Next &raquo;</a>
+  {% else %}
+
+  {% endif %}
+
+  <h1>Page {{ paginator.page }}.</h1>
+
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
   <ul class="post-list">
-  {% for post in site.posts %}
     <li>
       {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
-      
+
       <h2>
         <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
       </h2>
@@ -23,9 +39,21 @@ layout: default
       <span class="post-description">{{ post.excerpt | markdownify |  truncatewords: 30 }}</span>
       <hr>
     </li>
-  {% endfor %}
   </ul>
+  {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <em><b>{{ page }}</b></em>
+    {% elsif page == 1 %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
 </div>
-
-

@@ -163,7 +163,22 @@
   text-decoration: none !important;
 }
 
+.pagination {
+  text-align: center;
+  font-size: 20px;
+  em b{
+    font-weight: bold !important;
+    font-size: 23px !important;
+    color: $highlight-font-color !important;
+  }
+}
+
+.paginator-indicator{
+  color: $highlight-font-color !important;
+}
+
 table.dataframe {
+  white-space: normal;
   width: 100%;
   height: 240px;
   display: block;
@@ -186,3 +201,21 @@ table.dataframe td {
 table.dataframe tr:hover {
   background: #b8d1f3; 
 }
+
+.output_prompt {
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 0.3rem;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: $code-text-color;
+  border: solid 1px $border-color;
+  border-radius: 0.3rem;
+  word-break: normal;
+  white-space: pre;
+}
+
