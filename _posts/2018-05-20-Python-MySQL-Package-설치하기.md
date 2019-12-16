@@ -58,9 +58,4 @@ $ which mysql_config
     libs="-L$pkglibdir"
     libs="$libs -lmysqlclient -lssl -lcrypto"
 
->
->
->
->
->
 
