@@ -22,7 +22,7 @@ Tree 기반 모델은 RandomForest 모델때문에 참 인기있게 활용되는
 
 Tree 모델은 **참/거짓** 으로 가지치기를 하는 한마디로 스무고개식 분류라고 볼 수 있습니다.
 
-![decistion-tree (../images/2020-01-09/decistion-tree (1).png)](../../../Downloads/01_CHROME_DOWNLOAD_191217/decistion-tree (1).png)
+![decistion-tree-1](../images/2020-01-09/decistion-tree-1.png)
 
 위 의 그림에서 보시다시피, node (가지) 마다 sample을 특정 기준에 따라 왼쪽 가지 / 오른쪽 가지로 분할합니다. 예를 들면, 첫 번째 가장 뿌리가 되는 node (root node) 에서는 **petal length (cm) <= 2.45**  를 기준으로 먼저, 분할한 것을 볼 수 있습니다. 이렇듯 우리가 단순히 Tree 모델을 돌려보고 끝내는 것이 아니라, 세부 parameter 조정을 위해서나 혹은 어떤 feature 를 기준으로 분할 하였는지 확인 해 보고 싶을 때 시각화를 할 수 있습니다. 그래서 오늘은 Tree Model이 분할을 할 때 어떤 기준으로 트리가 분할을 하였는지 **시각화** 해볼 수 있는 방법에 대하여 알려드리고자 하며, `graph_viz`라는 모듈을 통해 구현해보고, 세부 parameter에 대해서도 알려드리고자 합니다.
 
@@ -116,7 +116,7 @@ export_graphviz(model,
                )
 ```
 
-![decistion-tree (../images/2020-01-09/decistion-tree (2).png)](../../../Downloads/01_CHROME_DOWNLOAD_191217/decistion-tree (2).png)
+![decistion-tree-2](../images/2020-01-09/decistion-tree-2.png)
 
 ```python
 from sklearn.tree import export_graphviz
@@ -131,7 +131,7 @@ export_graphviz(model, out_file='tree.dot',
                )
 ```
 
-![decistion-tree (../images/2020-01-09/decistion-tree (3).png)](../../../Downloads/01_CHROME_DOWNLOAD_191217/decistion-tree (3).png)
+![decistion-tree-3](../images/2020-01-09/decistion-tree-3.png)
 
 
 
@@ -158,7 +158,7 @@ export_graphviz(estimator, out_file='tree.dot',
                )
 ```
 
-![decistion-tree (../images/2020-01-09/decistion-tree (4).png)](../../../Downloads/01_CHROME_DOWNLOAD_191217/decistion-tree (4).png)
+![decistion-tree-4](../images/2020-01-09/decistion-tree-4.png)
 
 
 
