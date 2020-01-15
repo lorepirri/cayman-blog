@@ -6,7 +6,7 @@ headline: "train_test_split 모듈을 활용하여 학습과 테스트 세트 �
 tags: [train-test-split, scikit-learn, sklearn]
 comments: true
 published: true
-categories: thoughts
+categories: machine-learning
 typora-copy-images-to: ../images/2020-01-16
 ---
 
