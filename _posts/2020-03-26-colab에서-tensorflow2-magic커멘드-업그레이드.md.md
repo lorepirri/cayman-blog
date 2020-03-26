@@ -13,7 +13,7 @@ typora-copy-images-to: ../images/2020-03-26
 
 
 
-Google Colab에서 tensorflow 2.0으로 magic command를 통해 손쉽게 업그레이드 하는 방법에 대하여 알려드리겠습니다.
+Google Colab에서 `tensorflow 2.0`으로 **magic command**를 통해 손쉽게 업그레이드 하는 방법에 대하여 알려드리겠습니다.
 
 **2020년 3월 26일 기준**
 
@@ -27,10 +27,10 @@ Google Colab에서 tensorflow 2.0으로 magic command를 통해 손쉽게 업그
 
 ## magic command로 tensorflow 버젼 변경
 
-* magic command를 실행하기 전에, 먼저 **tensorflow를 import 하시면 안됩니다!**
+* `magic command`를 실행하기 전에, 먼저 **tensorflow를 import 하시면 안됩니다!**
 
-* 반드시, magic command를 먼저 실행해주세요
-* 아래의 magic command로 별도의 **tensorflow 버전 설치 필요없이, 버전을 변경**하실 수 있습니다.
+* 반드시, `magic command`를 먼저 실행해주세요
+* 아래의 `magic command`로 별도의 **tensorflow 버전 설치 필요없이, 버전을 변경**하실 수 있습니다.
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Google Colab에서 python 패키지를 영구적(permanently)으로 설치(업그레이드)하는 방법"
+title: "Google Colab에서 python 패키지를 영구적(permanently)으로 설치하는 방법"
 description: "Google Colab에서 python 패키지를 영구적(permanently)으로 설치(업그레이드)하는 방법에 대하여 알려드립니다."
 headline: "Google Colab에서 python 패키지를 영구적(permanently)으로 설치(업그레이드)하는 방법에 대하여 알려드립니다."
 tags: [colab, google, python, tensorflow2.0]
@@ -13,7 +13,7 @@ typora-copy-images-to: ../images/2020-03-20
 
 
 
-Colab에서 **영구적(permanently)으로 파이썬 패키지를 업그레이드 하는 방법**에 대하여 공유드리고자 합니다. 
+Colab에서 **영구적(permanently)으로 파이썬 패키지를 설치(install) 하는 방법**에 대하여 공유드리고자 합니다. 
 
 Google Colab은 정말 좋은 무료 환경입니다. 꽤 좋은 성능을 내는 하드웨어 자원을 무료로 사용할 수 있습니다. 때문에, 머신러닝/딥러닝 을 학습하시는 분들께는 정말 좋은 환경이라 최근 사용하시는 분들이 급격히 늘어나고 있습니다.
 
