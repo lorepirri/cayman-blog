@@ -13,11 +13,9 @@ typora-copy-images-to: ../images/2020-03-29
 
 
 
-Google 에서 공식 인증하는 **Tensorflow Developer Certification**
+Google 에서 공식 인증하는 **Tensorflow Developer Certification**(텐서플로우 2.0 개발자 자격증) 시험에 대한 응시 방법, 취득, 그리고 **노하우를 공유**드리고자 합니다.
 
- (텐서플로우 2.0 개발자 자격증) 시험에 대한 응시 방법, 취득, 그리고 **노하우를 공유**드리고자 합니다.
-
-
+> Google 이 얼마전 TensorFlow Developer Certificate을 런칭하였습니다.
 
 ![image-20200329054306980](../images/2020-03-29/image-20200329054306980.png)
 
