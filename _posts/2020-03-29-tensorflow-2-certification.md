@@ -33,7 +33,7 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification**(텐서�
 
 단기 취득을 위한 분들을 위하여 **시험 합격**을 위한 **온라인으로 진행하는 강의**를 준비하였습니다.
 
-원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](https://forms.gle/9pFRFwydoe5uStAc9)에서 신청해 주시기 바랍니다.
+원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](bit.ly/tf-cert-survey)에서 신청해 주시기 바랍니다.
 
 
 
