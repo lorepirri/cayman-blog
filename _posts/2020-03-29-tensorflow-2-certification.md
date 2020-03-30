@@ -176,7 +176,7 @@ PyCharm을 설치하신 후 **Google Certification 이라는 플러그인을 미
 
 
 
-#텐서플로우 #TensorFlow #Google TensorFlow Certification
+#텐서플로우 #TensorFlow #텐서플로우 자격증 #tensorflow 자격증 #텐서플로우 강의 #텐서플로우 강좌 
 
 
 
