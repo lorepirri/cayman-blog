@@ -34,6 +34,21 @@
     });
   </script>
   {% endif %}
+  <style>
+    .top-banner {
+      width: 100% !important;
+      height: 50px !important;
+      background-color: #deff87 !important;
+      text-align: left !important;
+      margin: 5px !important;
+      padding: 5px !important;
+    }
+  
+    .top-banner a {
+      color: #000000 !important;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -95,6 +110,7 @@
     </section>
     {% endif %}
     {% if page.layout == 'page' %}
+
     <section class="page-content">
 
       {{ content }}
