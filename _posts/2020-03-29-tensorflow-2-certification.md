@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Google에서 공식발행하는 Tensorflow Developer Certification (텐서플로우 개발자 자격 인증) 시험과 취득방법"
+title: "Google에서 공식발행하는 Tensorflow Developer Certification (텐서플로우 개발자 자격증) 시험과 취득방법"
 description: "Google에서 공식발행하는 Tensorflow Developer Certification (텐서플로우 개발자 자격증) 시험과 취득방법에 대하여 알려드립니다."
 headline: "Google에서 공식발행하는 Tensorflow Developer Certification (텐서플로우 개발자 자격증) 시험과 취득방법에 대하여 알려드립니다."
 tags: [colab, google, python, tensorflow]
