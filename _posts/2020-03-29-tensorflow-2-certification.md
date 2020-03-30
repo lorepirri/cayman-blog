@@ -166,6 +166,12 @@ PyCharm을 설치하신 후 **Google Certification 이라는 플러그인을 미
 
 보통은 1주일 이내에 모두 발표가 나는 것으로 보입니다.
 
+아래 Candidate Portal 링크를 남겨두었습니다. 시험을 치루신 후 방문해 보시면, Grade Status를 확인하실 수 있습니다.
+
+[Candidate Portal 바로가기](https://app.trueability.com/candidate/portal)
+
+![captured_20200330141025](../images/2020-03-29/captured_20200330141025.png)
+
 
 
 ### 주요 URL
