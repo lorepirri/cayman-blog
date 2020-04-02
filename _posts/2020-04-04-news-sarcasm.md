@@ -9,16 +9,10 @@ comments: true
 published: true
 ---
 
+캐글의 뉴스의 Sarcasm 에 대한 판단을 해주는 딥러닝 모델을 tensorflow 2.0을 활용하여 만들어 보겠습니다.
+
 <body>
 <div class="border-box-sizing" id="notebook" tabindex="-1">
-<div class="container" id="notebook-container">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>캐글의 뉴스의 Sarcasm 에 대한 판단을 해주는 딥러닝 모델을 tensorflow 2.0을 활용하여 만들어 보겠습니다.</p>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
