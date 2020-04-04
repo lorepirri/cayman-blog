@@ -14,6 +14,18 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 
 
 
+시험에 우선 합격을 하면 다양한 혜택들이 주어지는데요, 그 중 하나인 [Google TensorFlow Network](https://developers.google.com/certification/directory/tensorflow) 에 이름을 공식적으로 등재시켜 줍니다. 아직, 한국인은 많이 취득하지 않은 모습입니다.
+
+> Google TensorFlow Network에 Asia Region 4번째로 등재되어 있습니다.
+
+![image-20200405031323111](../images/2020-03-29/image-20200405031323111.png)
+
+
+
+합격 메일을 받으면, **Google TensorFlow Network 등재를 위한 설문지**를 보내줍니다.
+
+![image-20200401181530989](../images/2020-03-29/image-20200401181530989.png)
+
 본 인증시험은 **구글 텐서플로우 개발자 인증 시험**이라고도 불리우는 **구글에서 공인하는 텐서플로우 자격 시험**입니다. 정확히 말씀드리자면, 구글이 아닌 **Google Brain에서 제작**한 인증 시험입니다. **2020년 3월 12일에 런칭**한 따끈따끈한 TF 자격 인증 시험입니다. 모두 **온라인으로 진행**되는 것이 특징입니다. 
 
 
