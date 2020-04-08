@@ -12,11 +12,17 @@ typora-copy-images-to: ../images/2020-03-29
 
 Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서플로우 2.0 개발자 자격증)** 시험에 대한 응시 방법, 취득, 그리고 **노하우를 공유**드리고자 합니다.
 
+시험에 우선 합격을 하면 다양한 혜택들이 주어지는데요, 그 중 하나인 [Google TensorFlow Network](https://developers.google.com/certification/directory/tensorflow) 에 이름을 공식적으로 등재시켜 줍니다. 
+
+저는 **대한민국에서 2번째로 텐서플로우 자격증을 취득**하였습니다.
+
+> 텐서플로우 인증 시험 합격자에게 배부되는 인증서
+
+![image-20200408195039634](../images/2020-03-29/image-20200408195039634.png)
 
 
-시험에 우선 합격을 하면 다양한 혜택들이 주어지는데요, 그 중 하나인 [Google TensorFlow Network](https://developers.google.com/certification/directory/tensorflow) 에 이름을 공식적으로 등재시켜 줍니다. 아직, 한국인은 많이 취득하지 않은 모습입니다.
 
-> Google TensorFlow Network에 Asia Region 4번째로 등재되어 있습니다.
+> Google TensorFlow Network에 Asia Region에서는 4번째로 등재되어 있습니다.
 
 ![image-20200405031323111](../images/2020-03-29/image-20200405031323111.png)
 
@@ -42,7 +48,7 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 
 단기 취득을 위한 분들을 위하여 **시험 합격**을 위한 **온라인으로 진행하는 강의**를 준비하였습니다.
 
-원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](bit.ly/tf-cert-survey)에서 신청해 주시기 바랍니다.
+원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](https://bit.ly/tf-cert-survey)에서 신청해 주시기 바랍니다.
 
 
 
