@@ -8,7 +8,7 @@ comments: true
 published: true
 categories: kaggle
 redirect_from:
-  - data_science/2019-12-07-Kaggle-API-사용법
+  - data_science/Kaggle-API-사용법
 typora-copy-images-to: ../images/2019-12-07
 ---
 
