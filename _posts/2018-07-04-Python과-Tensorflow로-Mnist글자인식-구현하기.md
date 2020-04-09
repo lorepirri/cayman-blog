@@ -2,7 +2,7 @@
 layout: page
 title: "Python 과 Tensorflow로 Mnist 글자인식 구현하기"
 description: "Python / Tensorflow로 Mnist 글자인식 구현하기"
-categories: tensorflow & keras
+categories: tensorflow
 redirect_from:
   - machine-learning/Python과-Tensorflow로-Mnist글자인식-구현하기
 tags: [tensorflow, mnist, machine-learning]
