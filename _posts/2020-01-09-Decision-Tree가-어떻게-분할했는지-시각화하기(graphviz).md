@@ -6,7 +6,7 @@ headline: "Tree모델의 분할 그래프 시각화(Graphviz)하는 방법에 �
 tags: [decisiontree, graphviz, randomforest, sklearn, machine-learning]
 comments: true
 published: true
-categories: machine-learning
+categories: visualization
 typora-copy-images-to: ../images/2020-01-09
 ---
 
