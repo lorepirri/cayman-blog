@@ -6,7 +6,7 @@ headline: "Tensorflow, Keras, Pytorch GPU 사용여부 체크하는 방법에 �
 tags: [tensorflow, keras, pytorch, cuda, cudnn]
 comments: true
 published: true
-categories: deep-learning
+categories: tensorflow
 redirect_from:
   - machine-learning/딥러닝-framework-GPU사용체크-API
 typora-copy-images-to: ../images/2019-12-11
