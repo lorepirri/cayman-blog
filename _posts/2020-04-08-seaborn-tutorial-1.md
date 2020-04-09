@@ -11,12 +11,13 @@ comments: true
 published: true
 ---
 
+
 `seaborn`은 `matplotlib`의 상위 호환 데이터 시각화를 위한 라이브러리입니다. `seaborn`패키지는 데이터프레임으로 다양한 통계 지표를 낼 수 있는 시각화 차트를 제공하기 때문에 데이터 분석에 **활발히 사용되고 있는 라이브러리**입니다.
 
 이번 `seaborn` 튜토리얼에서는 `matplotlib`에는 없고 `seaborn`에서만 제공되는 통계 차트 위주로 설명드리겠습니다.
 
 <body>
-<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
