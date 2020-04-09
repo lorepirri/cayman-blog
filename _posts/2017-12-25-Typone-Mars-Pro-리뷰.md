@@ -3,8 +3,10 @@ layout: page
 title: "맥(Mac) 호환 기계식 키보드 - Typone Mars Pro"
 description: "Typone Mars Pro | 맥 호환 기계식 키보드 의 제품 리뷰."
 headline: 국내 Typone사의 Typone Mars Pro 개봉기 및 사용기
-category: review
+category: thoughts
 tags: review
+redirect_from:
+  - review/Typone-Mars-Pro-리뷰
 comments: true
 published: true
 ---
