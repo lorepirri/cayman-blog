@@ -17,7 +17,7 @@ published: true
 다양한 옵션값과 스타일 기본 설정법을 배울 수 있습니다.
 
 <body>
-<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">

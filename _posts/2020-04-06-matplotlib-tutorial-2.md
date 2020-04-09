@@ -14,7 +14,7 @@ published: true
 데이터 시각화를 위한 라이브러리인 `matplotlib` 의 주요 그래프와 세부 옵션들에 대하여 알아보는 튜토리얼입니다.
 
 <body>
-<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">

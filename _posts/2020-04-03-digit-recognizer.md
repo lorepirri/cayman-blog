@@ -12,7 +12,7 @@ published: true
 ---
 
 <body>
-<div class="border-box-sizing" id="notebook" tabindex="-1">
+<div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
