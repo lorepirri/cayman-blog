@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Python - Simple Gradient Descent on predicting Boston Housing"
+title: "Simple Gradient Descent on predicting Boston Housing"
 description: "Let's practice on predicting Bostong Housing prices (Gradient Descent)"
 headline: "Let's practice on predicting Bostong Housing prices (Gradient Descent)"
 categories: machine-learning

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "python - Numpy로 One-hot Encoding 쉽게 하기"
+title: "Numpy로 One-hot Encoding 쉽게 하기"
 description: "python - Numpy로 One-hot Encoding 쉽게 하기"
 categories: machine-learning
 tags: one-hot-encoding

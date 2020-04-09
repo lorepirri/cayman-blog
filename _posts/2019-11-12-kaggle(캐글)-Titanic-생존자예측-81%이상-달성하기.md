@@ -7,7 +7,7 @@ comments: true
 published: true
 categories: kaggle
 redirect_from:
-  - data_science/kaggle(캐글)-Titanic-생존자예측-81%이상-달성하기
+  - data_science/kaggle(캐글)-Titanic-생존자예측-81-이상-달성하기
 typora-copy-images-to: ../images/2019-11-12
 ---
 
