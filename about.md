@@ -30,9 +30,9 @@ permalink: /about.html
 + Deep Learning / Tensorflow, Keras, Pytorch
 
 ## Articles
-+ [남들 다 부러워하는 삼성전자 그만두고 선택한 놀라운 일]https://1boon.kakao.com/fastcampus/5e816892e0b0c27a3bf31c1c)
++ [남들 다 부러워하는 삼성전자 그만두고 선택한 놀라운 일](https://1boon.kakao.com/fastcampus/5e816892e0b0c27a3bf31c1c)
 + [인터랙티브 러닝 플랫폼 런어데이 루마퓨전 강의 와디즈 오픈예정](http://www.newsfreezone.co.kr/news/articleView.html?idxno=213663)
-+ [[스타트업] 헬멧에 부착하는 무선 헤드셋 '어헤드' 만든 아날로그 플러스(https://1boon.kakao.com/appstory/171208_3)
++ [[스타트업] 헬멧에 부착하는 무선 헤드셋 '어헤드' 만든 아날로그 플러스](https://1boon.kakao.com/appstory/171208_3)
 + [‘모두 대기업에서 나왔습니다. 왜 나오게 되었을까요?’ 아날로그플러스 팀](https://www.theteams.kr/teamterview/page/264)
 + [‘삼성발(發) 아이디어 집합소’ C랩 부스 빛낸 화제의 상품 5](https://news.samsung.com/kr/%ED%86%A1%ED%86%A1-%ED%8A%80%EB%8A%94-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EA%B0%80-%EA%B0%80%EB%93%9D-%ED%8A%B9%EB%B3%84%ED%95%9C-8%EA%B0%9C-%EC%A0%9C%ED%92%88-%EC%84%A0%EB%B3%B4%EC%9D%B8-c%EB%9E%A9?cid=in_paid_display_affiliate_cake_cefest_eshop_hhp_20200101_none)
 
