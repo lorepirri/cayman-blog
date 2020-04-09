@@ -2,10 +2,12 @@
 layout: page
 title: "sklearn의 KMeans 모듈을 활용한 뉴스 클러스터링"
 description: "sklearn의 KMeans 모듈을 활용한 뉴스 클러스터링에 대하여 알아보겠습니다."
-tags: [machine-learning]
+tags: [machine-learning, sklearn, kmeans]
 comments: true
 published: true
-categories: machine-learning
+categories: scikit-learn
+redirect_from:
+  - machine-learning/sklearn-kmeans-활용한-뉴스기사-클러스터링
 typora-copy-images-to: ../images/2019-03-05
 ---
 

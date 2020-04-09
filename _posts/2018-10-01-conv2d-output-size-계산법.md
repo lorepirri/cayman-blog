@@ -3,9 +3,11 @@ layout: page
 title: "Conv2d layer를 겹겹이 쌓을 때 최종 output volume 계산법"
 description: "Conv2d layer를 겹겹이 쌓을 때 최종 output volume 계산법을 알아보겠습니다."
 tags: [torch, conv2d, machine-learning]
+categories: pytorch
+redirect_from:
+  - machine-learning/conv2d-output-size-계산법
 comments: true
 published: true
-categories: machine-learning
 ---
 
 이번 포스팅에서는 torch 를 이용하여 CNN(Convolution Neural Network) 에서 convolution layer를 겹겹이 쌓았을 때 최종 output volume size를 구하는 방법에 대하여 알아 보겠습니다.

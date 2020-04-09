@@ -2,10 +2,12 @@
 layout: page
 title: "[Linux] Python(.py)을 가상환경(virtualenv)에서 주기별로 실행하기"
 description: "[Linux] Python(.py)을 가상환경(virtualenv)에서 주기별로 실행하는 방법에 대하여 알아보도록 하겠습니다."
-tags: [aws]
+tags: [linux, crontab, python, virtualenv]
 comments: true
 published: true
-categories: aws
+categories: linux
+redirect_from:
+  - aws/python-가상환경-crontab-주기마다-실행
 typora-copy-images-to: ..\images\2019-02-11
 ---
 

@@ -5,7 +5,9 @@ description: "tmux로 terminal을 닫아도 서비스 백그라운드 실행하�
 tags: [aws]
 comments: true
 published: true
-categories: aws
+categories: linux
+redirect_from:
+  - aws/tmux로-aws에서-terminal-닫아도-background실행
 typora-copy-images-to: ..\images\2019-02-11
 ---
 
