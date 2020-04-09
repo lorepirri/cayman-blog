@@ -4,6 +4,8 @@ title: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다
 description: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다뤄보기"
 categories: tensorflow
 tags: [tensorflow, xor, machine-learning]
+redirect_from:
+  - machine-learning/single-nn과-multi-nn으로-xor문제-풀기
 comments: true
 published: true
 ---

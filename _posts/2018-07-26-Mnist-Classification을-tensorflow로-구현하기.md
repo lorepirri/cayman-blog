@@ -2,8 +2,10 @@
 layout: page
 title: "Tensorflow를 활용하여 Mnist data classification을 CNN으로 구현"
 description: "Tensorflow를 활용하여 Mnist data classification을 CNN으로 구현해 보겠습니다."
-categories: machine-learning
+categories: tensorflow
 tags: [tensorflow, cnn, machine-learning]
+redirect_from:
+  - machine-learning/Mnist-Classification을-tensorflow로-구현하기
 comments: true
 published: true
 ---

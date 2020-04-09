@@ -2,8 +2,10 @@
 layout: page
 title: "Google Colaboratory에 대한 간단 팁과 활용법"
 description: "Google colaboratory를 활용하여 GPU부스트 받아 machine learning 학습하는 방법에 대하여 알아보겠습니다."
-categories: machine-learning
+categories: colab
 tags: [colaboratory, cnn, machine-learning]
+redirect_from:
+  - machine-learning/Google-colab으로-GPU-부스트받아-machine-learning-학습하기
 comments: true
 published: true
 ---
