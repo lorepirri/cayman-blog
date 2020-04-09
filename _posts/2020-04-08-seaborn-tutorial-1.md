@@ -7,7 +7,6 @@ categories: visualization
 tags: [pytho, colab, data_science, seaborn]
 redirect_from:
   - data_science/seaborn-tutorial-1
-  - /visualization/
 comments: true
 published: true
 ---

@@ -5,6 +5,8 @@ description: "TensorFlow 2.0 - 단어 토큰화, Embedding, LSTM layer를 활용
 headline: "TensorFlow 2.0 - 단어 토큰화, Embedding, LSTM layer를 활용한 뉴스 데이터 sarcasm 판단에 대하여 알아보겠습니다."
 categories: tensorflow
 tags: [pytho, colab, deep-learning, tensorflow2.0]
+redirect_from:
+  - deep-learning/news-sarcasm
 comments: true
 published: true
 ---

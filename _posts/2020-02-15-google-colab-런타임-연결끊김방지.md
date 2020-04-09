@@ -6,7 +6,9 @@ headline: "구글 코랩 (Google colab)의 런타임 연결 끊김을 방지하�
 tags: [deep-learning, data_science, lstm]
 comments: true
 published: true
-categories: data_science
+categories: colab
+redirect_from:
+  - data_science/google-colab-런타임-연결끊김방지
 typora-copy-images-to: ../images/2020-02-15
 ---
 

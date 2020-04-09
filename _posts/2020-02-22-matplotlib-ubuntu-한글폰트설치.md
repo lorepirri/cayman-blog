@@ -6,7 +6,9 @@ headline: "Ubuntu의 Docker환경에서 matplotlib 한글폰트 설치 및 적�
 tags: [matplotlib, ubuntu, nanum]
 comments: true
 published: true
-categories: linux
+categories: visualization
+redirect_from:
+  - linux/matplotlib-ubuntu-한글폰트설치
 typora-copy-images-to: ../images/2020-02-22
 ---
 

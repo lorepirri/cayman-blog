@@ -4,6 +4,8 @@ title: "Matplotlib.pyplot 기본 튜토리얼, 스타일, 캔버스"
 description: "Matplotlib.pyplot 기본 튜토리얼, 스타일, 캔버스"
 headline: "Matplotlib.pyplot 기본 튜토리얼, 스타일, 캔버스"
 categories: visualization
+redirect_from:
+  - data_science/matplotlib-tutorial
 tags: [colab, python, visualization, matplotlib]
 comments: true
 published: true

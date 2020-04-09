@@ -6,9 +6,10 @@ headline: "Google Colab에서 python 패키지를 영구적(permanently)으로 �
 tags: [colab, google, python, tensorflow2.0]
 comments: true
 published: true
-categories: data_science
+categories: colab
+redirect_from:
+  - data_science/colab에서-python패키지를-permanently-인스톨하는-방법
 typora-copy-images-to: ../images/2020-03-20
-
 ---
 
 

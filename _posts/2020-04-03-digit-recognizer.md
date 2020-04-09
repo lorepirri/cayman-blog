@@ -5,6 +5,8 @@ description: "Digit Recognizer (Kaggle) - over 99% accuracy"
 headline: "Digit Recognizer (Kaggle) - over 99% accuracy"
 categories: tensorflow
 tags: [python, colab, deep-learning, tensorflow]
+redirect_from:
+  - deep-learning/digit-recognizer
 comments: true
 published: true
 ---

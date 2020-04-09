@@ -6,7 +6,9 @@ headline: "Google Colab에서 코드 한 줄(magic command)로 tensorflow2.0으�
 tags: [colab, google, python, tensorflow2.0]
 comments: true
 published: true
-categories: data_science
+categories: colab
+redirect_from:
+  - data_science/colab에서-tensorflow2-magic커멘드-업그레이드
 typora-copy-images-to: ../images/2020-03-26
 
 ---
