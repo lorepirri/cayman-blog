@@ -5,7 +5,9 @@ description: "kaggle에서 제공해주는 notebook을 활용하여 캐글을 �
 tags: [machine-learning, mnist, kaggle]
 comments: true
 published: true
-categories: machine-learning
+categories: kaggle
+redirect_from:
+  - machine-learning/kaggle에서-제공하는-notebook-활용하기
 typora-copy-images-to: ../images/2019-09-13
 ---
 

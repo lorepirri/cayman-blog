@@ -2,10 +2,12 @@
 layout: page
 title: "matplotlib/seaborn으로 시각화할 때 한글 폰트 깨짐현상 해결방법"
 description: "matplotlib/seaborn으로 시각화할 때 한글 폰트 깨짐현상 해결방법에 대하여 알아보겠습니다."
-tags: [data_science, matplotlib, seaborn]
+tags: [data_science, matplotlib, seaborn, visualization]
 comments: true
 published: true
-categories: data_science
+categories: visualization
+redirect_from:
+  - data_science/matplotlib-시각화-한글폰트적용
 typora-copy-images-to: ../images/2019-10-02
 ---
 

@@ -2,10 +2,12 @@
 layout: page
 title: "sklearn 라이브러리를 활용한 mnist 손글씨 10분만에 70,000개 분류하기"
 description: "sklearn 라이브러리를 활용하여 mnist 손글씨 데이터를 분류하고 시각화 해보도록 하겠습니다."
-tags: [machine-learning, mnist, sklearn]
+tags: [machine-learning, mnist, scikit-learn]
 comments: true
 published: true
-categories: machine-learning
+categories: scikit-learn
+redirect_from:
+  - machine-learning/sklearn으로-mnist-손글씨분류하기
 typora-copy-images-to: ../images/2019-09-03
 ---
 

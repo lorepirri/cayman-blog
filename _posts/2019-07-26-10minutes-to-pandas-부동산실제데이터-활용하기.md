@@ -2,10 +2,12 @@
 layout: page
 title: "10분만에 pandas 정복하기 - 대한민국 부동산 데이터 활용편"
 description: "10분만에 pandas 정복하기 - 대한민국 부동산 데이터 활용편 에 대하여 알아보겠습니다. jupyter notebook을 활용합니다."
-tags:  [data_science, python]
+tags:  [data_science, pandas, python]
 comments: true
 published: true
-categories: data_science
+categories: pandas
+redirect_from:
+  - data_science/10minutes-to-pandas-부동산실제데이터-활용하기
 typora-copy-images-to: ../images/2019-07-26
 ---
 

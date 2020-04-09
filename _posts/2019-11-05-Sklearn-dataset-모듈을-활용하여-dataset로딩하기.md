@@ -5,7 +5,9 @@ description: "sklearn.datasets 모듈을 활용하여 샘플데이터 로딩하�
 tags: [data_science, sklearn, datasets]
 comments: true
 published: true
-categories: data_science
+categories: scikit-learn
+redirect_from:
+  - data_science/Sklearn-dataset-모듈을-활용하여-dataset로딩하기
 typora-copy-images-to: ../images/2019-11-05
 ---
 

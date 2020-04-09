@@ -2,10 +2,12 @@
 layout: page
 title: "[pytorch] MNIST dataset loading 하기"
 description: "MNIST dataset loading 하는 방법에 대하여 알아보겠습니다"
-tags: [pytorch]
+tags: [pytorch, mnist, dataset]
 comments: true
 published: true
-categories: machine-learning
+categories: pytorch
+redirect_from:
+  - machine-learning/pytorch-mnist-dataloader-loading하기
 typora-copy-images-to: ../images/2019-03-14
 ---
 
