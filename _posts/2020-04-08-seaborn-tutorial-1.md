@@ -5,6 +5,9 @@ description: "Seaborn 활용한 데이터 시각화 그래프 예제와 방법�
 headline: "Seaborn을 활용한 데이터 시각화 그래프 예제와 방법에 대하여 알아보겠습니다."
 categories: visualization
 tags: [pytho, colab, data_science, seaborn]
+redirect_from:
+  - data_science/seaborn-tutorial-1
+  - /visualization/
 comments: true
 published: true
 ---
