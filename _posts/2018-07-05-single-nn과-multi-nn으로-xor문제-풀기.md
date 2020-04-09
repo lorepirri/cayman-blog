@@ -2,7 +2,7 @@
 layout: page
 title: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다뤄보기"
 description: "Machine Learning - Single Layer NN과 Multi Layer NN으로 XOR문제 다뤄보기"
-categories: machine-learning
+categories: tensorflow
 tags: [tensorflow, xor, machine-learning]
 comments: true
 published: true

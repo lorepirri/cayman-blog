@@ -6,7 +6,7 @@ headline: "Kaggle API를 활용하여 데이터셋 다운로드와 바로 제출
 tags: [kaggle, data_science]
 comments: true
 published: true
-categories: data_science
+categories: kaggle
 typora-copy-images-to: ../images/2019-12-07
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: "Seaborn의 통계 차트 및 데이터 시각화 예제"
 description: "Seaborn 활용한 데이터 시각화 그래프 예제와 방법에 대하여 알아보겠습니다."
 headline: "Seaborn을 활용한 데이터 시각화 그래프 예제와 방법에 대하여 알아보겠습니다."
-categories: data_science
+categories: visualization
 tags: [pytho, colab, data_science, seaborn]
 comments: true
 published: true

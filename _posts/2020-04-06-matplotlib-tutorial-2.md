@@ -3,8 +3,8 @@ layout: page
 title: "Matplotlib을 활용한 데이터 시각화 그래프 예제"
 description: "Matplotlib을 활용한 데이터 시각화 그래프 예제와 방법에 대하여 알아보겠습니다."
 headline: "Matplotlib을 활용한 데이터 시각화 그래프 예제와 방법에 대하여 알아보겠습니다."
-categories: data_science
-tags: [pytho, colab, data_science, matplotlib]
+categories: visualization
+tags: [pytho, colab, visualization, matplotlib]
 comments: true
 published: true
 ---

@@ -3,8 +3,8 @@ layout: page
 title: "Digit Recognizer (Kaggle) - over 99% accuracy"
 description: "Digit Recognizer (Kaggle) - over 99% accuracy"
 headline: "Digit Recognizer (Kaggle) - over 99% accuracy"
-categories: deep-learning
-tags: [pytho, colab, deep-learning, tensorflow]
+categories: tensorflow
+tags: [python, colab, deep-learning, tensorflow]
 comments: true
 published: true
 ---
