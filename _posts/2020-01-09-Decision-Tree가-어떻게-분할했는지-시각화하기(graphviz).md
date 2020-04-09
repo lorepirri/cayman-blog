@@ -7,6 +7,8 @@ tags: [decisiontree, graphviz, randomforest, sklearn, machine-learning]
 comments: true
 published: true
 categories: visualization
+redirect_from:
+  - machine-learning/Decision-Tree가-어떻게-분할했는지-시각화하기(graphviz)
 typora-copy-images-to: ../images/2020-01-09
 ---
 

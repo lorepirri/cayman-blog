@@ -6,12 +6,11 @@ headline: "[Keras] 손실함수(Loss Function)와 평가지표(metric) 커스텀
 tags: [keras, loss-function]
 comments: true
 published: true
-categories: machine-learning
+categories: tensorflow
+redirect_from:
+  - machine-learning/train-test-데이터-분리
 typora-copy-images-to: ../images/2020-01-17
 ---
-
-
-
 
 
 이번 포스팅에서는 Keras 딥러닝 프레임워크 활용시 **loss function과 metric 을 커스텀**하는 방법에 대하여 다뤄보도록 하겠습니다.

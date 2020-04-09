@@ -6,11 +6,11 @@ headline: "train_test_split 모듈을 활용하여 학습과 테스트 세트 �
 tags: [train-test-split, scikit-learn, sklearn]
 comments: true
 published: true
-categories: machine-learning
+categories: scikit-learn
+redirect_from:
+  - machine-learning/keras-손실함수와-metric-커스텀하기
 typora-copy-images-to: ../images/2020-01-16
 ---
-
-
 
 사이킷런(scikit-learn)의 model_selection 패키지 안에 `train_test_split` 모듈을 활용하여 손쉽게 train set(학습 데이터 셋)과 test set(테스트 셋)을 분리할 수 있습니다. 이번 포스팅에서는 `train_test_split` 에 대해 자세히 소개해 드리고자 합니다.
 

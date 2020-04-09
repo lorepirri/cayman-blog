@@ -6,7 +6,9 @@ headline: "GridSearch를 이용한 Hyperparameter 튜닝하는 방법에 대하�
 tags: [gridsearch, hyperparameter, tuning, sklearn, machine-learning]
 comments: true
 published: true
-categories: machine-learning
+categories: scikit-learn
+redirect_from:
+  - machine-learning/grid-search-로-hyperparameter최적화
 typora-copy-images-to: ../images/2020-01-02
 ---
 

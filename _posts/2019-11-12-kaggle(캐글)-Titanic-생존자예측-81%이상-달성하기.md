@@ -1,11 +1,13 @@
 ---
 layout: page
 title: "Kaggle(캐글) 타이타닉 생존자 예측 81% 이상 달성하기"
-description: "Kaggle(캐글) 타이타닉 생존자 예측 81% 이상 달성하는 방법에 대하여 알아보겠습니다."
+description: "타이타닉 생존자 예측 81% 이상 달성하는 방법에 대하여 알아보겠습니다."
 tags: [data_science, python, kaggle]
 comments: true
 published: true
-categories: data_science
+categories: kaggle
+redirect_from:
+  - data_science/kaggle(캐글)-Titanic-생존자예측-81%이상-달성하기
 typora-copy-images-to: ../images/2019-11-12
 ---
 

@@ -5,7 +5,9 @@ description: "sklearn의 K-Nearest Neighbors 분류기를 활용하여 Iris 꽃 
 tags: [data_science, sklearn, kneighborsclassifier]
 comments: true
 published: true
-categories: data_science
+categories: scikit-learn
+redirect_from:
+  - data_science/KNeighborsClassifier를-활용한-분류기-적용하기
 typora-copy-images-to: ../images/2019-11-07
 ---
 

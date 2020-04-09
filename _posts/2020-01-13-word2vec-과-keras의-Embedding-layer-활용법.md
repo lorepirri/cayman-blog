@@ -6,7 +6,9 @@ headline: "keras를 활용한 word2vec pre-trained 모델을 로딩하여 IMDB �
 tags: [python, imdb, keras, word2ved]
 comments: true
 published: true
-categories: deep-learning
+categories: tensorflow
+redirect_from:
+  - deep-learning/word2vec-과-keras의-Embedding-layer-활용법
 typora-copy-images-to: ../images/2020-01-13
 ---
 

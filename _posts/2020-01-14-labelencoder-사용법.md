@@ -6,7 +6,9 @@ headline: "LabelEncoder를 사용하여 원핫(one-hot-encoding) 쉽게 하는 �
 tags: [python, sklearn, labelencoder]
 comments: true
 published: true
-categories: machine-learning
+categories: scikit-learn
+redirect_from:
+  - machine-learning/labelencoder-사용법
 typora-copy-images-to: ../images/2020-01-14
 ---
 
