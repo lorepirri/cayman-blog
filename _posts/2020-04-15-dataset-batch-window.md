@@ -17,58 +17,22 @@ published: true
 <body>
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>References</strong>: <a href="https://www.tensorflow.org/api_docs/python/tf/data/Dataset">텐서플로우 공식 도큐먼트</a></p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In [1]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 필요한 라이브러리 import</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [2]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">x</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[2]:</div>
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,
-       17, 18, 19])</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [3]:</div>
-<div class="inner_cell">
-<div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">shape</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="prompt output_prompt">Out[3]:</div>
-<div class="output_text output_subarea output_execute_result">
-<pre>(20,)</pre>
-</div>
 </div>
 </div>
 </div>
@@ -89,10 +53,11 @@ published: true
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [4]:</div>
+<div class="prompt input_prompt">In [2]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">tf</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">tf</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 </div>
 </div>
@@ -100,7 +65,7 @@ published: true
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>TensorShape([20, 1])</pre>
 </div>
@@ -117,7 +82,7 @@ published: true
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [5]:</div>
+<div class="prompt input_prompt">In [3]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
@@ -128,7 +93,7 @@ published: true
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>(20, 1)</pre>
 </div>
@@ -139,7 +104,7 @@ published: true
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="numpy-array나-list를-tensor-dataset으로-변환">numpy array나 list를 tensor dataset으로 변환</h2>
+<h3 id="1-3.-from_tensor_slices:-numpy-array나-list를-tensor-dataset으로-변환">1-3. from_tensor_slices: numpy array나 list를 tensor dataset으로 변환</h3>
 </div>
 </div>
 </div>
@@ -152,7 +117,7 @@ published: true
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [6]:</div>
+<div class="prompt input_prompt">In [4]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
@@ -181,7 +146,7 @@ tf.Tensor(5, shape=(), dtype=int32)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [7]:</div>
+<div class="prompt input_prompt">In [5]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
@@ -239,7 +204,7 @@ tf.Tensor(9, shape=(), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [8]:</div>
+<div class="prompt input_prompt">In [6]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> 
@@ -252,7 +217,7 @@ tf.Tensor(9, shape=(), dtype=int64)
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[8]:</div>
+<div class="prompt output_prompt">Out[6]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>[array([0, 1, 2]), array([3, 4, 5])]</pre>
 </div>
@@ -269,7 +234,7 @@ tf.Tensor(9, shape=(), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [9]:</div>
+<div class="prompt input_prompt">In [7]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
@@ -326,7 +291,7 @@ tf.Tensor([3 4 5], shape=(3,), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [10]:</div>
+<div class="prompt input_prompt">In [8]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
@@ -367,7 +332,7 @@ tf.Tensor([3 4 5], shape=(3,), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [11]:</div>
+<div class="prompt input_prompt">In [9]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
@@ -395,13 +360,20 @@ tf.Tensor([3 4 5], shape=(3,), dtype=int64)
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>shift=2</code>로 설정: 2칸씩 이동</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [12]:</div>
+<div class="prompt input_prompt">In [10]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
-<span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">drop_remainder</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">drop_remainder</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">as_numpy_iterator</span><span class="p">()))</span>
 </pre></div>
@@ -414,11 +386,8 @@ tf.Tensor([3 4 5], shape=(3,), dtype=int64)
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[0, 1, 2, 3, 4]
-[1, 2, 3, 4, 5]
 [2, 3, 4, 5, 6]
-[3, 4, 5, 6, 7]
 [4, 5, 6, 7, 8]
-[5, 6, 7, 8, 9]
 </pre>
 </div>
 </div>
@@ -448,7 +417,7 @@ tf.Tensor([3 4 5], shape=(3,), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [13]:</div>
+<div class="prompt input_prompt">In [11]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
@@ -485,7 +454,7 @@ tf.Tensor([8 9], shape=(2,), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [14]:</div>
+<div class="prompt input_prompt">In [12]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> 
@@ -530,10 +499,12 @@ tf.Tensor([5 6 7 8 9], shape=(5,), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [15]:</div>
+<div class="prompt input_prompt">In [13]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="c1">#.shuffle()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># shuffle을 해주지 않은 경우</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="c1">#.shuffle()</span>
+
 <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
@@ -563,10 +534,11 @@ tf.Tensor(9, shape=(), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [16]:</div>
+<div class="prompt input_prompt">In [14]:</div>
 <div class="inner_cell">
 <div class="input_area">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">buffer_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># shuffle 설정</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">buffer_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
@@ -578,16 +550,16 @@ tf.Tensor(9, shape=(), dtype=int64)
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>tf.Tensor(2, shape=(), dtype=int64)
+<pre>tf.Tensor(0, shape=(), dtype=int64)
 tf.Tensor(3, shape=(), dtype=int64)
-tf.Tensor(4, shape=(), dtype=int64)
 tf.Tensor(5, shape=(), dtype=int64)
-tf.Tensor(0, shape=(), dtype=int64)
-tf.Tensor(7, shape=(), dtype=int64)
-tf.Tensor(8, shape=(), dtype=int64)
+tf.Tensor(2, shape=(), dtype=int64)
 tf.Tensor(6, shape=(), dtype=int64)
-tf.Tensor(1, shape=(), dtype=int64)
+tf.Tensor(8, shape=(), dtype=int64)
+tf.Tensor(7, shape=(), dtype=int64)
 tf.Tensor(9, shape=(), dtype=int64)
+tf.Tensor(4, shape=(), dtype=int64)
+tf.Tensor(1, shape=(), dtype=int64)
 </pre>
 </div>
 </div>
@@ -631,7 +603,7 @@ tf.Tensor(9, shape=(), dtype=int64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [17]:</div>
+<div class="prompt input_prompt">In [15]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">window_size</span><span class="o">=</span><span class="mi">5</span>
@@ -655,18 +627,18 @@ tf.Tensor(9, shape=(), dtype=int64)
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>train set: [3 4 5 6]
+<pre>train set: [4 5 6 7]
+label set: [8]
+train set: [1 2 3 4]
+label set: [5]
+train set: [3 4 5 6]
 label set: [7]
+train set: [2 3 4 5]
+label set: [6]
 train set: [5 6 7 8]
 label set: [9]
 train set: [0 1 2 3]
 label set: [4]
-train set: [4 5 6 7]
-label set: [8]
-train set: [2 3 4 5]
-label set: [6]
-train set: [1 2 3 4]
-label set: [5]
 </pre>
 </div>
 </div>
@@ -682,7 +654,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [18]:</div>
+<div class="prompt input_prompt">In [16]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
@@ -700,9 +672,9 @@ label set: [5]
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[18]:</div>
+<div class="prompt output_prompt">Out[16]:</div>
 <div class="output_text output_subarea output_execute_result">
-<pre>('sunspots.csv', &lt;http.client.HTTPMessage at 0x7f909c770048&gt;)</pre>
+<pre>('sunspots.csv', &lt;http.client.HTTPMessage at 0x7f0a380dd8d0&gt;)</pre>
 </div>
 </div>
 </div>
@@ -710,7 +682,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [19]:</div>
+<div class="prompt input_prompt">In [17]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'sunspots.csv'</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
@@ -752,7 +724,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [20]:</div>
+<div class="prompt input_prompt">In [18]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -770,7 +742,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [21]:</div>
+<div class="prompt input_prompt">In [19]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_data</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span>
@@ -781,7 +753,7 @@ label set: [5]
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[21]:</div>
+<div class="prompt output_prompt">Out[19]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>[96.7, 104.3, 116.7, 92.8, 141.7]</pre>
 </div>
@@ -799,7 +771,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [22]:</div>
+<div class="prompt input_prompt">In [20]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
@@ -811,7 +783,7 @@ label set: [5]
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[20]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>(3235,)</pre>
 </div>
@@ -828,7 +800,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [23]:</div>
+<div class="prompt input_prompt">In [21]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -840,7 +812,7 @@ label set: [5]
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="prompt output_prompt">Out[23]:</div>
+<div class="prompt output_prompt">Out[21]:</div>
 <div class="output_text output_subarea output_execute_result">
 <pre>(3235, 1)</pre>
 </div>
@@ -857,7 +829,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [24]:</div>
+<div class="prompt input_prompt">In [22]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">Dataset</span><span class="o">.</span><span class="n">from_tensor_slices</span><span class="p">(</span><span class="n">train_data</span><span class="p">)</span>
@@ -868,7 +840,7 @@ label set: [5]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [25]:</div>
+<div class="prompt input_prompt">In [23]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">i</span><span class="o">=</span><span class="mi">0</span>
@@ -916,7 +888,7 @@ tf.Tensor([139.2], shape=(1,), dtype=float64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [26]:</div>
+<div class="prompt input_prompt">In [24]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">window_size</span><span class="o">=</span><span class="mi">20</span> <span class="o">+</span> <span class="mi">1</span>
@@ -936,7 +908,7 @@ tf.Tensor([139.2], shape=(1,), dtype=float64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [27]:</div>
+<div class="prompt input_prompt">In [25]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">flat_map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">w</span><span class="p">:</span> <span class="n">w</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
@@ -947,7 +919,7 @@ tf.Tensor([139.2], shape=(1,), dtype=float64)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [28]:</div>
+<div class="prompt input_prompt">In [26]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 2개만 출력해서 결과를 살펴보겠습니다.</span>
@@ -1022,7 +994,7 @@ tf.Tensor(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [29]:</div>
+<div class="prompt input_prompt">In [27]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
@@ -1043,7 +1015,7 @@ tf.Tensor(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [30]:</div>
+<div class="prompt input_prompt">In [28]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:]))</span>
@@ -1054,7 +1026,7 @@ tf.Tensor(
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [31]:</div>
+<div class="prompt input_prompt">In [29]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">train</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">dataset</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -1069,32 +1041,28 @@ tf.Tensor(
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>train: [[263.7]
- [246.8]
+<pre>train: [[276.2]
+ [196.7]
+ [241.7]
+ [233.3]
+ [189.5]
+ [238.3]
  [186.7]
- [173.3]
- [237.5]
- [133.5]
- [ 85. ]
- [116.8]
- [138.8]
- [183. ]
- [210.5]
- [174. ]
- [172.7]
- [220.3]
- [170.5]
- [ 60. ]
- [ 77. ]
- [ 77.8]
- [108.2]
- [254.5]]
-label: [[199.2]]
-train: [[143.3]
- [156.2]
- [128.3]
- [100. ]
- [ 97.8]
+ [185. ]
+ [206.7]
+ [190. ]
+ [183.3]
+ [116.7]
+ [163.3]
+ [163.3]
+ [158.3]
+ [178.7]
+ [146.7]
+ [143.3]
+ [143.3]
+ [156.2]]
+label: [[128.3]]
+train: [[ 97.8]
  [164.5]
  [124.5]
  [ 88.3]
@@ -1109,8 +1077,12 @@ train: [[143.3]
  [ 58.7]
  [ 90. ]
  [ 62.5]
+ [ 61.7]
+ [ 68.3]
+ [ 90.5]
+ [ 63.3]
  [ 61.7]]
-label: [[68.3]]
+label: [[73.3]]
 </pre>
 </div>
 </div>
@@ -1119,7 +1091,7 @@ label: [[68.3]]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [32]:</div>
+<div class="prompt input_prompt">In [30]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">dataset</span><span class="o">.</span><span class="n">batch</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">take</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
@@ -1134,7 +1106,102 @@ label: [[68.3]]
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(&lt;tf.Tensor: shape=(10, 20, 1), dtype=float64, numpy=
-array([[[ 62.8],
+array([[[223.3],
+        [225.8],
+        [171.7],
+        [212.5],
+        [160.5],
+        [156.7],
+        [155. ],
+        [151.7],
+        [115.5],
+        [145. ],
+        [128.8],
+        [140.5],
+        [136.7],
+        [123.3],
+        [121.2],
+        [103.3],
+        [123.3],
+        [128.7],
+        [122.8],
+        [107. ]],
+
+       [[ 78. ],
+        [109. ],
+        [ 92.8],
+        [ 73. ],
+        [ 85.5],
+        [ 47.5],
+        [ 29.2],
+        [ 11. ],
+        [ 13.2],
+        [ 23.3],
+        [ 29.5],
+        [ 20.3],
+        [  7.3],
+        [  0. ],
+        [ 19.3],
+        [ 18.7],
+        [  6.5],
+        [ 20.5],
+        [  1.7],
+        [ 13.2]],
+
+       [[ 73.3],
+        [ 58.3],
+        [ 83.3],
+        [118.3],
+        [ 98.8],
+        [ 99.5],
+        [ 66. ],
+        [130.7],
+        [ 48.8],
+        [ 45.2],
+        [ 77.7],
+        [ 62.7],
+        [ 66.7],
+        [ 73.3],
+        [ 53.3],
+        [ 76.2],
+        [ 63.3],
+        [ 60. ],
+        [ 52.8],
+        [ 36.7]],
+
+       [[ 54.8],
+        [ 54.5],
+        [ 59.7],
+        [ 90.3],
+        [ 44.2],
+        [113.5],
+        [ 77.2],
+        [101.5],
+        [102.3],
+        [ 99.5],
+        [ 99.5],
+        [ 67. ],
+        [ 57.3],
+        [ 73.8],
+        [ 50. ],
+        [ 50. ],
+        [ 50. ],
+        [ 47. ],
+        [ 46.7],
+        [ 43.3]],
+
+       [[107.8],
+        [ 55.8],
+        [ 62.7],
+        [ 86.7],
+        [ 81.7],
+        [120.5],
+        [ 77.3],
+        [ 75. ],
+        [ 73.3],
+        [ 64.5],
+        [104.2],
+        [ 62.8],
         [ 71.7],
         [ 71.7],
         [ 80.5],
@@ -1142,41 +1209,62 @@ array([[[ 62.8],
         [ 78. ],
         [ 78.3],
         [ 81.7],
-        [ 83.3],
-        [ 85. ],
-        [118.8],
-        [128.7],
-        [ 99.5],
-        [ 77.2],
-        [ 95. ],
-        [112.2],
-        [ 99.2],
-        [124.5],
-        [ 97.2],
-        [120. ]],
+        [ 83.3]],
 
-       [[ 68. ],
-        [ 71.2],
-        [ 73.5],
-        [ 91.2],
-        [ 88.8],
-        [ 89.2],
-        [110.2],
-        [ 77.2],
-        [ 71.2],
-        [129.5],
-        [129. ],
-        [ 87.7],
-        [111.3],
-        [124.7],
-        [129.7],
-        [151. ],
-        [186.3],
-        [123.2],
-        [107. ],
-        [107.2]],
+       [[190. ],
+        [208.8],
+        [200. ],
+        [205.5],
+        [205.8],
+        [200. ],
+        [195. ],
+        [171.7],
+        [186.7],
+        [149.5],
+        [223.3],
+        [225.8],
+        [171.7],
+        [212.5],
+        [160.5],
+        [156.7],
+        [155. ],
+        [151.7],
+        [115.5],
+        [145. ]],
 
-       [[  5. ],
+       [[290. ],
+        [230. ],
+        [215.3],
+        [238.8],
+        [180.8],
+        [188.3],
+        [257. ],
+        [235.8],
+        [226.7],
+        [235. ],
+        [236.7],
+        [157.8],
+        [215.8],
+        [190. ],
+        [208.8],
+        [200. ],
+        [205.5],
+        [205.8],
+        [200. ],
+        [195. ]],
+
+       [[ 45. ],
+        [ 49.5],
+        [ 26.7],
+        [ 23.3],
+        [ 23.3],
+        [ 21.7],
+        [ 20. ],
+        [ 18.3],
+        [ 61. ],
+        [ 10. ],
+        [ 44.7],
+        [  5. ],
         [  5.5],
         [  6.7],
         [  7.2],
@@ -1184,68 +1272,70 @@ array([[[ 62.8],
         [  9.5],
         [ 32. ],
         [ 45.7],
-        [ 50. ],
-        [ 71.7],
+        [ 50. ]],
+
+       [[171.7],
+        [212.5],
+        [160.5],
+        [156.7],
+        [155. ],
+        [151.7],
+        [115.5],
+        [145. ],
+        [128.8],
+        [140.5],
+        [136.7],
+        [123.3],
+        [121.2],
+        [103.3],
+        [123.3],
+        [128.7],
+        [122.8],
+        [107. ],
+        [118.3],
+        [ 71.7]],
+
+       [[128.5],
+        [ 56.3],
+        [112.8],
+        [114.2],
+        [115.5],
+        [129.7],
+        [128.7],
+        [ 94.2],
+        [ 53.2],
+        [ 57. ],
         [ 54.8],
-        [ 49.7],
-        [ 55.5],
-        [ 36.5],
-        [ 68. ],
-        [ 71.2],
-        [ 73.5],
-        [ 91.2],
-        [ 88.8],
-        [ 89.2]],
+        [ 54.5],
+        [ 59.7],
+        [ 90.3],
+        [ 44.2],
+        [113.5],
+        [ 77.2],
+        [101.5],
+        [102.3],
+        [ 99.5]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
+array([[[118.3]],
 
-       [[ 63.3],
-        [ 60. ],
-        [ 52.8],
-        [ 36.7],
-        [ 65. ],
-        [ 46.7],
-        [ 41.7],
-        [ 33.3],
-        [ 11.2],
-        [  0. ],
-        [  5. ],
-        [  2.8],
-        [ 22.8],
-        [ 34.5],
-        [ 44.5],
-        [ 31.3],
-        [ 20.5],
-        [ 13.7],
-        [ 40.2],
-        [ 22. ]],
+       [[  5.3]],
 
-       [[ 65. ],
-        [159.2],
-        [133.8],
-        [134.5],
-        [158.3],
-        [186.7],
-        [193.7],
-        [177.5],
-        [243.3],
-        [262.2],
-        [295.5],
-        [182.2],
-        [223.3],
-        [241.7],
-        [398.2],
-        [286. ],
-        [255. ],
-        [233.3],
-        [286.2],
-        [260.5]],
+       [[ 65. ]],
 
-       [[241.7],
-        [398.2],
-        [286. ],
-        [255. ],
-        [233.3],
-        [286.2],
-        [260.5],
+       [[ 42.8]],
+
+       [[ 85. ]],
+
+       [[128.8]],
+
+       [[171.7]],
+
+       [[ 71.7]],
+
+       [[110.8]],
+
+       [[ 99.5]]])&gt;)
+(&lt;tf.Tensor: shape=(10, 20, 1), dtype=float64, numpy=
+array([[[260.5],
         [250.5],
         [175. ],
         [191.2],
@@ -1258,10 +1348,57 @@ array([[[ 62.8],
         [186.7],
         [185. ],
         [206.7],
-        [190. ]],
+        [190. ],
+        [183.3],
+        [116.7],
+        [163.3],
+        [163.3],
+        [158.3],
+        [178.7]],
 
-       [[ 15. ],
-        [ 26.2],
+       [[ 20.5],
+        [  1.7],
+        [ 13.2],
+        [  5.3],
+        [  9.3],
+        [ 25.2],
+        [ 13.2],
+        [ 36.2],
+        [ 19.3],
+        [ 10.5],
+        [ 36.3],
+        [ 18.7],
+        [ 31.7],
+        [  1.7],
+        [ 40.3],
+        [ 26.7],
+        [ 50. ],
+        [ 58.3],
+        [ 66.7],
+        [ 75. ]],
+
+       [[250.5],
+        [175. ],
+        [191.2],
+        [276.2],
+        [196.7],
+        [241.7],
+        [233.3],
+        [189.5],
+        [238.3],
+        [186.7],
+        [185. ],
+        [206.7],
+        [190. ],
+        [183.3],
+        [116.7],
+        [163.3],
+        [163.3],
+        [158.3],
+        [178.7],
+        [146.7]],
+
+       [[ 26.2],
         [ 34.5],
         [ 43.8],
         [ 60.5],
@@ -1279,318 +1416,153 @@ array([[[ 62.8],
         [138.3],
         [149.5],
         [185.8],
-        [187.2]],
+        [187.2],
+        [193.3]],
 
-       [[ 96.7],
-        [104.3],
-        [116.7],
+       [[ 48.8],
+        [ 43.8],
+        [ 68.2],
+        [ 72. ],
+        [ 78. ],
+        [109. ],
         [ 92.8],
-        [141.7],
-        [139.2],
-        [158. ],
-        [110.5],
-        [126.5],
-        [125.8],
-        [264.3],
-        [142. ],
-        [122.2],
-        [126.5],
-        [148.7],
-        [147.2],
-        [150. ],
-        [166.7],
-        [142.3],
-        [171.7]],
-
-       [[ 76.2],
-        [100.3],
-        [ 66.5],
-        [128.5],
-        [ 56.3],
-        [112.8],
-        [114.2],
-        [115.5],
-        [129.7],
-        [128.7],
-        [ 94.2],
-        [ 53.2],
-        [ 57. ],
-        [ 54.8],
-        [ 54.5],
-        [ 59.7],
-        [ 90.3],
-        [ 44.2],
-        [113.5],
-        [ 77.2]],
-
-       [[  0. ],
-        [  0. ],
-        [ 14.3],
-        [  5.3],
-        [ 29.7],
-        [ 39.5],
-        [ 11.3],
-        [ 33.3],
-        [ 20.8],
-        [ 11.8],
-        [  9. ],
-        [ 15.7],
-        [ 20.8],
-        [ 21.5],
-        [  6. ],
-        [ 10.7],
-        [ 19.7],
-        [ 23.8],
-        [ 28.3],
-        [ 15.7]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
-array([[[ 80.5]],
-
-       [[161.2]],
-
-       [[110.2]],
-
-       [[  7. ]],
-
-       [[250.5]],
-
-       [[183.3]],
-
-       [[193.3]],
-
-       [[152. ]],
-
-       [[101.5]],
-
-       [[ 23.5]]])&gt;)
-(&lt;tf.Tensor: shape=(10, 20, 1), dtype=float64, numpy=
-array([[[171.7],
-        [186.7],
-        [149.5],
-        [223.3],
-        [225.8],
-        [171.7],
-        [212.5],
-        [160.5],
-        [156.7],
-        [155. ],
-        [151.7],
-        [115.5],
-        [145. ],
-        [128.8],
-        [140.5],
-        [136.7],
-        [123.3],
-        [121.2],
-        [103.3],
-        [123.3]],
-
-       [[ 89.2],
-        [110.2],
-        [ 77.2],
-        [ 71.2],
-        [129.5],
-        [129. ],
-        [ 87.7],
-        [111.3],
-        [124.7],
-        [129.7],
-        [151. ],
-        [186.3],
-        [123.2],
-        [107. ],
-        [107.2],
-        [161.2],
-        [122.7],
-        [157.3],
-        [197.7],
-        [200.5]],
-
-       [[200. ],
-        [195. ],
-        [171.7],
-        [186.7],
-        [149.5],
-        [223.3],
-        [225.8],
-        [171.7],
-        [212.5],
-        [160.5],
-        [156.7],
-        [155. ],
-        [151.7],
-        [115.5],
-        [145. ],
-        [128.8],
-        [140.5],
-        [136.7],
-        [123.3],
-        [121.2]],
-
-       [[125.8],
-        [264.3],
-        [142. ],
-        [122.2],
-        [126.5],
-        [148.7],
-        [147.2],
-        [150. ],
-        [166.7],
-        [142.3],
-        [171.7],
-        [152. ],
-        [109.5],
-        [105.5],
-        [125.7],
-        [116.7],
-        [ 72.5],
-        [ 75.5],
-        [ 94. ],
-        [101.2]],
-
-       [[149.5],
-        [ 76.7],
         [ 73. ],
-        [121.3],
-        [ 76.2],
-        [100.3],
-        [ 66.5],
-        [128.5],
-        [ 56.3],
-        [112.8],
-        [114.2],
-        [115.5],
-        [129.7],
-        [128.7],
-        [ 94.2],
-        [ 53.2],
-        [ 57. ],
-        [ 54.8],
-        [ 54.5],
-        [ 59.7]],
-
-       [[  9.5],
-        [ 32. ],
-        [ 45.7],
-        [ 50. ],
-        [ 71.7],
-        [ 54.8],
-        [ 49.7],
-        [ 55.5],
-        [ 36.5],
-        [ 68. ],
-        [ 71.2],
-        [ 73.5],
-        [ 91.2],
-        [ 88.8],
-        [ 89.2],
-        [110.2],
-        [ 77.2],
-        [ 71.2],
-        [129.5],
-        [129. ]],
-
-       [[243.3],
-        [262.2],
-        [295.5],
-        [182.2],
-        [223.3],
-        [241.7],
-        [398.2],
-        [286. ],
-        [255. ],
-        [233.3],
-        [286.2],
-        [260.5],
-        [250.5],
-        [175. ],
-        [191.2],
-        [276.2],
-        [196.7],
-        [241.7],
-        [233.3],
-        [189.5]],
-
-       [[ 99.7],
-        [ 39.2],
-        [ 38.7],
+        [ 85.5],
         [ 47.5],
-        [ 73.3],
-        [ 58.3],
-        [ 83.3],
-        [118.3],
-        [ 98.8],
-        [ 99.5],
-        [ 66. ],
-        [130.7],
-        [ 48.8],
-        [ 45.2],
-        [ 77.7],
-        [ 62.7],
-        [ 66.7],
-        [ 73.3],
-        [ 53.3],
-        [ 76.2]],
+        [ 29.2],
+        [ 11. ],
+        [ 13.2],
+        [ 23.3],
+        [ 29.5],
+        [ 20.3],
+        [  7.3],
+        [  0. ],
+        [ 19.3],
+        [ 18.7]],
 
-       [[ 29.7],
-        [ 39.5],
-        [ 11.3],
-        [ 33.3],
-        [ 20.8],
-        [ 11.8],
-        [  9. ],
-        [ 15.7],
-        [ 20.8],
-        [ 21.5],
-        [  6. ],
-        [ 10.7],
-        [ 19.7],
-        [ 23.8],
-        [ 28.3],
-        [ 15.7],
-        [ 23.5],
-        [ 35.3],
-        [ 43.7],
+       [[ 19.3],
+        [ 18.7],
+        [  6.5],
+        [ 20.5],
+        [  1.7],
+        [ 13.2],
+        [  5.3],
+        [  9.3],
+        [ 25.2],
+        [ 13.2],
+        [ 36.2],
+        [ 19.3],
+        [ 10.5],
+        [ 36.3],
+        [ 18.7],
+        [ 31.7],
+        [  1.7],
+        [ 40.3],
+        [ 26.7],
         [ 50. ]],
 
-       [[ 71.7],
-        [ 54.8],
-        [ 49.7],
-        [ 55.5],
-        [ 36.5],
-        [ 68. ],
-        [ 71.2],
-        [ 73.5],
-        [ 91.2],
-        [ 88.8],
-        [ 89.2],
-        [110.2],
-        [ 77.2],
-        [ 71.2],
-        [129.5],
-        [129. ],
-        [ 87.7],
-        [111.3],
-        [124.7],
-        [129.7]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
-array([[[128.7]],
+       [[ 47.5],
+        [ 29.2],
+        [ 11. ],
+        [ 13.2],
+        [ 23.3],
+        [ 29.5],
+        [ 20.3],
+        [  7.3],
+        [  0. ],
+        [ 19.3],
+        [ 18.7],
+        [  6.5],
+        [ 20.5],
+        [  1.7],
+        [ 13.2],
+        [  5.3],
+        [  9.3],
+        [ 25.2],
+        [ 13.2],
+        [ 36.2]],
 
-       [[248. ]],
+       [[128.3],
+        [100. ],
+        [ 97.8],
+        [164.5],
+        [124.5],
+        [ 88.3],
+        [113.8],
+        [174.5],
+        [162.8],
+        [122.5],
+        [110. ],
+        [ 85. ],
+        [ 45.5],
+        [111.7],
+        [ 58.7],
+        [ 90. ],
+        [ 62.5],
+        [ 61.7],
+        [ 68.3],
+        [ 90.5]],
 
-       [[103.3]],
+       [[ 10.8],
+        [ 13.3],
+        [ 15. ],
+        [ 26.2],
+        [ 34.5],
+        [ 43.8],
+        [ 60.5],
+        [ 33.3],
+        [ 53.3],
+        [ 78.7],
+        [ 67. ],
+        [ 45.5],
+        [ 62. ],
+        [ 79.3],
+        [ 79.5],
+        [142.3],
+        [153.8],
+        [ 98.3],
+        [138.3],
+        [149.5]],
 
-       [[ 84.5]],
+       [[185.8],
+        [187.2],
+        [193.3],
+        [187.8],
+        [224.5],
+        [176.7],
+        [145.7],
+        [212. ],
+        [224.7],
+        [165.3],
+        [213.3],
+        [228.7],
+        [262.2],
+        [261.7],
+        [235.8],
+        [290. ],
+        [230. ],
+        [215.3],
+        [238.8],
+        [180.8]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
+array([[[146.7]],
 
-       [[ 90.3]],
+       [[ 60.8]],
 
-       [[ 87.7]],
+       [[143.3]],
 
-       [[238.3]],
+       [[187.8]],
+
+       [[  6.5]],
+
+       [[ 58.3]],
+
+       [[ 19.3]],
 
        [[ 63.3]],
 
-       [[ 63.5]],
+       [[185.8]],
 
-       [[151. ]]])&gt;)
+       [[188.3]]])&gt;)
 </pre>
 </div>
 </div>
@@ -1606,7 +1578,7 @@ array([[[128.7]],
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [33]:</div>
+<div class="prompt input_prompt">In [31]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train_data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -1624,7 +1596,7 @@ array([[[128.7]],
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [34]:</div>
+<div class="prompt input_prompt">In [32]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">windowed_dataset</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">window_size</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">shuffle_buffer</span><span class="p">):</span>
@@ -1642,7 +1614,7 @@ array([[[128.7]],
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [35]:</div>
+<div class="prompt input_prompt">In [33]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">window_ds</span> <span class="o">=</span> <span class="n">windowed_dataset</span><span class="p">(</span><span class="n">train_data</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle_buffer</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
@@ -1666,7 +1638,7 @@ array([[[128.7]],
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In [36]:</div>
+<div class="prompt input_prompt">In [34]:</div>
 <div class="inner_cell">
 <div class="input_area">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">window_ds</span><span class="p">:</span>
@@ -1682,136 +1654,7 @@ array([[[128.7]],
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>(&lt;tf.Tensor: shape=(10, 20, 1), dtype=float64, numpy=
-array([[[116.7],
-        [ 92.8],
-        [141.7],
-        [139.2],
-        [158. ],
-        [110.5],
-        [126.5],
-        [125.8],
-        [264.3],
-        [142. ],
-        [122.2],
-        [126.5],
-        [148.7],
-        [147.2],
-        [150. ],
-        [166.7],
-        [142.3],
-        [171.7],
-        [152. ],
-        [109.5]],
-
-       [[ 75. ],
-        [ 73.3],
-        [ 64.5],
-        [104.2],
-        [ 62.8],
-        [ 71.7],
-        [ 71.7],
-        [ 80.5],
-        [ 73.3],
-        [ 78. ],
-        [ 78.3],
-        [ 81.7],
-        [ 83.3],
-        [ 85. ],
-        [118.8],
-        [128.7],
-        [ 99.5],
-        [ 77.2],
-        [ 95. ],
-        [112.2]],
-
-       [[ 14.3],
-        [  5.3],
-        [ 29.7],
-        [ 39.5],
-        [ 11.3],
-        [ 33.3],
-        [ 20.8],
-        [ 11.8],
-        [  9. ],
-        [ 15.7],
-        [ 20.8],
-        [ 21.5],
-        [  6. ],
-        [ 10.7],
-        [ 19.7],
-        [ 23.8],
-        [ 28.3],
-        [ 15.7],
-        [ 23.5],
-        [ 35.3]],
-
-       [[ 68.2],
-        [ 72. ],
-        [ 78. ],
-        [109. ],
-        [ 92.8],
-        [ 73. ],
-        [ 85.5],
-        [ 47.5],
-        [ 29.2],
-        [ 11. ],
-        [ 13.2],
-        [ 23.3],
-        [ 29.5],
-        [ 20.3],
-        [  7.3],
-        [  0. ],
-        [ 19.3],
-        [ 18.7],
-        [  6.5],
-        [ 20.5]],
-
-       [[ 61. ],
-        [ 10. ],
-        [ 44.7],
-        [  5. ],
-        [  5.5],
-        [  6.7],
-        [  7.2],
-        [  8.3],
-        [  9.5],
-        [ 32. ],
-        [ 45.7],
-        [ 50. ],
-        [ 71.7],
-        [ 54.8],
-        [ 49.7],
-        [ 55.5],
-        [ 36.5],
-        [ 68. ],
-        [ 71.2],
-        [ 73.5]],
-
-       [[ 60. ],
-        [ 52.8],
-        [ 36.7],
-        [ 65. ],
-        [ 46.7],
-        [ 41.7],
-        [ 33.3],
-        [ 11.2],
-        [  0. ],
-        [  5. ],
-        [  2.8],
-        [ 22.8],
-        [ 34.5],
-        [ 44.5],
-        [ 31.3],
-        [ 20.5],
-        [ 13.7],
-        [ 40.2],
-        [ 22. ],
-        [  7. ]],
-
-       [[ 18.7],
-        [  6.5],
-        [ 20.5],
-        [  1.7],
+array([[[  1.7],
         [ 13.2],
         [  5.3],
         [  9.3],
@@ -1827,28 +1670,10 @@ array([[[116.7],
         [ 40.3],
         [ 26.7],
         [ 50. ],
-        [ 58.3]],
-
-       [[ 47.3],
-        [ 46.2],
-        [ 21.2],
-        [ 48.8],
-        [ 43.8],
-        [ 68.2],
-        [ 72. ],
-        [ 78. ],
-        [109. ],
-        [ 92.8],
-        [ 73. ],
-        [ 85.5],
-        [ 47.5],
-        [ 29.2],
-        [ 11. ],
-        [ 13.2],
-        [ 23.3],
-        [ 29.5],
-        [ 20.3],
-        [  7.3]],
+        [ 58.3],
+        [ 66.7],
+        [ 75. ],
+        [ 60.8]],
 
        [[ 43.8],
         [ 68.2],
@@ -1871,7 +1696,155 @@ array([[[116.7],
         [ 18.7],
         [  6.5]],
 
-       [[250.5],
+       [[ 39.2],
+        [ 38.7],
+        [ 47.5],
+        [ 73.3],
+        [ 58.3],
+        [ 83.3],
+        [118.3],
+        [ 98.8],
+        [ 99.5],
+        [ 66. ],
+        [130.7],
+        [ 48.8],
+        [ 45.2],
+        [ 77.7],
+        [ 62.7],
+        [ 66.7],
+        [ 73.3],
+        [ 53.3],
+        [ 76.2],
+        [ 63.3]],
+
+       [[125.7],
+        [116.7],
+        [ 72.5],
+        [ 75.5],
+        [ 94. ],
+        [101.2],
+        [ 84.5],
+        [110.5],
+        [ 99.7],
+        [ 39.2],
+        [ 38.7],
+        [ 47.5],
+        [ 73.3],
+        [ 58.3],
+        [ 83.3],
+        [118.3],
+        [ 98.8],
+        [ 99.5],
+        [ 66. ],
+        [130.7]],
+
+       [[ 60. ],
+        [ 77. ],
+        [ 77.8],
+        [108.2],
+        [254.5],
+        [199.2],
+        [112.8],
+        [ 97.5],
+        [169. ],
+        [150. ],
+        [166.2],
+        [159.5],
+        [168.2],
+        [151.3],
+        [ 51.8],
+        [153.7],
+        [ 63.3],
+        [ 95. ],
+        [128.8],
+        [ 93.7]],
+
+       [[  5.5],
+        [  6.7],
+        [  7.2],
+        [  8.3],
+        [  9.5],
+        [ 32. ],
+        [ 45.7],
+        [ 50. ],
+        [ 71.7],
+        [ 54.8],
+        [ 49.7],
+        [ 55.5],
+        [ 36.5],
+        [ 68. ],
+        [ 71.2],
+        [ 73.5],
+        [ 91.2],
+        [ 88.8],
+        [ 89.2],
+        [110.2]],
+
+       [[ 49.7],
+        [ 55.5],
+        [ 36.5],
+        [ 68. ],
+        [ 71.2],
+        [ 73.5],
+        [ 91.2],
+        [ 88.8],
+        [ 89.2],
+        [110.2],
+        [ 77.2],
+        [ 71.2],
+        [129.5],
+        [129. ],
+        [ 87.7],
+        [111.3],
+        [124.7],
+        [129.7],
+        [151. ],
+        [186.3]],
+
+       [[159.5],
+        [168.2],
+        [151.3],
+        [ 51.8],
+        [153.7],
+        [ 63.3],
+        [ 95. ],
+        [128.8],
+        [ 93.7],
+        [ 84.2],
+        [131. ],
+        [102.2],
+        [106.7],
+        [ 91. ],
+        [ 48.3],
+        [ 85.3],
+        [ 54.8],
+        [ 68.5],
+        [ 47.3],
+        [ 46.2]],
+
+       [[ 60.8],
+        [ 65. ],
+        [159.2],
+        [133.8],
+        [134.5],
+        [158.3],
+        [186.7],
+        [193.7],
+        [177.5],
+        [243.3],
+        [262.2],
+        [295.5],
+        [182.2],
+        [223.3],
+        [241.7],
+        [398.2],
+        [286. ],
+        [255. ],
+        [233.3],
+        [286.2]],
+
+       [[260.5],
+        [250.5],
         [175. ],
         [191.2],
         [276.2],
@@ -1889,27 +1862,26 @@ array([[[116.7],
         [163.3],
         [163.3],
         [158.3],
-        [178.7],
-        [146.7]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
-array([[[105.5]],
-
-       [[ 99.2]],
-
-       [[ 43.7]],
-
-       [[  1.7]],
-
-       [[ 91.2]],
-
-       [[ 17. ]],
-
-       [[ 66.7]],
-
-       [[  0. ]],
+        [178.7]]])&gt;, &lt;tf.Tensor: shape=(10, 1, 1), dtype=float64, numpy=
+array([[[ 65. ]],
 
        [[ 20.5]],
 
-       [[143.3]]])&gt;)
+       [[ 60. ]],
+
+       [[ 48.8]],
+
+       [[ 84.2]],
+
+       [[ 77.2]],
+
+       [[123.2]],
+
+       [[ 21.2]],
+
+       [[260.5]],
+
+       [[146.7]]])&gt;)
 </pre>
 </div>
 </div>
