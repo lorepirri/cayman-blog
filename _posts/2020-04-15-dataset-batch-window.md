@@ -9,6 +9,11 @@ comments: true
 published: true
 ---
 
+`tf.data.Dataset`을 활용하여 다양한 Dataset 로더를 만들 수 있습니다. 
+그리고, 로더를 활용하여, `shuffle`, `batch_size`, `window` 데이터셋 생성등 다양한 종류를 데이터 셋을 상황에 맞게 생성하고 모델에 feed할 수 있도록 제공해 줍니다.
+
+더 이상 numpy로 한땀 한땀 만들어 줄 필요없이, 간단한 옵션 몇 개면 데이터세트를 완성할 수 있습니다.
+
 <body>
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
