@@ -17,7 +17,6 @@ Image Augmentation을 적용한 후에는 **Convolution Neural Network가 사진
 
 <br>
 <br>
-<br>
 
 <body>
 <div class="border-box-sizing" id="notebook" >
@@ -399,12 +398,7 @@ IPython.OutputArea.auto_scroll_threshold = 50;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ylabel이 <strong>웟핫인코딩</strong> 되어 있는 것을 확인할 수 있습니다.</p>
-</div>
-</div>
-</div>
+<br>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Convolution-Neural-Network-(CNN)">Convolution Neural Network (CNN)</h3>
