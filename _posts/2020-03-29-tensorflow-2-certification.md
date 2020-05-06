@@ -12,6 +12,26 @@ typora-copy-images-to: ../images/2020-03-29
 
 Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서플로우 2.0 개발자 자격증)** 시험에 대한 응시 방법, 취득, 그리고 **노하우를 공유**드리고자 합니다.
 
+
+
+## 단기 취득을 위한 도움을 드립니다
+
+단기 취득을 위한 분들을 위하여 **시험 합격**을 위한 **단기 취득 과정 (8시간)**을 준비하였습니다.
+
+**2020년 5월 5일 기준 총 14명의 합격자**를 배출하였습니다.
+
+또한, **폐쇠형 슬랙 채널을 통해 합격하신 분들과 시험 준비를 하시는 분들이 한 공간에 모여 QnA를 진행하면서 자격증 취득을 위한 온라인 스터디**도 이어 나가고 있습니다.
+
+입문자나 비전공자분들도 취득하실 수 있도록 만들어 드리는 원데이 과정입니다.
+
+원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](https://bit.ly/tf-festa)에서 신청해 주시기 바랍니다.
+
+![image-20200506145942918](../images/2020-03-29/image-20200506145942918.png)
+
+
+
+## 개요
+
 시험에 우선 합격을 하면 다양한 혜택들이 주어지는데요, 그 중 하나인 [Google TensorFlow Network](https://developers.google.com/certification/directory/tensorflow) 에 이름을 공식적으로 등재시켜 줍니다. 
 
 저는 **대한민국에서 2번째로 텐서플로우 자격증을 취득**하였습니다.
@@ -28,10 +48,6 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 
 
 
-합격 메일을 받으면, **Google TensorFlow Network 등재를 위한 설문지**를 보내줍니다.
-
-![image-20200401181530989](../images/2020-03-29/image-20200401181530989.png)
-
 본 인증시험은 **구글 텐서플로우 개발자 인증 시험**이라고도 불리우는 **구글에서 공인하는 텐서플로우 자격 시험**입니다. 정확히 말씀드리자면, 구글이 아닌 **Google Brain에서 제작**한 인증 시험입니다. **2020년 3월 12일에 런칭**한 따끈따끈한 TF 자격 인증 시험입니다. 모두 **온라인으로 진행**되는 것이 특징입니다. 
 
 
@@ -41,16 +57,6 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 ![image-20200329085640924](../images/2020-03-29/image-20200329085640924.png)
 
 시험이 공식적으로 발표된 지 얼마 지나지 않았기 때문에,  **자격증에 대한 희소성**도 있으면서, 동시에 시험에 대한 정보도 부족한 상황입니다. 그래서 **제가 직접 시험을 치른 후** 관련 정보를 공식 핸드북에 기반하여 공유 드리고, 직접 진행하면서 시험에 대한 간략한 후기도 공유드립니다.
-
-
-
-## 단기 취득을 위한 도움을 드립니다
-
-단기 취득을 위한 분들을 위하여 **시험 합격**을 위한 **단기 취득 과정 (8시간)**을 준비하였습니다.
-
-입문자나 비전공자분들도 취득하실 수 있도록 만들어 드리는 원데이 과정입니다.
-
-원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](https://bit.ly/tf-festa)에서 신청해 주시기 바랍니다.
 
 
 
@@ -82,7 +88,11 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 
 시험은 PyCharm IDE 로 진행이 되기 때문에, 아래 링크에서 미리 다운로드 후 설치하셔야 합니다.
 
-![image-20200329060755643](../images/2020-03-29/image-20200329060755643.png)
+
+
+![image-20200506145828640](../images/2020-03-29/image-20200506145828640.png)
+
+
 
 * [PyCharm 다운로드 바로가기](https://www.jetbrains.com/ko-kr/pycharm/download/)
 
@@ -180,47 +190,13 @@ PyCharm을 설치하신 후 **Google Certification 이라는 플러그인을 미
 
 
 
-## 6. 발표
+## 6. 합격발표
 
-발표는 시험을 Submit 한 후 **최대 2주이내 최종 합격 여부를 통지**해 준다고 합니다.
+발표는 시험을 Submit 한 후 **5분이내에 이메일로 합격여부를 통지** 합니다.
 
-보통은 1주일 이내에 모두 발표가 나는 것으로 보입니다.
-
-아래 Candidate Portal 링크를 남겨두었습니다. 시험을 치루신 후 방문해 보시면, Grade Status를 확인하실 수 있습니다.
-
-[Candidate Portal 바로가기](https://app.trueability.com/candidate/portal)
-
-![captured_20200330141025](../images/2020-03-29/captured_20200330141025.png)
-
-
-
-## 7. 합격
-
-**합격 발표까지는 평균 4일정도 소요**되는 것 같습니다.
-
-일요일에 시험을 봤는데, 수요일에 발표가 났습니다. 발표는 등록한 이메일로 합격여부를 발송해 줍니다.
-
-
-
-> 이메일로 합격 통지 메일이 날라옵니다
-
-![image-20200401181530989](../images/2020-03-29/image-20200401181530989.png)
-
-합격을 하게 되면, TensorFlow Certificate Network에 등록하기 위한 구글 설문지 작성 링크를 이메일안에 포함하여 전달해 줍니다. 설문 작성을 완료하면 **2주안에 TensorFlow Network에 등록**해준다고 합니다.
+합격을 하게 되면, TensorFlow Certificate Network에 등록하기 위한 구글 설문지 작성 링크를 이메일안에 포함하여 전달해 줍니다. 설문 작성을 완료하면 통상 **2주안에 TensorFlow Network에 등록**됩니다.
 
 설문 내용 안에는 개인정보와 링크드인 프로필 주소등 다양한 정보를 받아갑니다.
-
-나중에 linked-in  프로필에 배지를 달아주려나요?
-
-
-
-
-
-### 주요 URL
-
-* [텐서플로우 Certification 사이트](https://www.tensorflow.org/certificate)
-* [핸드북](https://www.tensorflow.org/site-assets/downloads/marketing/cert/TF_Certificate_Candidate_Handbook.pdf)
-* [시험 응시 바로가기](https://app.trueability.com/google-certificates/tensorflow-developer)
 
 
 
