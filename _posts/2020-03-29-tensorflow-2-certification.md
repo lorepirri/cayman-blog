@@ -26,6 +26,8 @@ Google 에서 공식 인증하는 **Tensorflow Developer Certification (텐서�
 
 원하시는 분들은 [TensorFlow Certification 단기취득과정 신청](https://bit.ly/tf-festa)에서 신청해 주시기 바랍니다.
 
+**<u>(페이지 하단에 댓글로 기 수강생 분들의 간단한 후기도 보실 수 있습니다)</u>**
+
 ![image-20200506145942918](../images/2020-03-29/image-20200506145942918.png)
 
 
