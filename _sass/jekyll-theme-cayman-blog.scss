@@ -231,15 +231,6 @@ a {
   }
 }
 
-iframe {
-  display:block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  margin-top: 2rem !important;
-  margin-bottom: 2rem !important;
-  max-width: 100% !important;
-}
-
 #notebook-container {
   h1, h2, h3, h4, h5, h6{
     margin-top: 3rem !important;
@@ -259,6 +250,15 @@ iframe {
 
 .page-wrapper {
   margin-bottom: 7rem;
+
+  iframe {
+    display:block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+    max-width: 100% !important;
+  }
 }
 
 // define main-content html attributs 
