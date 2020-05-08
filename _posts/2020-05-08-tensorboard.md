@@ -15,7 +15,7 @@ TensorBoard 사용을 위한 callback을 만드는 방법과 colab에서 바로 
 
 
 
-[![colab에서 텐서보드 로드하기](http://img.youtube.com/vi/MmebOG9g548/0.jpg)](https://youtu.be/MmebOG9g548)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MmebOG9g548" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
