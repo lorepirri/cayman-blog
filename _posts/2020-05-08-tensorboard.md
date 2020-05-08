@@ -13,7 +13,14 @@ TensorBoard 사용을 위한 callback을 만드는 방법과 colab에서 바로 
 
 밑에서 추가로 언급하지만, **Jupyter Notebook 서버나 로컬에서 돌리시는 분들은 별도의 extension 설치**를 해주셔야 하며, TensorBoard extension을 통해 텐서보드를 확인하실 수 있습니다.
 
+
+
+[![colab에서 텐서보드 로드하기](http://img.youtube.com/vi/MmebOG9g548/0.jpg)](https://youtu.be/MmebOG9g548)
+
+
+
 <body>
+
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -155,7 +162,7 @@ Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-dataset
     <span class="n">Dense</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'relu'</span><span class="p">),</span>
     <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">'softmax'</span><span class="p">)</span>
 <span class="p">])</span>
-    
+
 <span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">'adam'</span><span class="p">,</span>
                 <span class="n">loss</span><span class="o">=</span><span class="s1">'sparse_categorical_crossentropy'</span><span class="p">,</span>
                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">'acc'</span><span class="p">])</span>
