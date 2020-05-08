@@ -226,17 +226,32 @@ a {
     word-break: keep-all;
   }
 
-  h2{
+  h2 {
     word-break: keep-all;
   }
 }
 
-.output_text pre{
+iframe {
+  display:block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+#notebook-container {
+  h1, h2, h3, h4, h5, h6{
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+.output_text pre {
   background-color: #2e2e2e !important;
   color: #fff !important;
 }
 
-.output_subarea pre{
+.output_subarea pre {
   color: #fff !important;
   background-color: #2e2e2e !important;
 }
