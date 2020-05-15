@@ -94,7 +94,7 @@ train['Embarked'].value_counts()
 
 train['Embarked'].fillna('S', inplace=True)
 
-train['Embarked_clean'] = ['Embarked'].astype('category').cat.codes
+train['Embarked_clean'] = train['Embarked'].astype('category').cat.codes
 test['Embarked_clean'] = test['Embarked'].astype('category').cat.codes
 ```
 
