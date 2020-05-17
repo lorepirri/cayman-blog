@@ -11,13 +11,7 @@ typora-copy-images-to: ../images/2020-05-18
 ---
 
 
-
-dl오토인코더(Autoencoder)는 
-
-
-
 이번 포스팅에서는 오토인코더의 기본 개념에 대하여 알아보고, TensorFlow 2.0으로 **오토인코더(Autoencoder)를** **구현**해 보겠습니다. 
-
 
 
 ## 오토인코더란?
