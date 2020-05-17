@@ -710,3 +710,10 @@ _________________________________________________________________
 </div>
 </div>
 </body>
+
+
+
+## 소스코드
+
+* [GitHub](https://github.com/teddylee777/data-science-for-fun/blob/master/02-tensorflow/05-auto-encoder/01-basic-auto-encoder-MNIST.ipynb)
+* [Colab](https://colab.research.google.com/github/teddylee777/data-science-for-fun/blob/master/02-tensorflow/05-auto-encoder/01-basic-auto-encoder-MNIST.ipynb)
