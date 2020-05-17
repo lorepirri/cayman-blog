@@ -40,7 +40,7 @@ typora-copy-images-to: ../images/2020-05-18
 
 ## 비지도학습 (특징 추출)
 
-> 인코더가 특징을 추출하여 2D 캔버스위에 시각화한 모습
+> 인코더가 특징을 추출하여 2D 캔버스위에 시각화 (2개의 Feature로 압축)
 
 ![autoencoder](../images/2020-05-18/autoencoder.png)
 
