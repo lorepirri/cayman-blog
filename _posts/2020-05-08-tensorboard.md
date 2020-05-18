@@ -13,10 +13,11 @@ TensorBoard 사용을 위한 callback을 만드는 방법과 colab에서 바로 
 
 밑에서 추가로 언급하지만, **Jupyter Notebook 서버나 로컬에서 돌리시는 분들은 별도의 extension 설치**를 해주셔야 하며, TensorBoard extension을 통해 텐서보드를 확인하실 수 있습니다.
 
-
-
+<br>
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MmebOG9g548" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br>
+<br>
 
 
 <body>
