@@ -13,7 +13,7 @@ google_analytics:
 cayman-blog:
   date_format: "%b %-d, %Y"
 
-theme: # leave it empty
+theme: jekyll-theme-cayman
 
 # social
 author: lorepirri
