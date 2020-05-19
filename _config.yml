@@ -1,25 +1,25 @@
-title: Cayman Blog Theme
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
+title: Systems Biology Glossary
+description: A glossary of computational systems biology concepts I encountered during my doctoral research.
 show_downloads: true
 
-baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://lorepirri.github.io" # change this to the base hostname & protocol for your site
+baseurl: "/sysbio-glossary" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+url: "https://paulflang.github.io" # change this to the base hostname & protocol for your site
 
 
 google_analytics:
 
-# cayman-blog date format
+# sysbio-glossary date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
+sysbio-glossary:
   date_format: "%b %-d, %Y"
 
 theme: jekyll-theme-cayman
 
 # social
-author: lorepirri
+author: paulflang
 image: /thumbnail-jumbo.png
 twitter:
-  username: lorepirri
+  username: PaulLan64523159
 
 plugins:
   - jekyll-target-blank
