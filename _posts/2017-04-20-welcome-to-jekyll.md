@@ -1,23 +1,10 @@
 ---
 layout: post
-title: "Welcome to Jekyll"
+title: "Likelihood function"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+The likelihood function is a function of parameters X at fixed data D. It tells you what is the probability density of the data, given the parameters: P(D|X)
+If you integrate the likelihood function over all parameters, you do not necessarily get 1. Hence, the likelihood function is not a probability density function.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-
+Bayesian statistics assumes that a prior probability distribution of the parameters P(X) exists. By multiplying this prior probability density function with a likelihood function (and a normalising constant 1/P(D)) we get a probability density function of X
+    P(X|D) = P(D|X) * P(X) / P(D)
+that integrates over the parameters X to 1.
