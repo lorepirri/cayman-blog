@@ -7,6 +7,10 @@ categories: misc
 Essentially, neural networks perform an optimisation task. Let the objective function function be
 
 ![equation](https://latex.codecogs.com/gif.download?C%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft%5C%7Cy-a%5E%7BL%7D%5Cright%5C%7C%5E%7B2%7D%3D%5Cfrac%7B1%7D%7B2%7D%20%5Csum_%7Bj%7D%5Cleft%28y_%7Bj%7D-a_%7Bj%7D%5E%7BL%7D%5Cright%29%5E%7B2%7D)_
+
+![equation](https://latex.codecogs.com/gif.latex?C%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft%5C%7Cy-a%5E%7BL%7D%5Cright%5C%7C%5E%7B2%7D%3D%5Cfrac%7B1%7D%7B2%7D%20%5Csum_%7Bj%7D%5Cleft%28y_%7Bj%7D-a_%7Bj%7D%5E%7BL%7D%5Cright%29%5E%7B2%7D)
+
+![equation](https://latex.codecogs.com/gif.latex?C%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft%5C%7Cy-a%5E%7BL%7D%5Cright%5C%7C%5E%7B2%7D%3D%5Cfrac%7B1%7D%7B2%7D%20%5Csum_%7Bj%7D%5Cleft%28y_%7Bj%7D-a_%7Bj%7D%5E%7BL%7D%5Cright%29%5E%7B2%7D)_
  
 where aLj is the activation of the jth neuron in the output layer (denoted with capital L) given an input sample x, and y is the correct output layer activation of the sample x.
 For any single data point (x, y) of input vector x and correct output vector y, one the calculates the derivatives of the objective function C wrt all weights and biases in the neural network*. Note however, that C(aL) has a simple shape (a parabola) and we can easily calculate dC(aL)/daL analytically. However, a is a function of the weights, w and the biases b in the neural network and calculating C(w, b) is much more demanding. I think it is not possible analytically, but the backpropagation algorithm efficiently calculates the gradient of C(w, b) at the current location (w, b) numerically.
