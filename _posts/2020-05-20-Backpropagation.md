@@ -12,13 +12,13 @@ where **a<sub>L</sub><sup>j</sup>** is the activation of the j<sup>th</sup> neur
 For any single data point (**x**, **y**) of input vector **x** and ground truth output vector **y**, one calculates the derivatives of the objective function C wrt all weights and biases in the neural network*. Note however, that C(a<sup>L</sup>) has a simple shape (a parabola) and we can easily calculate dC(a<sup>L</sup>)/da<sup>L</sup> analytically. However, **a** is a function of the weights, **w** and the biases **b** in the neural network and calculating C(**w**, **b**) is much more demanding. I think it is not possible analytically, but the **backpropagation algorithm** efficiently calculates the gradient of C(**w**, **b**) at the current location (**w**, **b**) numerically.
 For a simpler notation, lets define the weighted sum of inputs (plus the bias) into the j<sup>th</sup> neuron in layer l, z<sub>j</sub><sup>L</sup> as
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![equation](https://latex.codecogs.com/gif.latex?z_%7Bj%7D%5E%7Bl%7D%3Da%5E%7B-1%7D*w_%7Bj%7D%5E%7Bl%7D&plus;b_%7Bj%7D%5E%7Bl%7D)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![equation](https://latex.codecogs.com/gif.latex?z_%7Bj%7D%5E%7Bl%7D%20%3D%20a_%7Bi%7D%5E%7Bl-1%7D*w_%7Bj%7D%5E%7Bl%7D%20&plus;%20b_%7Bj%7D%5E%7Bl%7D)
 
 and the derivative of the cost function wrt z<sub>j</sub><sup>l</sup> as $\delta<sub>j</sub><sup>l</sup>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![equation](https://latex.codecogs.com/gif.latex?%5Cdelta_%7Bj%7D%5E%7Bl%7D%20%5Cequiv%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20z_%7Bj%7D%5E%7Bl%7D%7D)
 
-Note that for the otuput layer L these defivateves are easilu calculated using the chain rule
+Note that for the otuput layer L these derivateves are easily calculated using the chain rule
 
 
 
