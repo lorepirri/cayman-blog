@@ -6,7 +6,9 @@ categories: misc
 
 Essentially, neural networks perform an optimisation task. Let the objective function function be
 
+```math
 C=\frac{1}{2}\left\|y-a^{L}\right\|^{2}=\frac{1}{2} \sum_{j}\left(y_{j}-a_{j}^{L}\right)^{2}
+```
  
 where aLj is the activation of the jth neuron in the output layer (denoted with capital L) given an input sample x, and y is the correct output layer activation of the sample x.
 For any single data point (x, y) of input vector x and correct output vector y, one the calculates the derivatives of the objective function C wrt all weights and biases in the neural network*. Note however, that C(aL) has a simple shape (a parabola) and we can easily calculate dC(aL)/daL analytically. However, a is a function of the weights, w and the biases b in the neural network and calculating C(w, b) is much more demanding. I think it is not possible analytically, but the backpropagation algorithm efficiently calculates the gradient of C(w, b) at the current location (w, b) numerically.
