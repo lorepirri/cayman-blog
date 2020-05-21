@@ -32,6 +32,14 @@ such that
 
 where the encircled dot means element wise multiplication (Hadamart product) rather than dot product.
 
+Now consider how z is amplified from one layer to the next:
+*  First, **z** is cast though sigmoidal neurons to yield an output **a**. The slope of **a** wrt **z** is **\sigma '(z)**.
+*  Then then **a** is multiplied with weights **w** (added to a bias) and cast into the sigmoidal function of the next neuron. The slope wrt **a** is **w**.
+
+Therefore we can backpropagate the signal according to
+
+
+
 Now observe that delta in layer l is amplified through layer l+1 proportionally to the weights in layer l+1
 
 
