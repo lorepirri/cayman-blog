@@ -4,6 +4,12 @@ title: "Backpropagation"
 categories: misc
 ---
 
+\sigma
+$\sigma
+$\sigma $
+$\sigma$
+
+
 Essentially, neural networks are uniform approximators of any function that maps an input vector **x** (fed into the input layer neurons) to an output vector **y** (represented by the output layer neurons). When the neural network means to optimise an objective function of the ground truth output vector **y** and the activation of of the neurons in the output layer. Let this objective function function be
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![equation](https://latex.codecogs.com/gif.latex?C%28a%5E%7BL%7D%29%3D%5Cfrac%7B1%7D%7B2%7D%5Cleft%5C%7Cy-a%5E%7BL%7D%5Cright%5C%7C%5E%7B2%7D%3D%5Cfrac%7B1%7D%7B2%7D%20%5Csum_%7Bj%7D%5Cleft%28y_%7Bj%7D-a_%7Bj%7D%5E%7BL%7D%5Cright%29%5E%7B2%7D)
