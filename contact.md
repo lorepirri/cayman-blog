@@ -6,6 +6,10 @@ ref: contact
 order: 1
 ---
 
-Jekyll is a great tool to create static sites but with static site, there's no backend to send your data to: that is why you need a third part service.
+### Contributing and bug reports
 
-[Go to the Home Page]({{ '/' | absolute_url }})
+To make a contribution to the sysbio-glossary or file a bug report, please create a pull request or issue on the ![sysbio-glossary GitHub repository](https://github.com/paulflang/sysbio-glossary).
+
+### Other enquires
+
+For all other enquiries, please [drop me an email](mailto:paul.lang@wolfson.ox.ac.uk).
