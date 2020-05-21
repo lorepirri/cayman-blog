@@ -8,6 +8,8 @@ categories: misc
 $\sigma
 $\sigma $
 $\sigma$
+&sigma
+&sigma;
 
 
 Essentially, neural networks are uniform approximators of any function that maps an input vector **x** (fed into the input layer neurons) to an output vector **y** (represented by the output layer neurons). When the neural network means to optimise an objective function of the ground truth output vector **y** and the activation of of the neurons in the output layer. Let this objective function function be
