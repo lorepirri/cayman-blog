@@ -14,7 +14,7 @@ For a simpler notation, lets define the weighted sum of inputs (plus the bias) i
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?z_%7Bj%7D%5E%7Bl%7D%20%3D%20a_%7Bi%7D%5E%7Bl-1%7D*w_%7Bj%7D%5E%7Bl%7D%20&plus;%20b_%7Bj%7D%5E%7Bl%7D)
 
-and the derivative of the cost function wrt z<sub>j</sub><sup>l</sup> as $\delta<sub>j</sub><sup>l</sup>
+and the derivative of the cost function wrt z<sub>j</sub><sup>l</sup> as \delta<sub>j</sub><sup>l</sup>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Cdelta_%7Bj%7D%5E%7Bl%7D%20%5Cequiv%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20z_%7Bj%7D%5E%7Bl%7D%7D)
 
@@ -33,18 +33,18 @@ such that
 where the encircled dot means element wise multiplication (Hadamart product) rather than dot product.
 
 Now consider how z is amplified from one layer to the next:
-*  First, **z** is cast though sigmoidal neurons to yield an output **a**. The slope of **a** wrt **z** is **$\sigma $'(z)**.
+*  First, **z** is cast though sigmoidal neurons to yield an output **a**. The slope of **a** wrt **z** is **\sigma '(z)**.
 *  Then then **a** is multiplied with weights **w** (added to a bias) and cast into the sigmoidal function of the next neuron. The slope wrt **a** is **w**.
 
 Therefore we can backpropagate the signal according to
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Cdelta%20%5E%7Bl%7D%20%3D%20%28%28w%5E%7Bl&plus;1%7D%29%5ET%5Cdelta%20%5E%7Bl&plus;1%7D%29%20%5Codot%20%7B%5Csigma%20%7D%27%28z%5E%7Bl%7D%29)
 
-Now use the chain rule again to obtain $\delta C/$\delta b:
+Now use the chain rule again to obtain \partial C/\partial b:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20C%28z%28w%5E%7Bl%7D%2C%20b%5E%7Bl%7D%29%29%7D%7B%5Cpartial%20b%5E%7Bl%7D%7D%20%3D%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20z%5E%7Bl%7D%7D%20*%20%5Cfrac%7B%5Cpartial%20z%5E%7Bl%7D%7D%7B%5Cpartial%20b%5E%7Bl%7D%7D%20%3D%20%5Cdelta%5E%7Bl%7D%20*%201%20%3D%20%5Cdelta%5E%7Bl%7D)
 
-and $\partial C/$\partial w:
+and \partial C/\partial w:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Cpartial%20C%28z%28w%5E%7Bl%7D%2C%20b%5E%7Bl%7D%29%29%7D%7B%5Cpartial%20w%5E%7Bl%7D%7D%20%3D%20%5Cfrac%7B%5Cpartial%20C%7D%7B%5Cpartial%20z%5E%7Bl%7D%7D%20*%20%5Cfrac%7B%5Cpartial%20z%5E%7Bl%7D%7D%7B%5Cpartial%20w%5E%7Bl%7D%7D%20%3D%20%5Cdelta%5E%7Bl%7D%20*%20a%5E%7Bl-1%7D%20%3D%20a%5E%7Bl-1%7D%20%5Cdelta%5E%7Bl%5ET%7D)
 	 
