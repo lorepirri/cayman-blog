@@ -16,7 +16,7 @@ The following explains several ABC methods. The terminology will be
 
 1.  Sample **&theta;\*** from the prior p(**&theta;**).
 2.  Simulate a dataset **x\*** from f(**x**|**&theta;\***).
-3.  If the distance metric d(**x<sub>mesured</sub>**, **x\***) &se; &epsilon;, accept **&theta;\***, otherwise reject.
+3.  If the distance metric d(**x<sub>mesured</sub>**, **x\***) &le; &epsilon;, accept **&theta;\***, otherwise reject.
 4.  Return to 1.
 
 <ins>Pros</ins>:
@@ -28,16 +28,20 @@ This algorithm does not learn. It just tries multiple times (especially if the p
 #### ABC Markov Chain Monte Carlo
 
 A markov chain is quite a simple concept. It is just a chain of probabilities:
-P(x) = P(xn|xn-1) * … * P(x2|x1) * P(x1)
 
-	M1 Initialize thetai , i=0.
-	M2 Propose theta* according to a proposal distribution q(q|qi) (the wider this distribution, the more you jump around in the parameter space in every step). This is where the markov chain comes in.
-	M3 Simulate a dataset x* from f(x|q*).
-	M4 If d(x0, x*)<=eps, go to M5, otherwise set thetai+1=thetai and go to M6.
-In words: if you are unhappy, try again. If you are happy considering updating theta.
-	M5 Set thetai+1 = theta* with the updating probability
-alpha=min⁡(1,(q(〖theta〗_i│theta*)p(theta*))/(q(theta*│〖theta〗_i )p(〖theta〗_i ) ))
-(note that this is where the prior information comes in) or stick to qi: qi+1=qi.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?p%28x%29%3Dp%28x_%7Bn%7D%7Cx_%7Bn-1%7D%29*...*p%28x_%7B2%7D%7Cx_%7B1%7D%29*p%28x_%7B1%7D%29)
+
+The ABC Markov Chain Monte Carlo works as follows:
+
+1.  Initialize &theta;<sub>i</sub>, i = 0
+2.  Propose &theta;\* according to a proposal distribution q(&theta;|&theta;<sub>i</sub>) (the wider this distribution, the more you jump around in the parameter space in every step). This is where the markov chain comes in.
+3.  Simulate a dataset x\* from f(x|q\*).
+4.  If d(x<sub>0</sub>, x\*) &le; \epsilon, go to 5, otherwise set &theta;<sub>i</sub> + 1 = &theta;<sub>i</sub> and go to 6. In other words: if you are unhappy, try again. If you are happy considering updating &theta;.
+5.  Set &theta;<sub>i</sub> + 1 = &theta;\* with the updating probability
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Calpha%3D%5Cmin%20%281%2C%20%5Cfrac%7Bq%28%5Ctheta_%7Bi%7D%7C%5Ctheta%5E%7B*%7D%29*p%28%5Ctheta%20%5E%7B*%7D%29%7D%7Bq%28%5Ctheta%5E%7B*%7D%7C%5Ctheta_%7Bi%7D%29*p%28%7B%5Ctheta%7D_%7Bi%7D%29%7D%29)
+
+Note that this step is where the prior information comes in. or stick to qi: qi+1=qi.
 In words that means: always update theta if jumping into this direction is more probable than jumping in the other direction. Otherwise update with the probability of the probability ratio. Note that for symmetric q this is just the ratio between the priors.
 	M6 Set i=i+1, go to M2.
 Pros:
