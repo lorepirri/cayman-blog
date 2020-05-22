@@ -20,6 +20,8 @@ author: paulflang
 image: /thumbnail-jumbo.png
 twitter:
   username: PaulLan64523159
+linkedin:
+  username: paul-lang-7b54a81a3
 
 plugins:
   - jekyll-target-blank

@@ -8,10 +8,5 @@
 layout: home
 ---
 
-Cayman Blog Theme is a clean, responsive blogging theme for Jekyll. It is inspired by the Cayman Theme for Github Pages, which can be greatly used for single projects but not as blogging platform.
-
-This theme has instead all you need to start today blogging with Jekyll, and no effort: pages, posts, few social buttons. Try loading this on mobile too.
-
-Have a look at the Github page for more information.
-
-You find this descriptive text in the `index.md` file, so you can change it, or remove it completely, according to your needs.
+Hi,
+I am Paul, a PhD student working on mathematical cell cycle models based on multiplexed imaging data. Trying to make the transition from an experimental biologist to a computational systems biologist I regularly come across several fascinating new concepts. To remind my future self of the key ideas of these concepts, I created this glossary. If you are anything like my envisioned future self, you may find this glossary useful, too. However, please take the content of this blog with a grain of salt. Some of the content may be oversimplified or not even correct. If you find mistakes or want to contribute to this glossary, please raise an issue or create a pull request on the ![sysbio-glossary GitHub repository](https://github.com/paulflang/sysbio-glossary).
