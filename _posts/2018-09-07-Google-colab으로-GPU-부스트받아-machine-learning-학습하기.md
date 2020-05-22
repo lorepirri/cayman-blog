@@ -33,8 +33,8 @@ Colaboratory는 구글 내부에서 활용하기 위해 만들어진 툴인데, 
 ### Colaboratory 환경
 
 * CPU: Intel (R) Xeon(R) CPU @ 2.30GHz (Dual-Core)
-* GPU: Nvidia Tesla K80
-* GPU Memory: 13GB
+* GPU: Nvidia Tesla K80 혹은 Nvidia Tesla P100
+* GPU Memory: 12GB (K80) / 16GB (P100)
 * VM 지속시간: 12시간
 
 무려 Xeon CPU에 Tesla GPU 환경을 이용할 수 있다는 것이 가장 큰 매력이 아닐까 합니다.
