@@ -5,15 +5,20 @@ title: "Approximate Bayesian Computation"
 
 ### Approximate Bayesian Computation
 
+The following content is largely taken from [Toni et al.](https://royalsocietypublishing.org/doi/full/10.1098/rsif.2008.0172).
+
 Approximate Bayesian Computation (ABC) is a Bayesian parameter estimation method (note that Bayesian methods typically become infeasible as the dimensionality of the parameter space increases beyond a few dozens). You simply sample parameters from a prior, and accept the sample if the parameters also explain the data well. That way, you combine both, the prior and the likelihood. You repeat this multiple times to get a whole distribution of possible parameter values (i.e. the posterior) rather than a single estimate. This approach is especially useful when the calculation of the likelihood is tough, as this step is replaced with a comparison between simulated and observed data. Only if simulated and observed data are close (wrt a chosen distance function) the chosen parameter set is accepted.
 The following explains several ABC methods. The terminology will be
-p(theta|x) = f(x|theta) * p(theta)
 
-ABC rejection sampler
-	R1 Sample theta* from the prior p(theta).
-	R2 Simulate a dataset x* from f(x|theta*).
-	R3 If the distance metric d(xmesured, x*) <= eps, accept theta*, otherwise reject.
-	R4 Return to R1.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?p%28%5Ctheta%20%7Cx%29%20%3D%20f%28x%7C%5Ctheta%20%29%20*%20p%28%5Ctheta%20%29)
+
+#### ABC rejection sampler
+
+1.  Sample theta* from the prior p(theta).
+2.  Simulate a dataset x* from f(x|theta*).
+3.  If the distance metric d(xmesured, x*) <= eps, accept theta*, otherwise reject.
+4.  Return to 1.
+
 Pros:
 	After running a lot of samples you get an idea of the posterior parameter distribution
 Con:
