@@ -14,18 +14,20 @@ The following explains several ABC methods. The terminology will be
 
 #### ABC rejection sampler
 
-1.  Sample theta* from the prior p(theta).
-2.  Simulate a dataset x* from f(x|theta*).
-3.  If the distance metric d(xmesured, x*) <= eps, accept theta*, otherwise reject.
+1.  Sample **&theta;\*** from the prior p(**&theta;**).
+2.  Simulate a dataset **x\*** from f(**x**|**&theta;\***).
+3.  If the distance metric d(**x<sub>mesured</sub>**, **x\***) &se; &epsilon;, accept **&theta;\***, otherwise reject.
 4.  Return to 1.
 
-Pros:
-	After running a lot of samples you get an idea of the posterior parameter distribution
-Con:
-	This algorithm does not learn. It just tries multiple times (especially if the prior is very different from the posterior)
+<ins>Pros</ins>:
+After running a lot of samples you get an idea of the posterior parameter distribution.
 
-ABC Markov Chain Monte Carlo
-Recall that a markov chain is very simple. It is just a chain of probabilities:
+<ins>Con</ins>:
+This algorithm does not learn. It just tries multiple times (especially if the prior is very different from the posterior).
+
+#### ABC Markov Chain Monte Carlo
+
+A markov chain is quite a simple concept. It is just a chain of probabilities:
 P(x) = P(xn|xn-1) * … * P(x2|x1) * P(x1)
 
 	M1 Initialize thetai , i=0.
