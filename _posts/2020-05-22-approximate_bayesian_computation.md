@@ -15,7 +15,7 @@ The following explains several ABC methods. The terminology will be
 #### ABC rejection sampler
 
 1.  Sample **&theta;\*** from the prior p(**&theta;**).
-2.  Simulate a dataset **x\*** from f(**x**|**&theta;\***).
+2.  Simulate a dataset **x\*** from f(**x**\|**&theta;\***).
 3.  If the distance metric d(**x<sub>mesured</sub>**, **x\***) &le; &epsilon;, accept **&theta;\***, otherwise reject.
 4.  Return to 1.
 
@@ -33,44 +33,59 @@ A markov chain is quite a simple concept. It is just a chain of probabilities:
 
 The ABC Markov Chain Monte Carlo works as follows:
 
-1.  Initialize &theta;<sub>i</sub>, i = 0
-2.  Propose &theta;\* according to a proposal distribution q(&theta;|&theta;<sub>i</sub>) (the wider this distribution, the more you jump around in the parameter space in every step). This is where the markov chain comes in.
-3.  Simulate a dataset x\* from f(x|q\*).
-4.  If d(x<sub>0</sub>, x\*) &le; \epsilon, go to 5, otherwise set &theta;<sub>i</sub> + 1 = &theta;<sub>i</sub> and go to 6. In other words: if you are unhappy, try again. If you are happy considering updating &theta;.
-5.  Set &theta;<sub>i</sub> + 1 = &theta;\* with the updating probability
+1.  Initialize **&theta;<sub>i</sub>**, i = 0
+2.  Propose **&theta;\*** according to a proposal distribution q(&theta;\|&theta;<sub>i</sub>) (the wider this distribution, the more you jump around in the parameter space in every step). This is where the markov chain comes in.
+3.  Simulate a dataset **x\*** from f(**x**\|q\*).
+4.  If d(**x<sub>0</sub>**, **x\***) &le; &epsilon;, go to step 5, otherwise set **&theta;<sub>i+1</sub>** = **&theta;<sub>i</sub>** and go to step 6. In other words: if you are unhappy, try again. If you are happy consider updating **&theta;**.
+5.  Set **&theta;<sub>i+1</sub>** = **&theta;\*** with the updating probability
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](https://latex.codecogs.com/gif.latex?%5Calpha%3D%5Cmin%20%281%2C%20%5Cfrac%7Bq%28%5Ctheta_%7Bi%7D%7C%5Ctheta%5E%7B*%7D%29*p%28%5Ctheta%20%5E%7B*%7D%29%7D%7Bq%28%5Ctheta%5E%7B*%7D%7C%5Ctheta_%7Bi%7D%29*p%28%7B%5Ctheta%7D_%7Bi%7D%29%7D%29)
 
 Note that this step is where the prior information comes in. or stick to qi: qi+1=qi.
-In words that means: always update theta if jumping into this direction is more probable than jumping in the other direction. Otherwise update with the probability of the probability ratio. Note that for symmetric q this is just the ratio between the priors.
-	M6 Set i=i+1, go to M2.
-Pros:
-	The algorithm learns: outcome is a Markov chain with the stationary distribution p(theta | being very close (<=eps) to the data). That is, ABC MCMC is guaranteed to converge to the target approximate posterior distribution.
-Cons:
-	Potentially low acceptance probability: the correlated nature of samples coupled with the potentially low acceptance probability may result in very long chains.
-	The chain may get stuck in regions of low probability for long periods of time.
+In words that means: always update **&theta;** if jumping into this direction is more probable than jumping in the other direction. Otherwise update with the probability of the above ratio. Note that for symmetric q this ratio is just the ratio between the two priors.
+6.  Set i=i+1, go to step 2.
 
-ABC Sequential Monte Carlo
-Here, the potentially low acceptance probability is circumvented by decreasing eps in a stepwise manner. The approach is parallelized using a population of N particles (theta vectors). Only the best particles survive in each eps (particles are drawn with replacement).
-S1 Initialize eps1,., epsT; set the population indicator t=0.
-S2.0 Set the particle indicator i=1.
-S2.1 If t=0, sample theta** from p(theta). Else, sample theta* from the previous population. Use weights for sampling and perturb the sampled particle using a perturbation kernel K. I you perturb the particle such that p(theta**) = 0, sample a new particle (i.e. repeat S2.1) Otherwise simulate a candidate dataset x* from f(x|theta**). If you are unhappy (distance metric >= epst), sample a new particle (i.e. repeat S2.1)
-S2.2 Lift theta** into the next generation. Calculate its weight in the new population. For t=0 the weight will be 1. Else, the weight will be proportional to its prior and indirect proportional to the weights of its neighbour particles in the previous generation. I guess this is to make sure the algorithm does not advantage ‘mainstream’ particles too much (I do not know why, though). Repeat this until you make the new generation full.
-S3 Normalize the weights and repeat (i.e. go to S2.0) until you have reached the smallest eps.
-Pros:
-	Not all particles need to have the same number of dimensions. This allows different particles to represent different models.
+<ins>Pros:</ins>
 
-ABC SMC with model selection
-Here, we have M models, indicated as m1, …, mM.
-MS1 Initialize e1,., eT.
-Set the population indicator t=0.
-MS2.0 Set the particle indicator i=1.
-MS2.1 Sample a model m* from p(m). If t=0, sample theta** from p(theta(m*)). If t>0, sample theta* from the weighted previous population. Perturb the particle theta* to obtain theta**. If p(theta**)=0 return to MS2.0. Else, simulate a candidate dataset x* from f(x|theta**, m*). If you are unhappy (distance metric > epst) return to MS2.1.
-MS2.2 Lift the model with its parameters into the next population. Go to MS2.1. until the population is full.
-MS3 Normalize the weights and repeat (i.e. go to S2.0) until you have reached the smallest eps.
-Pros:
-	Models with lots of parameters are automatically penalized, as randomly jumping to a better position in parameter space is unlikely
-Cons:
-	Poor models may become underrepresented (i.e. have few particles in the last generation) or even die out. This makes it difficult to calculate their posterior parameter distribution (i.e. you would have to run a separate ABC SMC for them alone).
-ABC sensitivity analysis
-Simply calculate the eigenvectors and eigenvalues of the parameter distribution point cloud. The lower the percentage of variance explained by a component, the better the corresponding eigenvector (i.e. eigenparameter) is estimated.
+The algorithm learns: outcome is a Markov chain with the stationary distribution p(**&theta;** \| being very close (&le; &epsilon;) to the data). That is, ABC MCMC is guaranteed to converge to the target approximate posterior distribution.
+
+<ins>Cons:</ins>
+Potentially low acceptance probability: the correlated nature of samples coupled with the potentially low acceptance probability may result in very long chains. The chain may get stuck in regions of low probability for long periods of time.
+
+### ABC Sequential Monte Carlo
+
+Here, the potentially low acceptance probability is circumvented by decreasing &epsilon; in a stepwise manner. The approach is parallelized using a population of N particles (**&theta;** vectors). Only the best particles survive in each &epsilon; (particles are drawn with replacement).
+
+1.  Initialize &epsilon;<sub>1</sub>, ..., &epsilon;<sub>T</sub>; set the population indicator t=0.
+2.  Set the particle indicator i=1.
+    1.  If t=0, sample **&theta;\*\*** from p(**&theta;**). Else, sample **&theta;\*** from the previous population. Use weights for sampling and perturb the sampled particle using a perturbation kernel K. I you perturb the particle such that p(**&theta;\*\***) = 0, sample a new particle (i.e. repeat 2.1) Otherwise simulate a candidate dataset **x\*** from f(**x**\|**&theta;\*\***). If you are unhappy (distance metric > &epsilon;<sub>t</sub>), sample a new particle (i.e. repeat step 2.1).
+    2.  Lift **&theta;\*\*** into the next generation. Calculate its weight in the new population. For t = 0 the weight will be 1. Else, the weight will be proportional to its prior and indirect proportional to the weights of its neighbour particles in the previous generation. I guess this is to make sure the algorithm does not advantage ‘mainstream’ particles too much. Repeat this until you make the new generation full.
+3.  Normalize the weights and repeat (i.e. go to step 2) until you have reached the smallest &epsilon;.
+
+<ins>Pros:</ins>
+Not all particles need to have the same number of dimensions. This allows different particles to represent different models.
+
+### ABC Sequential Monte Carlo with model selection
+
+Here, we have a populaton of M models, indicated as m<sub>1</sub>, …, m<sub>M</sub>. Each model comprises a population of N particles (i.e. parameter sets).
+
+1.  Initialize &epsilon;<sub>1</sub>, ..., &epsilon;<sub>T</sub>. Set the model population indicator t = 0.
+2.  Set the particle indicator i = 1.
+    1.  Sample a model m\* from p(m). If t = 0, sample **&theta;\*\*** from p(**&theta;**(m\*)). If t > 0, sample **&theta;\*** from the weighted previous population. Perturb the particle **&theta;\*** to obtain **&theta;\*\***. If p(**&theta;\*\***) = 0 return to step 2. Else, simulate a candidate dataset **x\*** from f(**x**\|**&theta;\*\***, m\*). If you are unhappy (distance metric > &epsilon;<sub>t</sub>) return to step 2.1.
+    2.  Lift the model with its parameters into the next population. Go to step 2.1 until the population is full.
+3.  Normalize the weights and repeat (i.e. go to step 2) until you have reached the smallest &epsilon;.
+
+<ins>Pros</ins>:
+
+Models with lots of parameters are automatically penalized, because
+*  randomly jumping to a better position (step 2.1) in parameter space is unlikely
+AND
+*  not finding a better position is a missed chance for the particular model to be lifted into the next generation.
+
+<ins>Cons</ins>:
+
+Poor models may become underrepresented (i.e. have few particles in the last generation) or even die out. This makes it difficult to calculate their posterior parameter distribution (i.e. you would have to run a separate ABC Sequential Monte Carlo for them alone).
+
+### ABC sensitivity analysis
+
+Simply calculate the eigenvectors and eigenvalues of the parameter distribution point cloud. The lower the percentage of variance explained by a component, the better the estimation in the direction of the corresponding eigenvector (i.e. eigenparameter).
