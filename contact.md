@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Contact
-tagline: Create a contact form and you are good to go
+tagline:
 ref: contact
 order: 1
 ---
 
 ### Contributing and bug reports
 
-To make a contribution to the sysbio-glossary or file a bug report, please create a pull request or issue on the ![sysbio-glossary GitHub repository](https://github.com/paulflang/sysbio-glossary).
+To make a contribution to the sysbio-glossary or file a bug report, please create a pull request or issue on the [sysbio-glossary GitHub repository](https://github.com/paulflang/sysbio-glossary).
 
 ### Other enquires
 
