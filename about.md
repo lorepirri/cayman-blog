@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 데이터 분석, 머신러닝, 딥러닝의 대중화를 꿈 꿉니다.
 tagline: Who am I?
 permalink: /about.html
 ---
@@ -9,15 +9,22 @@ permalink: /about.html
 + [Blog](https://teddylee777.github.io)
 + [GitHub](https://github.com/teddylee777)
 + [LinkedIn](https://www.linkedin.com/in/teddy-lee/)
++ [YouTube](https://www.youtube.com/channel/UCt2wAAXgm87ACiQnDHQEW6Q)
 + <teddylee777@gmail.com>
 
 ## History
 + Majored in Econonomics @ University of Wisconsin - Madison
 + Worked as a Software Developer @ Samsung Electronics (Mobile Communication Business)
 + Co-founded [analogue plus](https://www.analogue-plus.com) and developed Bluetooth firmware, Android application, Windows applications.
++ 인공지능 채용 솔루션 개발
 + Founded Braincrew Inc.
++ 특허출원 10-2019-0058830 (인공지능 기반 강의 추천 및 학습 동기 부여를 제공하는 강
+의 서비스를 위해 전자 장치를 동작시키는 방법)
 + [런어데이 (https://learnaday.kr)](https://learnaday.kr)
 + 패스트캠퍼스 강의 - [직장인을 위한 파이썬 데이터분석 올인원 패키지 Online](https://fastcampus.co.kr/data_online_pyd)
++ 패스트캠퍼스 Byte Degree 프로젝트 감수 - [Byte Degree : Machine Learning with Python](https://fastcampus.co.kr/degree_online_bml)
++ 텐서플로우 자격인증시험 강의 - [텐서플로우 자격인증시험 강의(learnaday)](https://learnaday.kr/open-course/KBMQZy), [텐서플로우 자격인증시험 강의(festa)](https://festa.io/events/974)
+
 
 ## Certificate
 + [TensorFlow Developers Certificate](https://www.credential.net/bbed6f0a-2767-4526-afe8-bd3ffc09ba2d)
@@ -27,7 +34,9 @@ permalink: /about.html
 + C# / C++ / C
 + Bluetooth firmware / BLE
 + Data Science / Python, Pandas, Numpy, Matplotlib, Seaborn
++ Machine Learning / scikit-learn
 + Deep Learning / Tensorflow, Keras, Pytorch
++ Git, GitHub
 
 ## Articles
 + [남들 다 부러워하는 삼성전자 그만두고 선택한 놀라운 일](https://1boon.kakao.com/fastcampus/5e816892e0b0c27a3bf31c1c)
