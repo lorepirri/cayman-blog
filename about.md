@@ -18,8 +18,7 @@ permalink: /about.html
 + Co-founded [analogue plus](https://www.analogue-plus.com) and developed Bluetooth firmware, Android application, Windows applications.
 + 인공지능 채용 솔루션 개발
 + Founded Braincrew Inc.
-+ 특허출원 10-2019-0058830 (인공지능 기반 강의 추천 및 학습 동기 부여를 제공하는 강
-의 서비스를 위해 전자 장치를 동작시키는 방법)
++ 특허출원 10-2019-0058830 (인공지능 기반 강의 추천 및 학습 동기 부여를 제공하는 강의 서비스를 위해 전자 장치를 동작시키는 방법)
 + [런어데이 (https://learnaday.kr)](https://learnaday.kr)
 + 패스트캠퍼스 강의 - [직장인을 위한 파이썬 데이터분석 올인원 패키지 Online](https://fastcampus.co.kr/data_online_pyd)
 + 패스트캠퍼스 Byte Degree 프로젝트 감수 - [Byte Degree : Machine Learning with Python](https://fastcampus.co.kr/degree_online_bml)
