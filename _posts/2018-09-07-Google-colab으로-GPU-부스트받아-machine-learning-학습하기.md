@@ -12,18 +12,6 @@ published: true
 
 이번 포스팅에서는 Google Colaboratory (colab)을 활용하여 jupyter notebook을 구글 플랫폼 내에서 활용하는 방법에 대하여 팁을 드리도록 하겠습니다.
 
-> 코랩의 설치와 GPU 사용
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vRu77RmGD-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
-> 코랩 튜토리얼
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nQu9yycRaMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<br>
-
 Colaboratory는 구글 내부에서 활용하기 위해 만들어진 툴인데, 일반 사용자들에게 오픈되어 브라우져 상에서 machine learning (deep learning)을 학습할 수 있도록 해주는 구글 플랫폼입니다. 일단 가장 큰 장점은 **무료**이구요.
 
 또 하나의 장점은, 하이엔드 GPU가 달린 데스크톱 없이 구글의 CPU/RAM/GPU를 활용하여 보다 빠르게 Training Data를 학습시킬 수 있다는 점입니다.
