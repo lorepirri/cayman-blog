@@ -22,7 +22,7 @@ TensorFlow 2.0을 Pycharm에서 실행시 **dll load failed: 지정된 모듈을
 
 > dll 에러 로그 출력
 
-![capture-20200630-180629](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-06-30\capture-20200630-180629.png)
+![capture-20200630-180629](../images/2020-06-30/capture-20200630-180629.png)
 
 
 
@@ -32,7 +32,7 @@ TensorFlow 2.0을 Pycharm에서 실행시 **dll load failed: 지정된 모듈을
 
 [다운로드 링크](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
-![image-20200630182943601](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-06-30\image-20200630182943601.png)
+![image-20200630182943601](../images/2020-06-30/image-20200630182943601.png)
 
 
 
@@ -48,7 +48,7 @@ ARM64 계열은 ARM64를 선택하여 다운로드 합니다.
 
 > 다운로드 파일 설치 진행
 
-![capture-20200630-180929](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-06-30\capture-20200630-180929.png)
+![capture-20200630-180929](../images/2020-06-30/capture-20200630-180929.png)
 
 
 
