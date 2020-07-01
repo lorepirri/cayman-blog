@@ -3,7 +3,7 @@ layout: page
 title: "텐서플로우(tensorflow) 파이참(pycharm)에서 dll 오류 해결"
 description: "텐서플로우(tensorflow) 파이참(pycharm)에서 dll 오류 해결방법에 대해 알아보겠습니다."
 headline: "텐서플로우(tensorflow) 파이참(pycharm)에서 dll 오류 해결방법에 대해 알아보겠습니다."
-categories: colab
+categories: tensorflow
 tags: [python, colab, tensorflow, dll, 오류, dll 에러, 텐서플로우, pycharm, 파이참, visual studio]
 comments: true
 published: true
