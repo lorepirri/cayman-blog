@@ -10,12 +10,24 @@ published: true
 typora-copy-images-to: ../images/2020-09-12
 ---
 
+국민연금 데이터를 공공 데이터 포털에서 제공합니다.
+
+국민연금 데이터를 활용하여 **특정 회사의 임직원 평균 연봉을 역추정**해보는 것도 가능합니다.
+
+대표적인 사례가 바로 **[크레딧잡(kreditjob.com)](https://kreditjob.com/)** 입니다.
+
+임직원의 국민연금 납부 내역을 역추적하여 사람들이 제일 궁금해 하는 연봉 정보를 역추정하여 정보를 제공합니다.
+
+물론, 정확도는 다소 떨어질 수 있습니다. 국민연금 납부액에도 **상한선**이 있기 때문에,
+
+실제보다 낮게 평가될 가능성이 큽니다.
+
 <body>
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="포스트-코로나-시대의-경제-상황을-국민연금-가입자-오픈데이터를-통해-알아보자?!!">포스트 코로나 시대의 경제 상황을 국민연금 가입자 오픈데이터를 통해 알아보자?!!</h2>
+<h2 id="포스트-코로나-시대의-경제-상황을-국민연금-가입자-오픈데이터를-통해-알아보자?!!">국민연금 데이터를 활용한 데이터 분석</h2>
 </div>
 </div>
 </div>
