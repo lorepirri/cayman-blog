@@ -261,7 +261,7 @@ array([[ 0.0559595 , -0.05586447,  0.01562458,  0.00130411,  0.11520934,
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li><code>output_a</code>의 shape이 <code>(32, 20)</code>으로 출력됌을 확인할 수 있습니다.</li>
+<li><code>output_a</code>의 shape이 <code>(32, 20)</code>으로 출력 됨을 확인할 수 있습니다.</li>
 <li>shape가 (32, 20)의 32는 <code>batch</code>의 갯수, 20은 LSTM에서 지정한 unit 수입니다.</li>
 </ol>
 </div>
@@ -416,7 +416,7 @@ array([[[-6.91634882e-03, -4.04341053e-03,  6.21243054e-03, ...,
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
-<li><code>output_b</code>의 shape이 <code>(32, 25, 20)</code>으로 출력됌을 확인할 수 있습니다.</li>
+<li><code>output_b</code>의 shape이 <code>(32, 25, 20)</code>으로 출력 됨을 확인할 수 있습니다.</li>
 <li>shape가 (32, 25, 20)의 32는 <code>batch</code>의 갯수, (25, 20)은 LSTM에서 지정한 unit 수입니다.</li>
 </ol>
 </div>
