@@ -93,7 +93,7 @@ typora-copy-images-to: ../images/2020-09-13
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>주요 hyper parameter는 다음과 같습니다.</p>
+<p>샘플 데이터의 shape 정의는 다음과 같습니다.</p>
 </div>
 </div>
 </div>
@@ -101,8 +101,8 @@ typora-copy-images-to: ../images/2020-09-13
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li><code>batch</code>: 32</li>
-<li><code>time_step</code>: 3</li>
 <li><code>window_size</code>: 25</li>
+<li><code>time_step</code>: 1</li>
 </ul>
 </div>
 </div>
