@@ -1,3 +1,0 @@
-User-agent: *
-Allow:/
-Sitemap: http://teddylee777.github.io/sitemap.xml
