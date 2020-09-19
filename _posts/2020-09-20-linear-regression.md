@@ -12,8 +12,6 @@ typora-copy-images-to: ../images/2020-09-20
 
 이번 포스팅에서는 **최소제곱법(Least Ordinary Sqaures)**의 Python 코드 구현과 scikit-learn의 LinearRegression을 활용하여 회귀(Regression) 예측까지 해보겠습니다.
 
-
-
 ## 코드
 
 ![Colab으로 열기](https://www.tensorflow.org/images/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
