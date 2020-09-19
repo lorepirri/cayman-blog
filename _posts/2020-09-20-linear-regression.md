@@ -57,7 +57,7 @@ typora-copy-images-to: ../images/2020-09-20
 <p>실제 값(y)과 가설(y_hat)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
 
-![image-20200920050911422](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920050911422.png)
+![image-20200920050911422](../images/2020-09-20/image-20200920050911422.png)
 
 </ul>
 </div>
@@ -218,7 +218,7 @@ typora-copy-images-to: ../images/2020-09-20
 <p>실제 값(y)과 가설($\hat{y}$)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
 
-![image-20200920051519413](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051519413.png)
+![image-20200920051519413](../images/2020-09-20/image-20200920051519413.png)
 
 </div>
 </div>
@@ -249,7 +249,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-![image-20200920051423523](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051423523.png)
+![image-20200920051423523](../images/2020-09-20/image-20200920051423523.png)
 
 
 <div class="inner_cell">
@@ -281,7 +281,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 
-![image-20200920051616205](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051616205.png)
+![image-20200920051616205](../images/2020-09-20/image-20200920051616205.png)
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
