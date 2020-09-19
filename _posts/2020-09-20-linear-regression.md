@@ -277,8 +277,6 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-</div>
-
 <img src='../images/2020-09-20/image-20200920051616205.png' />
 
 <div class="cell border-box-sizing code_cell rendered">
@@ -490,6 +488,5 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-</div>
-</div>
+
 </body>
