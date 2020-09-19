@@ -34,6 +34,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>최소제곱법, 또는 최소자승법, 최소제곱근사법, 최소자승근사법(method of least squares, least squares approximation)은 <strong>어떤 계의 해방정식을 근사적으로 구하는 방법</strong>으로, 근사적으로 구하려는 해와 <strong>실제 해의 오차의 제곱의 합이 최소가 되는 해</strong>를 구하는 방법입니다.</p>
@@ -53,18 +54,16 @@ typora-copy-images-to: ../images/2020-09-20
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>RSS(Residual Sum of Square)</strong> 공식</p>
-<p>실제 값(y)과 가설($\hat{y}$)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
+<p>실제 값(y)과 가설(y_hat)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
-<p>$y = wx + b$일때,</p>
-<ul>
-<li><p>$w = \frac{\sum(x-\bar{x})(y-\bar{y})}{\sum(x-\bar{x})^{2}}$</p>
-</li>
-<li><p>$b = \bar{y} - a\bar{x}$</p>
-</li>
+
+![image-20200920050911422](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920050911422.png)
+
 </ul>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="샘플-데이터를-생성합니다.">샘플 데이터를 생성합니다.</h2>
@@ -206,6 +205,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Python-코드로-구현">Python 코드로 구현</h2>
@@ -217,16 +217,13 @@ typora-copy-images-to: ../images/2020-09-20
 <h3 id="최소제곱법-(Least-Square)-공식">최소제곱법 (Least Square) 공식</h3><p><strong>RSS(Residual Sum of Square)</strong></p>
 <p>실제 값(y)과 가설($\hat{y}$)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
-<p>$y = wx + b$일때,</p>
-<ul>
-<li><p>$w = \frac{\sum(x-\bar{x})(y-\bar{y})}{\sum(x-\bar{x})^{2}}$</p>
-</li>
-<li><p>$b = \bar{y} - a\bar{x}$</p>
-</li>
-</ul>
+
+![image-20200920051519413](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051519413.png)
+
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="x_bar(x-평균),-y_bar-(y-평균)-구하기">x_bar(x 평균), y_bar (y 평균) 구하기</h3>
@@ -245,20 +242,15 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="w의-계수-값-찾기">w의 계수 값 찾기</h3>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$w = \frac{\sum(x-\bar{x})(y-\bar{y})}{\sum(x-\bar{x})^{2}}$</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+![image-20200920051423523](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051423523.png)
+
 
 <div class="inner_cell">
 <div class="input_area">
@@ -268,6 +260,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
@@ -286,12 +279,10 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$b = \bar{y} - a\bar{x}$</p>
 </div>
-</div>
-</div>
+
+![image-20200920051616205](C:\Users\teddy\Documents\teddylee777.github.io\images\2020-09-20\image-20200920051616205.png)
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
