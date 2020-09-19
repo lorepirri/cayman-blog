@@ -57,10 +57,7 @@ typora-copy-images-to: ../images/2020-09-20
 <p><strong>RSS(Residual Sum of Square)</strong> 공식</p>
 <p>실제 값(y)과 가설(y_hat)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
-
 <img src='../images/2020-09-20/image-20200920050911422.png' />
-
-</ul>
 </div>
 </div>
 </div>
@@ -216,10 +213,10 @@ typora-copy-images-to: ../images/2020-09-20
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="최소제곱법-(Least-Square)-공식">최소제곱법 (Least Square) 공식</h3><p><strong>RSS(Residual Sum of Square)</strong></p>
-<p>실제 값(y)과 가설($\hat{y}$)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
+<p>실제 값(y)과 가설(y_hat)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
 
-![image-20200920051519413](../images/2020-09-20/image-20200920051519413.png)
+<img src='../images/2020-09-20/image-20200920051519413.png' />
 
 </div>
 </div>
@@ -250,7 +247,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-![image-20200920051423523](../images/2020-09-20/image-20200920051423523.png)
+<img src='../images/2020-09-20/image-20200920051423523.png' />
 
 
 <div class="inner_cell">
@@ -282,7 +279,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 
-![image-20200920051616205](../images/2020-09-20/image-20200920051616205.png)
+<img src='../images/2020-09-20/image-20200920051616205.png' />
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -295,6 +292,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
@@ -340,7 +338,6 @@ typora-copy-images-to: ../images/2020-09-20
 <span class="c1"># 임의로 2개의 outlier를 추가해 보도록 하겠습니다.</span>
 <span class="n">y</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="mi">60</span>
 <span class="n">y</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span><span class="o">=</span><span class="mi">60</span>
-
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -348,6 +345,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
