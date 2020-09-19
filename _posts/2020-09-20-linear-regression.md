@@ -12,29 +12,18 @@ typora-copy-images-to: ../images/2020-09-20
 
 이번 포스팅에서는 **최소제곱법(Least Ordinary Sqaures)**의 Python 코드 구현과 scikit-learn의 LinearRegression을 활용하여 회귀(Regression) 예측까지 해보겠습니다.
 
+
+
+## 코드
+
+![Colab으로 열기](https://www.tensorflow.org/images/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+
+![GitHub](../images/2020-09-20/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+
+
+
 <body>
 
-<div class="border-box-sizing" id="notebook" >
-<div class="container" id="notebook-container">
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<table align="left">
-<td>
-<a href="https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb" target="_blank"><img src="https://www.tensorflow.org/images/colab_logo_32px.png"/>Colab으로 열기</a>
-</td>
-<td>
-<a href="https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb" target="_blank"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>GitHub에서 소스보기</a>
-</td>
-</table>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="최소제곱법-(Least-Ordinary-Squares)">최소제곱법 (Least Ordinary Squares)</h1>
-</div>
-</div>
-</div>
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
