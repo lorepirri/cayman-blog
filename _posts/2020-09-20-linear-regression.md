@@ -13,6 +13,7 @@ typora-copy-images-to: ../images/2020-09-20
 이번 포스팅에서는 **최소제곱법(Least Ordinary Sqaures)**의 Python 코드 구현과 scikit-learn의 LinearRegression을 활용하여 회귀(Regression) 예측까지 해보겠습니다.
 
 <body>
+
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -57,7 +58,7 @@ typora-copy-images-to: ../images/2020-09-20
 <p>실제 값(y)과 가설(y_hat)에 의한 예측 값의 차이가 가장 작은 계수 계산</p>
 <p>선형함수:</p>
 
-![image-20200920050911422](../images/2020-09-20/image-20200920050911422.png)
+<img src='../images/2020-09-20/image-20200920050911422.png' />
 
 </ul>
 </div>
@@ -316,6 +317,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="노이즈-값을-증가-시켰을-때">노이즈 값을 증가 시켰을 때</h3>
