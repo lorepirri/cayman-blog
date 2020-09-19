@@ -20,7 +20,11 @@ typora-copy-images-to: ../images/2020-09-20
 
 ![GitHub](../images/2020-09-20/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
 
+<br/>
 
+
+
+## 최소제곱법 (Ordinary Least Squares)?
 
 <body>
 
