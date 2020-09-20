@@ -18,9 +18,9 @@ typora-copy-images-to: ../images/2020-09-21
 
 ## 코드
 
-![Colab으로 열기](../images/2020-09-21/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+![Colab으로 열기](../images/2020-09-21/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/02-%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95(Gradient_Descent).ipynb)
 
-![GitHub](../images/2020-09-21/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+![GitHub](../images/2020-09-21/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/02-%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95(Gradient_Descent).ipynb)
 
 
 
@@ -41,13 +41,14 @@ typora-copy-images-to: ../images/2020-09-21
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>기본 개념은 함수의 기울기(경사)를 구하여 기울기가 낮은 쪽으로 계속 이동시켜서 극값에 이를 때까지 반복시키는 것이다.</p>
+<p>기본 개념은 함수의 기울기(경사)를 구하여 기울기가 낮은 쪽으로 계속 이동시켜서 극값에 이를 때까지 반복시키는 것 입니다.</p>
 <p>비용 함수 (Cost Function 혹은 Loss Function)를 최소화하기 위해 반복해서 파라미터를 업데이트 해 나가는 방식입니다.</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+
 
 <div class="inner_cell">
 <div class="input_area">
