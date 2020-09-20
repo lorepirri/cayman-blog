@@ -10,19 +10,22 @@ published: true
 typora-copy-images-to: ../images/2020-09-21
 ---
 
+
+
+## 코드
+
+![Colab으로 열기](../images/2020-09-21/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+
+![GitHub](../images/2020-09-21/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
+
+
+
 <body>
+
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<table align="left">
-<td>
-<a href="https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb" target="_blank"><img src="https://www.tensorflow.org/images/colab_logo_32px.png"/>Colab으로 열기</a>
-</td>
-<td>
-<a href="https://github.com/tensorflow/docs/blob/master/site/en/tutorials/quickstart/beginner.ipynb" target="_blank"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>GitHub에서 소스보기</a>
-</td>
-</table>
 </div>
 </div>
 </div>
@@ -62,6 +65,7 @@ typora-copy-images-to: ../images/2020-09-21
 </div>
 </div>
 </div>
+
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
@@ -280,6 +284,7 @@ typora-copy-images-to: ../images/2020-09-21
 </div>
 </div>
 </div>
+
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
@@ -336,15 +341,15 @@ typora-copy-images-to: ../images/2020-09-21
     <span class="n">error</span> <span class="o">=</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">error</span> <span class="o">&lt;</span> <span class="mf">0.0005</span><span class="p">:</span>
         <span class="k">break</span>
-
+    
     <span class="n">w</span> <span class="o">=</span> <span class="n">w</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     
     <span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
-
+    
     <span class="k">if</span> <span class="n">epoch</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0:2}</span><span class="s2"> w = </span><span class="si">{1:.5f}</span><span class="s2">, b = </span><span class="si">{2:.5f}</span><span class="s2"> error = </span><span class="si">{3:.5f}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span>
-    
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">"----"</span> <span class="o">*</span> <span class="mi">15</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0:2}</span><span class="s2"> w = </span><span class="si">{1:.1f}</span><span class="s2">, b = </span><span class="si">{2:.1f}</span><span class="s2"> error = </span><span class="si">{3:.5f}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span>
 </pre></div>
@@ -511,23 +516,23 @@ typora-copy-images-to: ../images/2020-09-21
     <span class="n">error</span> <span class="o">=</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="k">if</span> <span class="n">error</span> <span class="o">&lt;</span> <span class="mf">0.00001</span><span class="p">:</span>
         <span class="k">break</span>
-
+    
     <span class="c1"># 미분값 적용 (Gradient)</span>
     <span class="n">w1</span> <span class="o">=</span> <span class="n">w1</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">x1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="n">w2</span> <span class="o">=</span> <span class="n">w2</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">x2</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="n">w3</span> <span class="o">=</span> <span class="n">w3</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">((</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span> <span class="o">*</span> <span class="n">x3</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-
+    
     <span class="n">w1_grad</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w1</span><span class="p">)</span>
     <span class="n">w2_grad</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w2</span><span class="p">)</span>
     <span class="n">w3_grad</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">w3</span><span class="p">)</span>
-
+    
     <span class="n">b</span> <span class="o">=</span> <span class="n">b</span> <span class="o">-</span> <span class="n">learning_rate</span> <span class="o">*</span> <span class="p">(</span><span class="n">y_hat</span> <span class="o">-</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     
     <span class="n">errors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
-
+    
     <span class="k">if</span> <span class="n">epoch</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0:2}</span><span class="s2"> w1 = </span><span class="si">{1:.5f}</span><span class="s2">, w2 = </span><span class="si">{2:.5f}</span><span class="s2">, w3 = </span><span class="si">{3:.5f}</span><span class="s2">, b = </span><span class="si">{4:.5f}</span><span class="s2"> error = </span><span class="si">{5:.5f}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">,</span> <span class="n">w3</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span>
-    
+
 <span class="nb">print</span><span class="p">(</span><span class="s2">"----"</span> <span class="o">*</span> <span class="mi">15</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="si">{0:2}</span><span class="s2"> w1 = </span><span class="si">{1:.1f}</span><span class="s2">, w2 = </span><span class="si">{2:.1f}</span><span class="s2">, w3 = </span><span class="si">{3:.1f}</span><span class="s2">, b = </span><span class="si">{4:.1f}</span><span class="s2"> error = </span><span class="si">{5:.5f}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">epoch</span><span class="p">,</span> <span class="n">w1</span><span class="p">,</span> <span class="n">w2</span><span class="p">,</span> <span class="n">w3</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">error</span><span class="p">))</span>
 </pre></div>
