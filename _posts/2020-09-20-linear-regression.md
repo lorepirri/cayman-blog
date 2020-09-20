@@ -246,7 +246,7 @@ typora-copy-images-to: ../images/2020-09-20
 </pre></div>
 </div>
 </div>
-</div>
+
 
 <div class="output_wrapper">
 <div class="output">
@@ -259,7 +259,7 @@ typora-copy-images-to: ../images/2020-09-20
 </div>
 </div>
 </div>
-</div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="b의-계수-값-구현">b의 계수 값 구현</h3>
