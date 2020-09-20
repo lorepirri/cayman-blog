@@ -12,6 +12,10 @@ typora-copy-images-to: ../images/2020-09-21
 
 
 
+이번에는 머신러닝 뿐만아니라, 인공신경망 모델의 가장 기초가 되는 **경사하강법 (Gradient Descent)**에 대하여 알아보도록 하겠습니다. 경사하강법을 **Python으로 직접 구현해보는 튜토리얼** 입니다. 자세한 설명은 유튜브 영상을 참고해 보셔도 좋습니다.
+
+
+
 ## 코드
 
 ![Colab으로 열기](../images/2020-09-21/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/01-%EC%B5%9C%EC%86%8C%EC%A0%9C%EA%B3%B1%EB%B2%95(Least%20Ordinary%20Squares).ipynb)
@@ -288,14 +292,15 @@ typora-copy-images-to: ../images/2020-09-21
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/images/lr1.png">
-</img></div>
+<img src="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/images/lr1.png"/>
+</div>
+
 </div>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>한 번 학습할 때 <strong>얼마만큼 가중치(weight)를 업데이트</strong> 해야 하는지 학습 양을 의미합니다.</p>
