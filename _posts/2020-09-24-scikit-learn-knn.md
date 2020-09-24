@@ -26,7 +26,7 @@ scikit-learn 내부에 구현된 알고리즘으로 손쉽게 머신러닝을 �
 
 ![GitHub](../images/2020-09-24/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/05-%EB%B6%84%EB%A5%98%20(Classifications).ipynb)
 
-
+<br/>
 
 
 
