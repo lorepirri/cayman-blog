@@ -14,7 +14,8 @@ permalink: /about.html
 
 ## History
 + University of Wisconsin - Madison (위스콘신 주립대) 경제학 졸.
-+ 삼성전자 무선사업부 UX개발그룹 (안드로이드 앱개발).
++ 삼성 SCSA 1기 졸.
++ 삼성전자 무선사업부 UX개발그룹 (Samsung Notes, Samsung Themes, 갤러리카메라 등 개발).
 + 삼성전자 C-Lab 사내벤처 스핀오프.
 + 아날로그플러스 공동창업, Co-Founder & CTO (헬멧 부착형 블루투스 웨어러블 디바이스 펌웨어 개발).
 + 에듀베이션 (현 대교 에듀베이션) 인공지능 채용 솔루션 개발. 신사업 팀장.
@@ -24,7 +25,7 @@ permalink: /about.html
 + 패스트캠퍼스 강의 - [직장인을 위한 파이썬 데이터분석 올인원 패키지 Online](https://fastcampus.co.kr/data_online_pyd).
 + 패스트캠퍼스 Byte Degree 프로젝트 감수 - [Byte Degree : Machine Learning with Python.](https://fastcampus.co.kr/degree_online_bml)
 + 패스트캠퍼스 데이터분석 Capstone 프로젝트 & 포트폴리오 완성 과정 강의.
-+ 대한민국 2호 구글 텐서플로우 자격 인증 (TensorFlow Developer's Certificate).
++ 대한민국 2호 [구글 텐서플로우 자격 인증](http://bit.ly/tf-cert-teddy) (TensorFlow Developer's Certificate).
 + 텐서플로우 자격 인증 과정 강의 - [텐서플로우 자격인증시험 강의(learnaday)](https://learnaday.kr/open-course/KBMQZy), [텐서플로우 자격인증시험 강의(festa)](https://festa.io/events/974).
 + 대구 디지털진흥원 - A.I. 트렌드 2020 & 비즈니스 적용 강연.
 + SK그룹 기업 (파이썬, 데이터분석, 머신러닝, 텐서플로우) 강의.
