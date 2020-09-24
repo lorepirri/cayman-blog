@@ -176,13 +176,14 @@ typora-copy-images-to: ../images/2020-09-25
 </div>
 </div>
 </div>
+
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="https://miro.medium.com/max/2812/1*_HbrAW-tMRBli6ASD5Bttw.png" width="350">
-</img></div>
+<img src="https://miro.medium.com/max/2812/1*_HbrAW-tMRBli6ASD5Bttw.png" width="350"/>
+</div>
+
 </div>
 </div>
 </div>
@@ -1843,10 +1844,10 @@ $Error=MSE+α|w|$</p>
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="https://miro.medium.com/max/1312/1*j_DDK7LbVrejTq0tfmavAA.png" width="500">
-</img></div>
+<img src="https://miro.medium.com/max/1312/1*j_DDK7LbVrejTq0tfmavAA.png" width="500" />
+</div>
+
 </div>
 </div>
 </div>
@@ -2475,8 +2476,8 @@ $Error=MSE+α|w|$</p>
 <div class="output_area">
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="https://t1.daumcdn.net/cfile/tistory/999EC6335CDE8D8131" width="100">
-</img></div>
+<img src="https://t1.daumcdn.net/cfile/tistory/999EC6335CDE8D8131" width="100" />
+</div>
 </div>
 </div>
 </div>

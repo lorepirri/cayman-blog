@@ -24,7 +24,7 @@ scikit-learn 패키지를 활용한 전처리를 알아보도록 하겠습니다
 
 ![GitHub](../images/2020-09-23/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/04-%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%A0%84%EC%B2%98%EB%A6%AC%20(Preprocessing).ipynb)
 
-
+<br/>
 
 # scikit-learn 전처리
 

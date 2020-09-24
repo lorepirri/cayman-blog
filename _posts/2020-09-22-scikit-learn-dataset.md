@@ -22,7 +22,7 @@ scikit-learn의 패키지에 포함된 dataset 패키지에서 Toy Dataset을 �
 
 ![GitHub](../images/2020-09-22/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/03-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%85%8B%20(Dataset)%20%EB%8B%A4%EB%A3%A8%EA%B8%B0.ipynb)
 
-
+<br/>
 
 <body>
 
