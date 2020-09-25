@@ -25,9 +25,9 @@ use_math: true
 
 ## 코드
 
-![Colab으로 열기](../images/2020-09-26/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/06-%ED%9A%8C%EA%B7%80%20(regression).ipynb)
+![Colab으로 열기](../images/2020-09-26/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/10-scikit-learn/07-%EB%A1%9C%EC%A7%80%EC%8A%A4%ED%8B%B1%ED%9A%8C%EA%B7%80(Logistic%20Regression)%EC%99%80%20%EB%B6%84%EB%A5%98%20%ED%8F%89%EA%B0%80%20%EC%A7%80%ED%91%9C.ipynb)
 
-![GitHub](../images/2020-09-26/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/06-%ED%9A%8C%EA%B7%80%20(regression).ipynb)
+![GitHub](../images/2020-09-26/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/10-scikit-learn/07-%EB%A1%9C%EC%A7%80%EC%8A%A4%ED%8B%B1%ED%9A%8C%EA%B7%80(Logistic%20Regression)%EC%99%80%20%EB%B6%84%EB%A5%98%20%ED%8F%89%EA%B0%80%20%EC%A7%80%ED%91%9C.ipynb)
 
 <br/>
 
