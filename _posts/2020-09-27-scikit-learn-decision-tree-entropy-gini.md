@@ -195,14 +195,15 @@ Random Forest 의 Hyperparameter와 겹치는 부분이 많기 때문에, 본 �
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="https://miro.medium.com/max/1122/0*DkWdyGidNSfdT1Nu.png" width="350">
-</img></div>
+<img src="https://miro.medium.com/max/1122/0*DkWdyGidNSfdT1Nu.png" width="350"/>
+</div>
+
 </div>
 </div>
 </div>
 </div>
+
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
@@ -305,8 +306,8 @@ Group 3: 0.161
 <div class="output_area">
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<img src="http://www.learnbymarketing.com/wp-content/uploads/2016/02/gini-index-formula.png" width="350">
-</img></div>
+<img src="http://www.learnbymarketing.com/wp-content/uploads/2016/02/gini-index-formula.png" width="350" />
+</div>
 </div>
 </div>
 </div>
