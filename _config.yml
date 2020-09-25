@@ -24,6 +24,9 @@ repository: teddylee777/teddylee777.github.io
 
 highlighter: rouge
 markdown:    kramdown
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 # root_dir: http://localhost:4000
 category_dir: categories/

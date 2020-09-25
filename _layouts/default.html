@@ -77,6 +77,9 @@
       font-size: 1.2em !important;
     }
   </style>
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
 </head>
 
 <body>
