@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "로지스팅회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)"
-description: "로지스팅회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)에 대해 알아보겠습니다."
-headline: "로지스팅회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)에 대해 알아보겠습니다."
+title: "로지스틱회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)"
+description: "로지스틱회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)에 대해 알아보겠습니다."
+headline: "로지스틱회귀(Lodistic Regression)와 분류 평가 지표 (Precision, Recall, F1 Score)에 대해 알아보겠습니다."
 categories: scikit-learn
-tags: [python, tensorflow, scikit-learn, 분류, classification, precision, recall, f1 score, 텐서플로우, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
+tags: [python, tensorflow, scikit-learn, 로지스틱회귀, logistic regression, 분류, classification, precision, recall, f1 score, 텐서플로우, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
 published: true
 typora-copy-images-to: ../images/2020-09-26
