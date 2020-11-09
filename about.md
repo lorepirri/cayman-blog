@@ -14,32 +14,37 @@ permalink: /about.html
 
 ## History
 + University of Wisconsin - Madison (위스콘신 주립대) 경제학 졸.
-+ 삼성전자 무선사업부 UX개발그룹 (안드로이드 앱개발).
++ 삼성 SCSA 1기 졸.
++ 삼성전자 무선사업부 UX개발그룹 (Samsung Notes, Samsung Themes, 갤러리카메라 등 개발).
 + 삼성전자 C-Lab 사내벤처 스핀오프.
 + 아날로그플러스 공동창업, Co-Founder & CTO (헬멧 부착형 블루투스 웨어러블 디바이스 펌웨어 개발).
-+ 에듀베이션 (현 대교 에듀베이션) 인공지능 채용 솔루션 개. 신사업 팀장.
-+ 교육 스타트업 브레인크루 설립.
++ 에듀베이션 (현 대교 에듀베이션) 인공지능 채용 솔루션 개발. 신사업 팀장.
++ 교육 스타트업 브레인크루 주식회사 설립, CEO.
 + 특허출원 10-2019-0058830 (인공지능 기반 강의 추천 및 학습 동기 부여를 제공하는 강의 서비스를 위해 전자 장치를 동작시키는 방법).
 + [온라인 실무교육 플랫폼 런어데이 (https://learnaday.kr)](https://learnaday.kr) 런칭.
-+ 패스트캠퍼스 강의 - [직장인을 위한 파이썬 데이터분석 올인원 패키지 Online](https://fastcampus.co.kr/data_online_pyd)
-+ 패스트캠퍼스 Byte Degree 프로젝트 감수 - [Byte Degree : Machine Learning with Python](https://fastcampus.co.kr/degree_online_bml)
-+ 대한민국 2호 구글 텐서플로우 자격 인증 (TensorFlow Developer's Certificate)
-+ 텐서플로우 자격 인증 과정 강의 - [텐서플로우 자격인증시험 강의(learnaday)](https://learnaday.kr/open-course/KBMQZy), [텐서플로우 자격인증시험 강의(festa)](https://festa.io/events/974)
-+ SK그룹 기업 강의 (파이썬, 데이터분석, 머신러닝, 텐서플로우)
-+ 멀티캠퍼스 강의 (텐서플로우 자격 인증 과정)
-+ 서울대 평생교육원 텐서플로우 강의
++ 패스트캠퍼스 강의 - [직장인을 위한 파이썬 데이터분석 올인원 패키지 Online](https://fastcampus.co.kr/data_online_pyd).
++ 패스트캠퍼스 Byte Degree 프로젝트 감수 - [Byte Degree : Machine Learning with Python.](https://fastcampus.co.kr/degree_online_bml)
++ 패스트캠퍼스 데이터분석 Capstone 프로젝트 & 포트폴리오 완성 과정 강의.
++ 대한민국 2호 [구글 텐서플로우 자격 인증](http://bit.ly/tf-cert-teddy) (TensorFlow Developer's Certificate).
++ 텐서플로우 자격 인증 과정 강의 - [텐서플로우 자격인증시험 강의(learnaday)](https://learnaday.kr/open-course/KBMQZy), [텐서플로우 자격인증시험 강의(festa)](https://festa.io/events/974).
++ 대구 디지털진흥원 - A.I. 트렌드 2020 & 비즈니스 적용 강연.
++ SK그룹 기업 (파이썬, 데이터분석, 머신러닝, 텐서플로우) 강의.
++ KT AI 교육센터 (텐서플로우 자격 인증 과정) 강의.
++ 멀티캠퍼스 (텐서플로우 자격 인증 과정) 강의.
++ 서울대학교 평생교육원 [텐서플로우 개발자 과정](https://snui.snu.ac.kr/el/course/course_info_form.acl?COURSE_SEQ=204&LECTURE_SEQ=258) 강의.
 
 
 ## Certificate
 + [TensorFlow Developers Certificate](https://www.credential.net/bbed6f0a-2767-4526-afe8-bd3ffc09ba2d)
 
 ## Key Skills
-+ Android / Java
++ Windows / Mac OS / Linux
++ Android / Java / Python
 + C# / C++ / C
 + Bluetooth firmware / BLE
-+ Data Science / Python, Pandas, Numpy, Matplotlib, Seaborn
++ Data Science / Pandas, Numpy, Matplotlib, Seaborn
 + Machine Learning / scikit-learn
-+ Deep Learning / Tensorflow, Keras, Pytorch
++ Deep Learning / Tensorflow, Keras, PyTorch
 + Git, GitHub
 
 ## Articles
