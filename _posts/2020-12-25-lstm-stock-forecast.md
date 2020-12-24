@@ -20,7 +20,7 @@ FinanceDataReader를 활용하면 더이상 파일데이터로 주가 데이터�
 
 이전 블로그 글과 비교해보실 분들은 아래 링크를 참고해 주세요.
 
-[딥러닝(LSTM)을 활용하여 삼성전자 주가 예측을 해보았습니다](https://teddylee777.github.io/tensorflow/LSTM%EC%9C%BC%EB%A1%9C-%EC%98%88%EC%B8%A1%ED%95%B4%EB%B3%B4%EB%8A%94-%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%A3%BC%EA%B0%80)
+- [(이전글) 딥러닝(LSTM)을 활용하여 삼성전자 주가 예측을 해보았습니다](https://teddylee777.github.io/tensorflow/LSTM%EC%9C%BC%EB%A1%9C-%EC%98%88%EC%B8%A1%ED%95%B4%EB%B3%B4%EB%8A%94-%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EC%A3%BC%EA%B0%80)
 
 <body>
 <div class="border-box-sizing" id="notebook" >
