@@ -3,7 +3,7 @@ layout: page
 title: "Facebook Prophet을 활용한 시계열데이터 예측 및 시각화"
 description: "Facebook Prophet을 활용한 시계열데이터 예측 및 시각화 방법에 대하여 알아보겠습니다."
 headline: "Facebook Prophet을 활용한 시계열데이터 예측 및 시각화 방법에 대하여 알아보겠습니다."
-categories: tensorflow
+categories: data_science
 tags: [python, facebook prophet, time series, 삼성전자, 주가예측, AI주가, 텐서플로우, 텐서플로우 강의, 텐서플로우 튜토리얼, TensorFlow Tutorial, data science, 데이터 분석, 딥러닝]
 comments: true
 published: true
