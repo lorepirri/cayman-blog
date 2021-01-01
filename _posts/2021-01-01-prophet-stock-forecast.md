@@ -18,11 +18,13 @@ Facebook Prophet을 활용한 시계열 데이터 예측은 Kaggle에서도 종�
 
 부스팅 계열의 알고리즘, 딥러닝 모델과 함께 앙상블하여 예측한다면 꽤 좋은 성능을 기대해볼 수 있을 것 같습니다.
 
-## 코드
+<h2 id="코드">코드</h2>
 
-![Colab으로 열기](../images/2020-09-24/colab_logo_32px.png) [Colab으로 열기](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/12-facebook-prophet/01-stock-forecasting-fb-prophet.ipynb)
+<p><img src="../images/2020-09-24/colab_logo_32px.png" alt="Colab으로 열기" /> <a href="https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/12-facebook-prophet/01-stock-forecasting-fb-prophet.ipynb" target="_blank">Colab으로 열기</a></p>
 
-![GitHub](../images/2020-09-24/GitHub-Mark-32px.png) [GitHub에서 소스보기](https://github.com/teddylee777/machine-learning/blob/master/12-facebook-prophet/01-stock-forecasting-fb-prophet.ipynb)
+<p><img src="../images/2020-09-24/GitHub-Mark-32px.png" alt="GitHub" /> <a href="https://github.com/teddylee777/machine-learning/blob/master/12-facebook-prophet/01-stock-forecasting-fb-prophet.ipynb" target="_blank">GitHub에서 소스보기</a></p>
+
+<p><br /></p>
 
 <br/>
 
