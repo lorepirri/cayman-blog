@@ -32,6 +32,8 @@ permalink: /about.html
 + KT AI 교육센터 (텐서플로우 자격 인증 과정) 강의.
 + 멀티캠퍼스 (텐서플로우 자격 인증 과정) 강의.
 + 서울대학교 평생교육원 [텐서플로우 개발자 과정](https://snui.snu.ac.kr/el/course/course_info_form.acl?COURSE_SEQ=204&LECTURE_SEQ=258) 강의.
++ 인프런 [텐서플로우 자격 인증 과정](https://www.inflearn.com/course/%ED%85%90%EC%84%9C%ED%94%8C%EB%A1%9C%EC%9A%B0-%EC%9E%90%EA%B2%A9%EC%A6%9D#)
++ 런어데이 [텐서플로우 자격 인증 과정](https://learnaday.kr/open-course/tfcert)
 
 
 ## Certificate
