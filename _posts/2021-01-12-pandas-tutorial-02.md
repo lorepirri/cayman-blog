@@ -872,7 +872,7 @@ typora-copy-images-to: ../images/2021-01-12
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>데이터의 크기가 매우 큰 경우 memory에 한 번에 로드할 수 없습니다.</p>
 <p><code>chunksize</code>를 지정하고 <code>chunksize</code>만큼 끊어서 불어와서 처리하게 되면 용량이 매우 큰 데이터도 처리할 수 있습니다.</p>
-<p>예시) <code>chunksize=10</code>: 5개의 데이터를 로드합니다.</p>
+<p>예시) <code>chunksize=10</code>: 10개의 데이터를 로드합니다.</p>
 </div>
 </div>
 </div>
