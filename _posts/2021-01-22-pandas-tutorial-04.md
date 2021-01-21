@@ -20,7 +20,9 @@ typora-copy-images-to: ../images/2021-01-22
 Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요없습니다. 자주 사용되는 통계 함수를 위주로 알아보겠습니다.
 
 
+
 <body>
+
 <div class="border-box-sizing" id="notebook" >
 <div class="container" id="notebook-container">
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
@@ -74,7 +76,7 @@ Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -272,7 +274,7 @@ Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -406,7 +408,7 @@ Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -654,7 +656,7 @@ dtype: float64</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1525,7 +1527,7 @@ Categories (7, object): [A, B, C, D, E, F, G]</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }

@@ -11,6 +11,7 @@ typora-copy-images-to: ../images/2021-01-23
 ---
 
 
+
 이번 에피소드에서는 Pandas 데이터프레임(DataFrame) 의 **복사(Copy)**와 중요한 전처리 Task 중의 하나인 **결측치 처리** 에 대해서 알아보겠습니다.
 
 DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나, 필요 없는 컬럼을 제거했을 때 **원본 DataFrame이 손상되었기 때문에 다시 파일로부터 불러와야하는 불상사가 생기게 됩니다.** 그래서 저는 DataFrame의 복사 기능을 잘 활용합니다. (물론 용량이 큰 DataFrame은 복사 할 때마다 용량이 늘어나 RAM이 터질 수 있습니다.)
@@ -22,6 +23,8 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
 결측치 처리는 **데이터 전처리 프로세스 중 가장 중요하다고 생각하는 프로세스 중 하나**입니다.
 
 결측치를 어떻게 처리해 주느냐에 따라 나중에 머신러닝 모델에 데이터를 주입하고 예측한 결과가 달라지는 경우도 많습니다.
+
+
 
 <body>
 <div class="border-box-sizing" id="notebook" >
@@ -77,7 +80,7 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -261,7 +264,7 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -454,7 +457,7 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -626,7 +629,7 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -781,7 +784,7 @@ DataFrame을 활용하여 새로운 Feature(특성)을 만들어 추가하거나
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1141,7 +1144,7 @@ dtype: int64</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1423,7 +1426,7 @@ dtype: int64</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1615,7 +1618,7 @@ Name: age, dtype: float64</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1867,7 +1870,7 @@ Categories (8, object): [A, B, C, D, E, F, G, No Data]</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2180,7 +2183,7 @@ Categories (7, object): [A, B, C, D, E, F, G]</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2335,7 +2338,7 @@ Categories (7, object): [A, B, C, D, E, F, G]</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -2603,7 +2606,7 @@ Categories (7, object): [A, B, C, D, E, F, G]</pre>
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
