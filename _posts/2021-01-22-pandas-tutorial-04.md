@@ -1132,7 +1132,7 @@ Name: age, Length: 891, dtype: float64</pre>
 
 왜냐하면 Pandas가 `numpy` 패키지 기반으로 만들어졌기 때문에 그렇습니다.
 
-Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요없습니다. 자주 사용되는 통계 함수를 위주로 알아보겠습니다.
+Pandas에서 제공하는 모든 통계 함수에 대해서는 굳이 알 필요없습니다. 자주 사용되는 **통계 함수**를 위주로 알아보겠습니다.
 
 <div class="output_text output_subarea output_execute_result">
 <pre>0            22.0
