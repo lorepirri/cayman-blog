@@ -1149,13 +1149,6 @@ Name: age, Length: 891, dtype: float64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\large 분산 = \Huge\frac{\sum_{i=1}^{n}(X_{i} - \bar{X})^{2}}{n}$</p>
-<p>$\large 평균 = \huge \bar{x}$</p>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
@@ -1206,12 +1199,6 @@ Name: age, Length: 891, dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="std()---표준편차">std() - 표준편차</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>$\large 표준편차 =\huge \sqrt{분산} = \sqrt{\frac{{}\sum_{i=1}^{n}(X_{i} - \bar{X})^{2}}{n}}$</p>
 </div>
 </div>
 </div>
