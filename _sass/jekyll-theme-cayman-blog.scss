@@ -238,14 +238,27 @@ a {
   }
 }
 
-.output_text pre {
-  background-color: #2e2e2e !important;
-  color: #fff !important;
+.output_text pre, .jp-RenderedText pre {
+  margin-top: -1rem !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  border: solid 0px !important;
 }
 
 .output_subarea pre {
-  color: #fff !important;
-  background-color: #2e2e2e !important;
+  color: #000 !important;
+  background-color: #fff !important;
+  border: solid 0px !important;
+}
+
+.output_html, .output_jpeg, .output_png , .jp-RenderedHTMLCommon div, .jp-RenderedImage{
+  margin-top: -1rem !important;
+  margin-bottom: 1.5rem !important;
+  border: solid 0px !important;
+}
+
+.output_html table{
+  border: 0 !important;
 }
 
 .page-wrapper {
@@ -320,19 +333,19 @@ a {
     font-size: 15.75px;
     color: $code-text-color;
     background-color: $code-bg-color;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
   }
 
   pre {
     padding: 0.8rem;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem import !important;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
 
     > code {
       padding: 0;
@@ -361,7 +374,7 @@ a {
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
     -webkit-overflow-scrolling: touch;
   }
 
