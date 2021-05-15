@@ -7,6 +7,7 @@ categories: python
 tags: [python, pandas, numpy, 넘파이, 파이썬, 자료구조, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
 published: true
+use_math: true
 typora-copy-images-to: ../images/2021-05-15
 ---
 
