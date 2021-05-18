@@ -10,7 +10,7 @@ published: true
 typora-copy-images-to: ../images/2021-05-19
 ---
 
-본 포스팅은 **파이썬(Python) 코딩 입문자를 위한 튜토리얼** 시리즈 연재 중 일부입니다. 이번 튜토리얼에서는 파이썬 **리스트(list)와 튜플(tuple)을 다룹니다.
+본 포스팅은 **파이썬(Python) 코딩 입문자를 위한 튜토리얼** 시리즈 연재 중 일부입니다. 이번 튜토리얼에서는 파이썬 **리스트(list)**와 **튜플(tuple)**을 다룹니다.
 
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div class="jp-Cell-inputWrapper"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
