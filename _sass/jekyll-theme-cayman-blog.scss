@@ -27,63 +27,70 @@
 
 body {
   padding: 0;
-  margin: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  font-kerning: 300;
+  font-feature-settings: "kern" 1;
   line-height: 1.5;
   color: $body-text-color;
 }
 
 a {
   color: $body-link-color;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
+.site-header-wrapper {
+  position: fixed;
+  height: $site-header-height;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  padding-left: 1rem;
+  border-bottom: 1px solid $grey-color-light;
+  
+}
+.site-header {
+  max-width: 980px;
+  margin: auto;
+  a {
+    font-size: 1.8rem;
+    color: $section-headings-color;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
   }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
+  // padding: 1rem 2rem 0px;
   @include large {
-    padding: 0.75rem 1rem;
+    padding: 1rem 2rem 0px;
   }
 
   @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
+    padding: 1rem 1rem 0px;
   }
 
   @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
+    padding: 1rem 0rem 0px;
+  }
+}
 
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
+.page-content-header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+  border: 2px solid #000;
+  .page-content-header-title{
+    font-size: 2.2rem;
+    margin: 0px;
+    font-weight: bold;
+    word-break: keep-all;
+  }
+  .page-content-header-date {
+    padding-top: 20px;
+    font-size: 1.1rem;
+    margin: 0px;
+    font-weight: normal;
   }
 }
 
@@ -92,6 +99,7 @@ a {
   text-align: center;
   background-color: $header-bg-color;
   background-image: linear-gradient(180deg, $header-bg-color-secondary, $header-bg-color);
+  margin-top: $site-header-height;
 
   @include large {
     padding: 5rem 6rem;
@@ -106,6 +114,7 @@ a {
   }
 }
 
+// project title on main page
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
@@ -123,6 +132,7 @@ a {
   }
 }
 
+// project tagline on main page
 .project-tagline {
   margin-bottom: 2rem;
   font-weight: normal;
@@ -141,27 +151,132 @@ a {
   }
 }
 
-.project-date {
-  margin-bottom: 0rem;
+.sidebar-menu {
+  float: right;
+  width: 20%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 9rem;
+}
+
+.sidebar-nav-item {
+  color: $sidebar-header-font-color;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar-menu a {
+  padding: 6px 8px 6px 16px;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-size: 1.0rem;
   font-weight: normal;
-  opacity: 0.7;
-  font-style: italic;
+  color: $sidebar-font-color;
+  display: block;
+  text-decoration: none;
+  font-kerning: normal;
+  font-feature-settings: "kern" 1;
+}
+
+.sidebar-menu a:hover {
+  color: #a1a1a1;
+}
+
+.main-wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 980px;
+  padding-top: $site-header-height;
+}
+
+.main-content{
+  word-wrap: break-word;
+  float: left;
+  width: 80%; 
 
   @include large {
-    font-size: 1.0rem;
+    max-width: 64rem;
+    padding: 2rem 3rem;
+    font-size: 1.1rem;
   }
 
   @include medium {
-    font-size: 0.95rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
   }
 
   @include small {
-    font-size: 0.75rem;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+  }
+
+  hr {
+    height: 2px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+
+  a, strong, b, span, strong, u{
+    text-decoration: none !important;
+    font-weight: normal;
+    color: $main-describe-color;
+    word-break: keep-all;
+  }
+
+  h2 {
+    word-break: keep-all;
   }
 }
 
-.main-content {
+#notebook-container {
+  h1, h2, h3, h4, h5, h6{
+    margin-top: 3rem !important;
+    margin-bottom: 2rem !important;
+  }
+}
+
+.output_text pre, .jp-RenderedText pre {
+  margin-top: -1rem !important;
+  background-color: #fff !important;
+  color: #000 !important;
+  border: solid 0px !important;
+}
+
+.output_subarea pre {
+  color: #000 !important;
+  background-color: #fff !important;
+  border: solid 0px !important;
+}
+
+.output_html, .output_jpeg, .output_png , .jp-RenderedHTMLCommon div, .jp-RenderedImage{
+  margin-top: -1rem !important;
+  margin-bottom: 1.5rem !important;
+  border: solid 0px !important;
+}
+
+.output_html table{
+  border: 0 !important;
+}
+
+.page-wrapper {
+  margin-bottom: 7rem;
+
+  iframe {
+    display:block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+// define main-content html attributs 
+.page-content {
   word-wrap: break-word;
+  float: left;
+  width: 100%;  
 
   :first-child {
     margin-top: 0;
@@ -169,21 +284,20 @@ a {
 
   @include large {
     max-width: 64rem;
-    padding: 3rem 6rem;
-    margin: 0 auto;
+    padding: 2rem 3rem;
     font-size: 1.1rem;
   }
 
   @include medium {
-    padding: 3rem 4rem;
+    padding: 1rem 2rem;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
   }
-
+  
   img {
     max-width: 100%;
   }
@@ -194,40 +308,49 @@ a {
   h4,
   h5,
   h6 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: normal;
-    color: $section-headings-color;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: $header-font-color;
+    display: table;
   }
 
   p {
-    margin-bottom: 1em;
+    color: $body-text-color;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  blockquote > p{
+    color: $blockquote-text-color;
   }
 
   code {
     padding: 2px 4px;
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-    font-size: 0.9rem;
+    font-size: 15.75px;
     color: $code-text-color;
     background-color: $code-bg-color;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
   }
 
   pre {
     padding: 0.8rem;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem import !important;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: $code-text-color;
     word-wrap: normal;
     background-color: $code-bg-color;
     border: solid 1px $border-color;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
 
     > code {
       padding: 0;
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 15.75px;
       color: $code-text-color;
       word-break: normal;
       white-space: pre;
@@ -251,8 +374,12 @@ a {
     overflow: auto;
     font-size: 0.9rem;
     line-height: 1.45;
-    border-radius: 0.3rem;
+    border-radius: 0rem;
     -webkit-overflow-scrolling: touch;
+  }
+
+  u {
+    text-underline-position: under;
   }
 
   pre code,
@@ -275,7 +402,13 @@ a {
 
   ul,
   ol {
-    margin-top: 0;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    display: block;
+    list-style-type: disc;
   }
 
   blockquote {
@@ -312,6 +445,11 @@ a {
     }
   }
 
+  strong {
+    color: $body-strong-color;
+    font-weight: bold;
+  }
+
   dl {
     padding: 0;
 
@@ -335,6 +473,21 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
+
+  a {
+    text-decoration: underline;
+    text-underline-position: under;
+    font-weight: normal;
+  }
+}
+
+.post-link {
+  padding: 5px 0px;
+  font-size: 2rem;
+}
+
+.pagination {
+  word-spacing: 10px;
 }
 
 .site-footer {

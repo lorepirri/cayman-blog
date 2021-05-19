@@ -6,25 +6,62 @@ layout: default
 
   {{ content }}
 
-  <h2>Latest Posts</h2>
+  <div class="top-banner">
+    <a href="http://bit.ly/tfcert-vod" class="banner-link" target="_blank"><b>입문자를 위한 텐서플로우 자격증 취득과정 - VOD (누적 합격자 391명)</b></a><br/>
+    <a href="https://www.youtube.com/channel/UCt2wAAXgm87ACiQnDHQEW6Q" class="banner-link" target="_blank"><b>테디노트 유튜브</b></a><br/>
+    <a href="https://github.com/teddylee777/machine-learning" class="banner-link" target="_blank"><b>머신러닝 입문자를 위하여 정리한 GitHub</b></a><br/>
+  </div>
 
-  <div>&nbsp;</div>
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path | relative_url }}" class="paginator-indicator">&laquo; Prev</a>
+  {% else %}
+  {% endif %}
 
+  {% if paginator.previous_page %}
+  {% if paginator.next_page %}
+  |
+  {% endif %}
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path | relative_url }}" class="paginator-indicator">Next &raquo;</a>
+  {% else %}
+
+  {% endif %}
+
+
+
+  <h1>Page {{ paginator.page }}.</h1>
+
+  <!-- This loops through the paginated posts -->
+  {% for post in paginator.posts %}
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
+    <li>
+      {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+      </h2>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
-
-        <span>{{ post.excerpt | markdownify | truncatewords: 30 }}</span>
-
-      </li>
-    {% endfor %}
+      <span class="post-description">{{ post.excerpt | markdownify |  truncatewords: 30 }}</span>
+      <hr>
+    </li>
   </ul>
+  {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <em><b>{{ page }}</b></em>
+    {% elsif page == 1 %}
+    <a href="{{ site.url }}">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endif %}
 
 </div>

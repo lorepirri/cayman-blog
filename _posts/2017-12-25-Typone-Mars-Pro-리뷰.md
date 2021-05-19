@@ -3,8 +3,10 @@ layout: page
 title: "맥(Mac) 호환 기계식 키보드 - Typone Mars Pro"
 description: "Typone Mars Pro | 맥 호환 기계식 키보드 의 제품 리뷰."
 headline: 국내 Typone사의 Typone Mars Pro 개봉기 및 사용기
-category: review
-tags: review 리뷰 typone mars mac 기계식키보드 맥
+category: thoughts
+tags: review
+redirect_from:
+  - review/Typone-Mars-Pro-리뷰
 comments: true
 published: true
 ---
@@ -86,8 +88,7 @@ fn + Esc를 누르게 되면 Windows모드 / Mac모드 를 토글링할 수 있�
 
 하기 URL에서 펌웨어 업데이트를 통해 Mac 모드에서 ***Function Key를 활용할 수 있다.***
 
-**펌웨어 업데이트:**
-http://typoneshop.com/article/%EC%9E%90%EB%A3%8C%EC%8B%A4/7/122/
+[펌웨어 업데이트 링크](http://typoneshop.com/article/%EC%9E%90%EB%A3%8C%EC%8B%A4/7/122/)
 
 ![Mars Pro Firmware Updated]({{site.baseurl}}/images/2017-12-25-Typone-Mars-Pro-리뷰/Typone_Firmware_Update.png)
 
@@ -146,10 +147,3 @@ caps lock led도 *caps lock 설정이 되어 있지 않음에도 불구하고 �
 앞으로 꾸준한 업데이트를 기대해본다.
 
 
-
-
-
-
-
-
-### #Typone Mars Pro #기계식키보드 #Mac #맥

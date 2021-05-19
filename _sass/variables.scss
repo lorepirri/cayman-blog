@@ -6,18 +6,33 @@ $medium-breakpoint: 42em !default;
 $header-heading-color: #fff !default;
 $header-bg-color: #8b8c80 !default;
 $header-bg-color-secondary: #011526 !default;
+$header-font-color: #000 !default;
+
+// Sidebar
+$sidebar-header-font-color: #0e103d !default;
+$sidebar-font-color: #0e103d !default;
 
 // Text
-$section-headings-color: #003d50 !default;
-$body-text-color: #27627f !default;
-$body-link-color: #f2c500 !default;
-$blockquote-text-color: #819198 !default;
+$section-headings-color: #494949 !default;
+$section-title-color: #212121 !default;
+$section-title-desc-color: #424242 !default;
+$main-describe-color: #494949 !default;
+$body-text-color: #212121 !default;
+$body-link-color: #ff0033 !default;
+$body-strong-color: #000 !default;
+$blockquote-text-color: #666 !default;
 
 // Code
-$code-bg-color: #011526 !default;
-$code-text-color: #d7d9d8 !default;
+$code-bg-color: #272822 !default;
+$code-text-color: #fff !default;
 
 // Borders
 $border-color: #dce6f0 !default;
 $table-border-color: #e9ebec !default;
 $hr-border-color: #eff0f1 !default;
+
+// f2c500
+$spacing-unit: 15px;
+
+// site-header size
+$site-header-height: 65px !default;

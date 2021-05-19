@@ -1,12 +1,75 @@
 ---
 layout: default
 ---
+<div class="page-content-header">
+  <div class="page-content-header-title">{{ page.title }}</div>
+  <div class="page-content-header-date">
+    {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+    {{ page.date | date: date_format }}
+  </div>
+</div>
+<div class="top-banner">
+    <a href="http://bit.ly/tfcert-vod" class="banner-link" target="_blank"><b>입문자를 위한 텐서플로우 자격증 취득과정 - VOD (누적 합격자 391명)</b></a><br/>
+    <a href="https://www.youtube.com/channel/UCt2wAAXgm87ACiQnDHQEW6Q" class="banner-link" target="_blank"><b>테디노트 유튜브</b></a><br/>
+    <a href="https://github.com/teddylee777/machine-learning" class="banner-link" target="_blank"><b>머신러닝 입문자를 위하여 정리한 GitHub</b></a><br/>
+</div>
+<br>
 <article>
+  <div class="page-wrapper">
+    {% if page.title != 'About' %}
 
-  <div>
+    {% endif %}
+
     {{ content }}
+
+    <br>
+    <hr/>
+    {% for cat in page.categories %}
+    {% for post in site.categories[cat] %}
+    {% if post.url == page.url %}
+    {% assign current_index = forloop.index %}
+    {% endif %}
+    {% endfor %}
+
+    {% if site.categories[cat].size > 1 %}
+    <h2>관련 글 더보기</h2>
+    {% endif %}
+
+    {% assign start_index = current_index | minus: 3 %}
+    {% if start_index < 1 %}
+    {% assign start_index = 1 %}
+    {% endif %}
+
+    {% assign end_index = start_index | plus: 5 %}
+
+    {% for post in site.categories[cat] %}
+    {% if forloop.index >= start_index %}
+    {% if forloop.index <= end_index %}
+    {% if post.url != page.url %}
+    <p>- <a href="{{ post.url }}" class="recommendations">{{ post.title }}</a></p>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    
+
   </div>
 
+  {% if page.permalink != '/about.html' %}
+  <div class='last-comment'>
+    <p>데이터 분석, 머신러닝, 딥러닝의 대중화를 꿈 꿉니다.</p>
+  </div>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- below website -->
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5548835221228418" data-ad-slot="1481048616"
+    data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
   {% include disqus_comments.html %}
+  {% endif %}
 
 </article>
