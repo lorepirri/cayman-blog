@@ -18,8 +18,6 @@ typora-copy-images-to: ../images/2021-05-14
 
 <p><img src="../images/2020-09-24/GitHub-Mark-32px.png" alt="GitHub" /> <a href="https://github.com/teddylee777/machine-learning/blob/master/00-Python/01-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0.ipynb" target="_blank">GitHub에서 소스보기</a></p>
 
-<p><br /></p>
-
 <br/>
 
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
