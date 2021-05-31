@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "#09-파이썬(Python) 함수"
+title: "#09-파이썬(Python) 함수, lambda 함수, 인수(arguments), 매개변수(parameters)"
 description: "파이썬(Python) 함수를 알아보고 튜토리얼을 진행합니다."
 headline: "파이썬(Python) 함수를 알아보고 튜토리얼을 진행합니다."
 categories: python
@@ -10,7 +10,7 @@ published: true
 typora-copy-images-to: ../images/2021-06-01
 ---
 
-본 포스팅은 **파이썬(Python) 코딩 입문자를 위한 튜토리얼** 시리즈 연재 중 일부입니다. 이번 튜토리얼에서는 파이썬의 **함수(function)**를 다룹니다.
+본 포스팅은 **파이썬(Python) 코딩 입문자를 위한 튜토리얼** 시리즈 연재 중 일부입니다. 이번 튜토리얼에서는 파이썬의 **함수(function)**, **lambda 함수**, **인수(arguments)**와 **매개변수(parameters)**를 다룹니다.
 
 <h2 id="코드">코드</h2>
 
