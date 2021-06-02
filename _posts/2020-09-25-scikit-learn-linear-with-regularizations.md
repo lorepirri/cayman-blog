@@ -6,6 +6,7 @@ headline: "Lasso, Ridge, ElasticNet 규제를 적용한 선형 알고리즘에 �
 categories: scikit-learn
 tags: [python, tensorflow, scikit-learn, lasso, ridge, elasticnet, linear regression, 선형회귀, 규제, 텐서플로우, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
+use_math: true
 published: true
 typora-copy-images-to: ../images/2020-09-25
 ---
