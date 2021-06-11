@@ -3,7 +3,7 @@ layout: page
 title: "#07-Pandas(판다스) Groupby와 Pivot table"
 description: "Pandas(판다스) Groupby와 Pivot table 활용 방법에 대한 튜토리얼입니다."
 headline: "Pandas(판다스) Groupby와 Pivot table 활용 방법에 대한 튜토리얼입니다."
-categories: data_science
+categories: pandas
 tags: [python, pandas, groupby, pivot_table, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
 published: true
