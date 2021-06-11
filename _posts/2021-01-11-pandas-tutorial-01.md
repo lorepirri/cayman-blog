@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "#01-Pandas(판다스) Pandas(판다스)의 기본 자료구조"
+title: "#01-Pandas(판다스) 기본 자료구조"
 description: "#01-Pandas(판다스) 기본 자료구조에 대해 알아보겠습니다."
 headline: "#01-Pandas(판다스) 기본 자료구조에 대해 알아보겠습니다."
 categories: pandas
