@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "에피소드#03 - 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)"
-description: "에피소드#03 - 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)에 대해 알아보겠습니다."
-headline: "에피소드#03 - 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)에 대해 알아보겠습니다."
+title: "#03-Pandas(판다스) 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)"
+description: "#03-Pandas(판다스) 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)에 대해 알아보겠습니다."
+headline: "#03-Pandas(판다스) 데이터프레임(DataFrame) 조회, 정렬(sort), 조건필터(loc, iloc)에 대해 알아보겠습니다."
 categories: pandas
 tags: [python, pandas, dataframe, series, pandas tutorial, excel, loc, iloc, sort, csv, 판다스, 판다스 자료구조, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "에피소드#01 - Pandas(판다스)의 기본 자료구조"
-description: "Pandas(판다스)의 기본 자료구조에 대해 알아보겠습니다."
-headline: "Pandas(판다스)의 기본 자료구조에 대해 알아보겠습니다."
+title: "#01-Pandas(판다스) Pandas(판다스)의 기본 자료구조"
+description: "#01-Pandas(판다스) 기본 자료구조에 대해 알아보겠습니다."
+headline: "#01-Pandas(판다스) 기본 자료구조에 대해 알아보겠습니다."
 categories: pandas
 tags: [python, pandas, dataframe, series, pandas tutorial, 판다스, 판다스 자료구조, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
