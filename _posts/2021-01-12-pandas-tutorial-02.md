@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "에피소드#02 - Pandas(판다스)의 파일 입출력 - Excel, CSV"
-description: "에피소드#02 - Pandas(판다스)의 파일 입출력 - Excel, CSV에 대해 알아보겠습니다."
-headline: "에피소드#02 - Pandas(판다스)의 파일 입출력 - Excel, CSV에 대해 알아보겠습니다."
+title: "#02-Pandas(판다스) Pandas(판다스)의 파일 입출력 - Excel, CSV"
+description: "#02-Pandas(판다스) Pandas(판다스)의 파일 입출력 - Excel, CSV에 대해 알아보겠습니다."
+headline: "#02-Pandas(판다스) Pandas(판다스)의 파일 입출력 - Excel, CSV에 대해 알아보겠습니다."
 categories: pandas
 tags: [python, pandas, dataframe, series, pandas tutorial, excel, csv, 판다스, 판다스 자료구조, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true

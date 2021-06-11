@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "에피소드#04 - Pandas를 활용한 통계"
-description: "에피소드#04 - Pandas를 활용한 통계에 대해 알아보겠습니다."
-headline: "에피소드#04 - Pandas를 활용한 통계에 대해 알아보겠습니다."
+title: "#04-Pandas(판다스) Pandas를 활용한 통계"
+description: "#04-Pandas(판다스) Pandas를 활용한 통계에 대해 알아보겠습니다."
+headline: "#04-Pandas(판다스) Pandas를 활용한 통계에 대해 알아보겠습니다."
 categories: pandas
 tags: [python, pandas, dataframe, series, pandas tutorial, 통계, 판다스 자료구조, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
