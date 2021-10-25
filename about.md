@@ -40,6 +40,7 @@ permalink: /about.html
 + NIA 한국정보와진흥원 - 텐서플로우 강의.
 + 패스트캠퍼스 - [파이썬 딥러닝 300제 강의](https://fastcampus.co.kr/data_online_dl300)
 + 대구 디지털진흥원 - Python, 데이터분석, 시각화, 머신러닝 강의.
++ CJ올리브네트웍스 - Python, 데이터분석, 시각화, 머신러닝, 딥러닝 강의.
 
 
 ## Certificate
