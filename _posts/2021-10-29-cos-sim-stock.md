@@ -15,7 +15,6 @@ published: true
 
 데모 페이지는 [주식 패턴 검색기](http://teddynote.herokuapp.com/stock)에서 확인해 보실 수 있습니다.
 
-
 <head>
   <style>
     table.dataframe {
@@ -88,10 +87,18 @@ published: true
 </head>
 
 
-## 필요한 모듈 import
+## 패키지 설치
 
 
-본 실습에 대한 진행을 위해서는 `finance-datareader` 와 `mpl_finance` 라이브러리 설치가 필요합니다.
+본 실습에 대한 진행을 위해서는 `numpy`, `pandas`, `matplotlib`외에도
+
+
+
+**주가 데이터 로드** 및 **주식 캔들차트 시각화**를 위하여
+
+
+
+`finance-datareader` 와 `mpl_finance` 라이브러리 설치가 필요합니다.
 
 
 **패키지 정보**
@@ -111,6 +118,9 @@ published: true
 # mpl-finance
 !pip install mpl-finance
 ```
+
+## 모듈 import 
+
 
 
 ```python
@@ -739,19 +749,29 @@ next_date = 5
 moving_cnt = len(data) - window_size - next_date - 1
 ```
 
+코사인 유사도를 구하는 공식을 활용하여 **다음과 같이 함수로 구현**합니다.
 
-```python
-close.iloc[i:i+window_size]
-```
 
-<pre>
-Series([], Name: Close, dtype: int64)
-</pre>
+
+혹은 **scipy**에서 제공하는 `cosine`을 사용하여 구할 수도 있습니다.
+
+
+
+[scipy.spatial.distance.cosine](https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.distance.cosine.html)
+
+
 
 ```python
 def cosine_similarity(x, y):
     return np.dot(x, y) / (np.sqrt(np.dot(x, x)) * np.sqrt(np.dot(y, y)))
 ```
+
+다음은 데이터의 처음부터 끝까지 `window_size`만큼 순회하면서 `base`와의 코사인 유사도를 모두 계산하여 `sim_list` 리스트에 추가합니다.
+
+
+
+나중에 `sim_list`에서 코사인 유사도를 기준으로 내림차순 정렬을 하여 유사도가 높은 인덱스를 확인하겠습니다
+
 
 
 ```python
