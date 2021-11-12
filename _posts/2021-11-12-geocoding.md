@@ -192,5 +192,5 @@ maps.geocode('서울특별시 중구 세종대로 지하 2')
 
 이번에 **서울 지하철역 주소에 대한 위/경도 좌표계**가 필요하여 변환하여 **CSV 파일**로 만들었습니다.
 
-혹시 필요하신 분들은 [여기](https://www.dropbox.com/s/2xy6zhf54rg5coc/seoul_station_geocode.csv?dl=1)에서 다운로드 받을 수 있습니다.
+혹시 필요하신 분들은 [여기](https://raw.githubusercontent.com/teddylee777/teddylee777.github.io/gh-pages/assets/files/seoul_station_geocode.csv)에서 다운로드 받을 수 있습니다.
 
