@@ -7,7 +7,7 @@ categories: data_science
 tags: [python, 인공지능 책, 테디노트 책, 테디노트, 파이썬, 딥러닝 책 추천, 파이썬 책 추천, 머신러닝 책 추천, 파이썬 딥러닝 텐서플로, 텐서플로우 책 추천, 텐서플로 책, 인공지능 서적, data science, 데이터 분석, 딥러닝, Google Cloud API]
 comments: true
 published: true
-typora-copy-images-to: ../images/2021-11-12해
+typora-copy-images-to: ../images/2021-11-12
 ---
 
 
