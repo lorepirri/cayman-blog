@@ -3,7 +3,7 @@ layout: page
 title:  "[AI SPARK 챌린지] 수도관 누수 탐지 분류 문제 베이스라인 코드! (오디오 파일 전처리)"
 description: "[AI SPARK 챌린지] 수도관 누수 탐지 분류 문제 베이스라인 코드! 오디오 파일 전처리 방법을 알아 보도록 하겠습니다."
 headline: "[AI SPARK 챌린지] 수도관 누수 탐지 분류 문제 베이스라인 코드! 오디오 파일 전처리 방법을 알아 보도록 하겠습니다."
-categories: data_science
+categories: kaggle
 tags: [python, 인공지능 책, 테디노트 책, 테디노트, 파이썬, 딥러닝 책 추천, 파이썬 책 추천, 머신러닝 책 추천, 파이썬 딥러닝 텐서플로, 텐서플로우 책 추천, 텐서플로 책, 인공지능 서적, data science, 데이터 분석, 딥러닝, aifactory, 캐글, 오디오전처리, 수도관 누수 탐지 분류]
 comments: true
 published: true
