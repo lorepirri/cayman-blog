@@ -310,11 +310,6 @@ for line in output_text1.split('.'):
 ```
 
 <pre>
-[nltk_data] Downloading package punkt to /root/nltk_data...
-[nltk_data]   Unzipping tokenizers/punkt.zip.
-[Korean Sentence Splitter]: Initializing Pynori...
-</pre>
-<pre>
 2004년 SM에서 주최한 청소년 베스트 선발 대회에서 노래짱 대상을 수상하며 SM 엔터테인먼트에 캐스팅되었다
  이후 태연은 2004년 8월에 열린 제8회 SM 청소년 베스트 선발 대회에서 노래짱 부문에 출전해 1위(대상)를 수상하였고 SM 엔터테인먼트에 정식 캐스팅되어 연습생 생활을 시작하게 되었다
  이후 SM엔터테인먼트에서 3년여의 연습생 기간을 거쳐 걸 그룹 소녀시대의 멤버로 정식 데뷔하게 되었다
@@ -557,11 +552,10 @@ from IPython.display import Image
 ```python
 url = 'https://i.pinimg.com/originals/b9/de/80/b9de803706fb2f7365e06e688b7cc470.jpg'
 Image(url, width=750)
+
 ```
 
-<pre>
-<IPython.core.display.Image object>
-</pre>
+이미지 캡션 출력
 
 ```python
 caption(url)
