@@ -164,78 +164,7 @@ ext_summ = Pororo(task="text_summarization", lang="ko", model="extractive")
 abs_summ = Pororo(task="text_summarization", lang="ko", model="abstractive")
 ```
 
-<pre>
 
-
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/226k [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/28.0 [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/455k [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/570 [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading: "https://github.com/facebookresearch/detr/archive/master.zip" to /root/.cache/torch/hub/master.zip
-Downloading: "https://download.pytorch.org/models/resnet50-19c8e357.pth" to /root/.cache/torch/hub/checkpoints/resnet50-19c8e357.pth
-</pre>
-<pre>
-  0%|          | 0.00/97.8M [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading: "https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth" to /root/.cache/torch/hub/checkpoints/detr-r50-e632da11.pth
-</pre>
-<pre>
-  0%|          | 0.00/159M [00:00<?, ?B/s]
-</pre>
-<pre>
-
-
-
-
-
-
-
-</pre>
-<pre>
-As of now, this beta model tries to correct spacing errors in Korean text.
-</pre>
-<pre>
-
-
-
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/1.08k [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/2.00 [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/85.0 [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/109 [00:00<?, ?B/s]
-</pre>
-<pre>
-Downloading:   0%|          | 0.00/666k [00:00<?, ?B/s]
-</pre>
-<pre>
-The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
-The tokenizer class you load from this checkpoint is 'BartTokenizer'. 
-The class this function is called from is 'PreTrainedTokenizerFast'.
-
-
-
-The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
-The tokenizer class you load from this checkpoint is 'BartTokenizer'. 
-The class this function is called from is 'PreTrainedTokenizerFast'.
-</pre>
 ## 형태소 분석기 `konlpy` 예제
 
 
