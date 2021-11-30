@@ -3,7 +3,7 @@ layout: page
 title:  "뽀로로(PORORO) 자연어처리 라이브러리 활용기 (dev. and maintained by 카카오 브레인(Kakao Brain) PORORO팀)"
 description: "뽀로로(PORORO) 자연어처리 라이브러리 활용기 (dev. and maintained by 카카오 브레인(Kakao Brain) PORORO팀)에 대해 알아 보도록 하겠습니다."
 headline: "뽀로로(PORORO) 자연어처리 라이브러리 활용기 (dev. and maintained by 카카오 브레인(Kakao Brain) PORORO팀)에 대해 알아 보도록 하겠습니다."
-categories: visualization
+categories: machine-learning
 tags: [python, 인공지능 책, 테디노트 책, 테디노트, 파이썬, 딥러닝 책 추천, 파이썬 책 추천, 머신러닝 책 추천, 파이썬 딥러닝 텐서플로, 텐서플로우 책 추천, 텐서플로 책, 인공지능 서적, data science, 데이터 분석, 딥러닝, 뽀로로, PORORO, Kakao Brain, 자연어처리, 딥러닝 자연어, 한글 자연어]
 comments: true
 published: true
