@@ -137,31 +137,8 @@ typora-copy-images-to: ../images/2021-11-30
 
 
 ```python
-# 예제 실행을 위한 사전 import
+# Pororo 라이브러리 import
 from pororo import Pororo
-
-# 요약
-bullet_summ = Pororo(task="text_summarization", lang="ko", model="bullet")
-ext_summ = Pororo(task="text_summarization", lang="ko", model="extractive")
-abs_summ = Pororo(task="text_summarization", lang="ko", model="abstractive")
-
-# 영어 맞춤법 수정
-gec = Pororo(task="gec", lang="en")
-
-# 한글 맞춤법(띄어쓰기) 수정
-spacing = Pororo(task="gec", lang="ko")
-
-# 빈칸 채우기
-fib = Pororo(task="fib", lang="ko")
-
-# 자동 에세이 채점
-aes = Pororo(task="aes", lang="en")
-
-# 기계번역
-mt = Pororo(task="translation", lang="multi")
-
-# 이미지 캡셔닝
-caption = Pororo(task="caption", lang="en")
 ```
 
 
