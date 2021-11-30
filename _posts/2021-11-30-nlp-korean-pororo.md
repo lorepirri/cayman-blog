@@ -102,7 +102,7 @@ typora-copy-images-to: ../images/2021-11-30
 
 
 
-1. `konlpy`: 한글 형태소 분석기
+`konlpy`: 한글 형태소 분석기
 
   - [공식문서](https://konlpy.org/ko/latest/)
 
@@ -110,7 +110,7 @@ typora-copy-images-to: ../images/2021-11-30
 
 
 
-2. `pororo`: 카카오브레인에서 만든 한글 자연어처리 라이브러리
+`pororo`: 카카오브레인에서 만든 한글 자연어처리 라이브러리
 
   - [Github 주소](https://github.com/kakaobrain/pororo)
 
