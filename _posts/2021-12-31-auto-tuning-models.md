@@ -11,9 +11,13 @@ typora-copy-images-to: ../images/2021-12-31
 ---
 
 
+
 경진대회에서 모델의 Hyperparameter 튜닝에 드는 노력과 시간을 절약하기 위하여 xgboost, lightgbm, catboost 3개의 라이브러리에 대하여 optuna 튜닝을 적용하여 예측 값을 산출해 내는 로직을 라이브러리 형태로 패키징 했습니다.
 
+
+
 ## 경진대회 BASELINE을 잡기 위한 optuna + [xgboost, lightgbm, catboost]
+
 
 
 지원하는 예측 종류는
@@ -24,6 +28,7 @@ typora-copy-images-to: ../images/2021-12-31
 
 
 입니다.
+
 
 
 앞으로 라이브러리 개선작업을 통해 더 빠르게 최적화할 수 있도록 개선해 나갈 계획입니다.
@@ -50,16 +55,16 @@ typora-copy-images-to: ../images/2021-12-31
       font-weight: bold;
       padding: 8px;
     }
-
+    
     table.dataframe td {
       text-align: center;
       padding: 8px;
     }
-
+    
     table.dataframe tr:hover {
       background: #b8d1f3; 
     }
-
+    
     .output_prompt {
       overflow: auto;
       font-size: 0.9rem;
@@ -100,6 +105,7 @@ typora-copy-images-to: ../images/2021-12-31
 
   </style>
 </head>
+
 
 
 ## 설치
@@ -162,7 +168,7 @@ cancer_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -339,7 +345,7 @@ iris_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -419,7 +425,7 @@ boston_df.head()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -545,33 +551,22 @@ boston_df.head()
 ```
 
 optimize(
-
     x,
-
     y,
-
     test_data=None,
-
     cat_features=None,
-
     eval_metric='f1',
-
     cv=5,
-
     seed=None,
-
     n_rounds=3000,
-
     n_trials=100,
-
 )
 
 ```
 
 
+
 **입력 매개변수**
-
-
 
 - `x`: Feature 데이터
 
@@ -599,6 +594,8 @@ optimize(
 
 - `preds`: `test_data` 매개변수에 데이터를 지정한 경우 이에 대한 예측 값
 
+  
+
 
 ### 결과값 자동저장 기능
 
@@ -613,6 +610,9 @@ optimizer() 로 튜닝 + 예측한 결과는 `numpy array` 형식으로 자동 �
 ## CatBoost + Optuna
 
 
+### 이진분류(binary classification)
+
+
 
 ```python
 catboostoptuna = models.CatBoostClassifierOptuna(use_gpu=False)
@@ -622,49 +622,11 @@ params, preds = catboostoptuna.optimize(iris_df.drop('target', 1),
                                         test_data=iris_df.drop('target', 1),
                                         seed=321,
                                         eval_metric='recall', n_trials=3)
-
-(np.squeeze(preds) == iris_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 03:43:18,089][0m A new study created in memory with name: no-name-9e0d572d-958c-4a71-9797-8d3c51057317[0m
-</pre>
-<pre>
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.90000
-metric type: recall, score: 0.90000
-metric type: recall, score: 0.96667
-</pre>
-<pre>
-[32m[I 2021-12-31 03:43:19,862][0m Trial 0 finished with value: 0.9400000000000001 and parameters: {'bootstrap_type': 'MVS', 'boosting_type': 'Plain', 'od_type': 'Iter', 'colsample_bylevel': 0.06486819802222668, 'l2_leaf_reg': 0.0002951662171612853, 'learning_rate': 0.2804611004136478, 'iterations': 1893, 'min_child_samples': 5, 'depth': 9}. Best is trial 0 with value: 0.9400000000000001.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.93333
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.93333
-metric type: recall, score: 0.96667
-metric type: recall, score: 0.96667
-</pre>
-<pre>
-[32m[I 2021-12-31 03:43:21,781][0m Trial 1 finished with value: 0.96 and parameters: {'bootstrap_type': 'MVS', 'boosting_type': 'Ordered', 'od_type': 'IncToDec', 'colsample_bylevel': 0.09709757848571335, 'l2_leaf_reg': 6.972791682108428e-07, 'learning_rate': 0.4839437086735112, 'iterations': 878, 'min_child_samples': 27, 'depth': 9}. Best is trial 1 with value: 0.96.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.93333
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.93333
-metric type: recall, score: 0.96667
-metric type: recall, score: 0.96667
-</pre>
-<pre>
-[32m[I 2021-12-31 03:43:23,694][0m Trial 2 finished with value: 0.96 and parameters: {'bootstrap_type': 'Bernoulli', 'boosting_type': 'Ordered', 'od_type': 'Iter', 'colsample_bylevel': 0.0633327312007314, 'l2_leaf_reg': 2.208668993641365, 'learning_rate': 0.4010740839160681, 'iterations': 902, 'min_child_samples': 26, 'depth': 5, 'subsample': 0.8960199305353185}. Best is trial 1 with value: 0.96.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.93333
-saving model...models/CatBoostClassifier-0.96000.npy
-</pre>
-<pre>
-0.9733333333333334
-</pre>
+### 다중분류(multi-class classification)
+
+
 
 ```python
 catboostoptuna = models.CatBoostClassifierOptuna()
@@ -678,45 +640,9 @@ params, preds = catboostoptuna.optimize(cancer_df.drop('target', 1),
 (np.squeeze(preds) == cancer_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 03:44:05,031][0m A new study created in memory with name: no-name-7e6da76b-7aa2-43d2-a643-bb2f3f1eff91[0m
-</pre>
-<pre>
-metric type: recall, score: 0.96923
-metric type: recall, score: 1.00000
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.98718
-</pre>
-<pre>
-[32m[I 2021-12-31 03:44:07,003][0m Trial 0 finished with value: 0.9912820512820513 and parameters: {'bootstrap_type': 'Bernoulli', 'boosting_type': 'Plain', 'od_type': 'IncToDec', 'colsample_bylevel': 0.040899209292070075, 'l2_leaf_reg': 2.1814809587844156e-05, 'learning_rate': 0.08354646152391278, 'iterations': 988, 'min_child_samples': 29, 'depth': 7, 'subsample': 0.5562305039848767}. Best is trial 0 with value: 0.9912820512820513.[0m
-</pre>
-<pre>
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.95385
-metric type: recall, score: 1.00000
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.98718
-</pre>
-<pre>
-[32m[I 2021-12-31 03:44:11,668][0m Trial 1 finished with value: 0.9855735492577598 and parameters: {'bootstrap_type': 'MVS', 'boosting_type': 'Plain', 'od_type': 'Iter', 'colsample_bylevel': 0.03351971867096344, 'l2_leaf_reg': 0.11726953296818438, 'learning_rate': 0.01204480002353308, 'iterations': 1888, 'min_child_samples': 16, 'depth': 11}. Best is trial 0 with value: 0.9912820512820513.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.98684
-metric type: recall, score: 0.95385
-metric type: recall, score: 0.95522
-metric type: recall, score: 0.98592
-metric type: recall, score: 0.97436
-</pre>
-<pre>
-[32m[I 2021-12-31 03:44:13,653][0m Trial 2 finished with value: 0.9712373214046094 and parameters: {'bootstrap_type': 'MVS', 'boosting_type': 'Ordered', 'od_type': 'IncToDec', 'colsample_bylevel': 0.04462669813698863, 'l2_leaf_reg': 2.7764295629202865e-08, 'learning_rate': 0.3129235892998792, 'iterations': 771, 'min_child_samples': 5, 'depth': 9}. Best is trial 0 with value: 0.9912820512820513.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.98684
-saving model...models/CatBoostClassifier-0.99128.npy
-</pre>
-<pre>
-0.9947275922671354
-</pre>
+### 회귀(regression)
+
+
 
 ```python
 for col in ['CHAS', 'RAD', 'ZN']:
@@ -734,48 +660,9 @@ params, preds = catboostoptuna_reg.optimize(boston_df.drop('target', 1),
 mean_squared_error(boston_df['target'], preds)
 ```
 
-<pre>
-[32m[I 2021-12-31 03:44:56,368][0m A new study created in memory with name: no-name-1b621233-2666-4193-a589-2085da537825[0m
-</pre>
-<pre>
-error type: rmse, error: 3.17323
-error type: rmse, error: 2.86931
-error type: rmse, error: 4.06081
-error type: rmse, error: 3.75035
-</pre>
-<pre>
-[32m[I 2021-12-31 03:44:58,418][0m Trial 0 finished with value: 3.5586318766499248 and parameters: {'bootstrap_type': 'Bernoulli', 'boosting_type': 'Ordered', 'od_type': 'IncToDec', 'colsample_bylevel': 0.08005280346616732, 'l2_leaf_reg': 2.5134291928531462e-08, 'learning_rate': 0.35770630387105873, 'iterations': 1819, 'min_child_samples': 11, 'depth': 3, 'subsample': 0.5095036468081915}. Best is trial 0 with value: 3.5586318766499248.[0m
-</pre>
-<pre>
-error type: rmse, error: 3.93946
-error type: rmse, error: 2.63963
-error type: rmse, error: 2.47184
-error type: rmse, error: 4.22292
-error type: rmse, error: 3.35770
-</pre>
-<pre>
-[32m[I 2021-12-31 03:45:01,760][0m Trial 1 finished with value: 3.1998452181464536 and parameters: {'bootstrap_type': 'MVS', 'boosting_type': 'Plain', 'od_type': 'Iter', 'colsample_bylevel': 0.09489731919902508, 'l2_leaf_reg': 2.5850673686532312e-05, 'learning_rate': 0.021516522548568846, 'iterations': 973, 'min_child_samples': 20, 'depth': 4}. Best is trial 1 with value: 3.1998452181464536.[0m
-</pre>
-<pre>
-error type: rmse, error: 3.30714
-error type: rmse, error: 3.39045
-error type: rmse, error: 3.69054
-error type: rmse, error: 2.78785
-error type: rmse, error: 2.80355
-</pre>
-<pre>
-[32m[I 2021-12-31 03:45:05,580][0m Trial 2 finished with value: 3.1224951774698733 and parameters: {'bootstrap_type': 'Bernoulli', 'boosting_type': 'Ordered', 'od_type': 'Iter', 'colsample_bylevel': 0.07229340860687768, 'l2_leaf_reg': 2.5811803971908034e-05, 'learning_rate': 0.07495793354303494, 'iterations': 1763, 'min_child_samples': 20, 'depth': 10, 'subsample': 0.60804921075639}. Best is trial 2 with value: 3.1224951774698733.[0m
-</pre>
-<pre>
-error type: rmse, error: 2.94009
-saving model...models/CatBoostRegressor-3.12250.npy
-</pre>
-<pre>
-7.718443655973282
-</pre>
+
+
 ### 저장한 파일로부터 예측 값 (prediction) 불러오기
-
-
 
 ```python
 # 넘파이 array로 저장된 예측 결과를 로드할 수 있습니다.
@@ -886,16 +773,25 @@ array([28.76168717, 21.97469764, 33.91423778, 36.25317587, 34.89063327,
        20.54947447, 21.35132386, 17.93859277, 23.9005454 , 22.68316054,
        17.21506894])
 </pre>
+
+
 ### 하이퍼파라미터 튜닝 시각화
-
-
 
 ```python
 # 튜닝 결과 시각화
 catboostoptuna_reg.visualize()
 ```
 
+![capture-20211231-161430](../images/2021-12-31/capture-20211231-161430.png)
+
+![capture-20211231-161439](../images/2021-12-31/capture-20211231-161439.png)
+
+
+
 ## XGBoost
+
+
+### 이진분류(binary classification)
 
 
 
@@ -911,45 +807,9 @@ params, preds = xgboptuna.optimize(iris_df.drop('target', 1),
 (preds == iris_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 04:54:29,175][0m A new study created in memory with name: no-name-cede5431-45cd-4160-aae0-fe7db91b19d7[0m
-</pre>
-<pre>
-metric type: recall, score: 0.23333
-metric type: recall, score: 0.33333
-metric type: recall, score: 0.20000
-</pre>
-<pre>
-[32m[I 2021-12-31 04:54:29,533][0m Trial 0 finished with value: 0.2533333333333333 and parameters: {'lambda': 5.4433550844759385e-05, 'alpha': 0.16638324954592612, 'colsample_bytree': 0.5553611192935635, 'subsample': 0.6004881072333348, 'learning_rate': 0.016297922548371792, 'n_estimators': 3473, 'max_depth': 26, 'min_child_weight': 26}. Best is trial 0 with value: 0.2533333333333333.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.33333
-metric type: recall, score: 0.16667
-metric type: recall, score: 1.00000
-metric type: recall, score: 0.90000
-metric type: recall, score: 0.96667
-metric type: recall, score: 0.96667
-</pre>
-<pre>
-[32m[I 2021-12-31 04:55:00,617][0m Trial 1 finished with value: 0.9533333333333334 and parameters: {'lambda': 7.931779093115287e-05, 'alpha': 0.000629181856174543, 'colsample_bytree': 0.8339223988166906, 'subsample': 0.537448394497017, 'learning_rate': 0.00015104176676847454, 'n_estimators': 1763, 'max_depth': 21, 'min_child_weight': 6}. Best is trial 1 with value: 0.9533333333333334.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.93333
-metric type: recall, score: 0.33333
-metric type: recall, score: 0.30000
-</pre>
-<pre>
-[32m[I 2021-12-31 04:55:00,956][0m Trial 2 finished with value: 0.3333333333333333 and parameters: {'lambda': 0.021888058724878718, 'alpha': 2.455454661763027, 'colsample_bytree': 0.8876267551765076, 'subsample': 0.5590629745422453, 'learning_rate': 2.4390047315019495e-05, 'n_estimators': 1956, 'max_depth': 24, 'min_child_weight': 157}. Best is trial 1 with value: 0.9533333333333334.[0m
-</pre>
-<pre>
-metric type: recall, score: 0.20000
-metric type: recall, score: 0.30000
-metric type: recall, score: 0.53333
-saving model...models/XGBClassifier-0.95333.npy
-</pre>
-<pre>
-0.9666666666666667
-</pre>
+### 다중분류(multi-class classification)
+
+
 
 ```python
 xgboptuna_binary = models.XGBClassifierOptuna(use_gpu=False)
@@ -962,41 +822,9 @@ params, preds = xgboptuna_binary.optimize(cancer_df.drop('target', 1),
 (preds == cancer_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 04:55:12,490][0m A new study created in memory with name: no-name-621f0d57-3e1d-4b1e-b69e-669a8ee2a1a0[0m
-[32m[I 2021-12-31 04:55:12,760][0m Trial 0 finished with value: 0.6274491538580965 and parameters: {'lambda': 0.1755235804334081, 'alpha': 0.10883393324492178, 'colsample_bytree': 0.5242360621379514, 'subsample': 0.5171796803756229, 'learning_rate': 1.231939166086572e-05, 'n_estimators': 3796, 'max_depth': 12, 'min_child_weight': 132}. Best is trial 0 with value: 0.6274491538580965.[0m
-</pre>
-<pre>
-metric type: accuracy, score: 0.68421
-metric type: accuracy, score: 0.64035
-metric type: accuracy, score: 0.64035
-metric type: accuracy, score: 0.52632
-metric type: accuracy, score: 0.64602
-metric type: accuracy, score: 0.91228
-metric type: accuracy, score: 0.93860
-metric type: accuracy, score: 0.94737
-metric type: accuracy, score: 0.92105
-</pre>
-<pre>
-[32m[I 2021-12-31 04:55:33,748][0m Trial 1 finished with value: 0.927930445582984 and parameters: {'lambda': 0.0004235240963201465, 'alpha': 0.08147722543722236, 'colsample_bytree': 0.7484187245898394, 'subsample': 0.5794381584864169, 'learning_rate': 0.00015027421815483563, 'n_estimators': 2818, 'max_depth': 9, 'min_child_weight': 10}. Best is trial 1 with value: 0.927930445582984.[0m
-</pre>
-<pre>
-metric type: accuracy, score: 0.92035
-metric type: accuracy, score: 0.68421
-metric type: accuracy, score: 0.60526
-metric type: accuracy, score: 0.61404
-</pre>
-<pre>
-[32m[I 2021-12-31 04:55:34,010][0m Trial 2 finished with value: 0.6273870517000465 and parameters: {'lambda': 2.4410117385667154, 'alpha': 0.0008044447010598563, 'colsample_bytree': 0.6654006970565365, 'subsample': 0.689402404651076, 'learning_rate': 0.04552812279043075, 'n_estimators': 1920, 'max_depth': 17, 'min_child_weight': 110}. Best is trial 1 with value: 0.927930445582984.[0m
-</pre>
-<pre>
-metric type: accuracy, score: 0.62281
-metric type: accuracy, score: 0.61062
-saving model...models/XGBClassifier-0.92793.npy
-</pre>
-<pre>
-0.9543057996485061
-</pre>
+### 회귀(regression)
+
+
 
 ```python
 xgboptuna_reg = models.XGBRegressorOptuna()
@@ -1009,45 +837,6 @@ params, preds = xgboptuna_reg.optimize(boston_df.drop('target', 1),
 mean_squared_error(boston_df['target'], preds)
 ```
 
-<pre>
-[32m[I 2021-12-31 04:57:04,459][0m A new study created in memory with name: no-name-869c364d-46ce-4f68-9d89-755a63ea1461[0m
-</pre>
-<pre>
-error type: mse, error: 84.44991
-error type: mse, error: 55.86387
-error type: mse, error: 105.52391
-error type: mse, error: 84.80251
-</pre>
-<pre>
-[32m[I 2021-12-31 04:57:07,961][0m Trial 0 finished with value: 84.27665116287378 and parameters: {'lambda': 2.363845537360973, 'alpha': 0.009566592461706023, 'colsample_bytree': 0.7876083799338037, 'subsample': 0.6907389576018993, 'learning_rate': 0.006180430848980449, 'n_estimators': 1349, 'max_depth': 14, 'min_child_weight': 176}. Best is trial 0 with value: 84.27665116287378.[0m
-</pre>
-<pre>
-error type: mse, error: 90.74306
-error type: mse, error: 28.28641
-error type: mse, error: 29.21717
-error type: mse, error: 40.86397
-error type: mse, error: 37.78767
-</pre>
-<pre>
-[32m[I 2021-12-31 04:57:15,189][0m Trial 1 finished with value: 31.533895178654678 and parameters: {'lambda': 0.0007188493070002403, 'alpha': 0.0004582875894406261, 'colsample_bytree': 0.8337513520419544, 'subsample': 0.5970150301353495, 'learning_rate': 0.010786297739502288, 'n_estimators': 3318, 'max_depth': 18, 'min_child_weight': 89}. Best is trial 1 with value: 31.533895178654678.[0m
-</pre>
-<pre>
-error type: mse, error: 21.51425
-error type: mse, error: 373.51885
-error type: mse, error: 419.46507
-error type: mse, error: 379.93970
-error type: mse, error: 362.89331
-</pre>
-<pre>
-[32m[I 2021-12-31 04:57:31,826][0m Trial 2 finished with value: 395.8868985441321 and parameters: {'lambda': 0.00019875417009774664, 'alpha': 1.034258225709447e-05, 'colsample_bytree': 0.8091283877062585, 'subsample': 0.6108634598370167, 'learning_rate': 6.71611811113678e-05, 'n_estimators': 313, 'max_depth': 7, 'min_child_weight': 76}. Best is trial 1 with value: 31.533895178654678.[0m
-</pre>
-<pre>
-error type: mse, error: 443.61756
-saving model...models/XGBRegressor-31.53390.npy
-</pre>
-<pre>
-32.92111688074596
-</pre>
 ## LGBM
 
 
@@ -1066,96 +855,6 @@ params, preds = lgbmoptuna_binary.optimize(cancer_df.drop('target', 1),
 (preds == cancer_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 04:59:17,359][0m A new study created in memory with name: no-name-14b716e1-ecf8-4e49-b53e-2b08881efd50[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[50]	training's binary_logloss: 0.397461	training's score: 0.936264	valid_1's binary_logloss: 0.436755	valid_1's score: 0.912281
-metric type: accuracy, score: 0.91228
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[55]	training's binary_logloss: 0.392336	training's score: 0.940659	valid_1's binary_logloss: 0.403726	valid_1's score: 0.938596
-metric type: accuracy, score: 0.93860
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[59]	training's binary_logloss: 0.376351	training's score: 0.953846	valid_1's binary_logloss: 0.405461	valid_1's score: 0.903509
-metric type: accuracy, score: 0.90351
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:17,898][0m Trial 0 finished with value: 0.9297158826269213 and parameters: {'lambda_l1': 1.1876278035135512, 'lambda_l2': 9.933628478180302e-05, 'path_smooth': 1.3327058334487095e-05, 'learning_rate': 0.01036576389312941, 'feature_fraction': 0.6047911724419435, 'bagging_fraction': 0.6835566674824104, 'num_leaves': 22, 'min_data_in_leaf': 41, 'max_bin': 186, 'n_estimators': 2303, 'bagging_freq': 6, 'min_child_weight': 8}. Best is trial 0 with value: 0.9297158826269213.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[59]	training's binary_logloss: 0.386027	training's score: 0.949451	valid_1's binary_logloss: 0.370237	valid_1's score: 0.95614
-metric type: accuracy, score: 0.95614
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[31]	training's binary_logloss: 0.48012	training's score: 0.901316	valid_1's binary_logloss: 0.480087	valid_1's score: 0.938053
-metric type: accuracy, score: 0.93805
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.659107	training's score: 0.628571	valid_1's binary_logloss: 0.662164	valid_1's score: 0.622807
-metric type: accuracy, score: 0.62281
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.666696	training's score: 0.613187	valid_1's binary_logloss: 0.633941	valid_1's score: 0.684211
-metric type: accuracy, score: 0.68421
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:18,143][0m Trial 1 finished with value: 0.627278372923459 and parameters: {'lambda_l1': 3.471981097340538e-05, 'lambda_l2': 0.0024941632434138336, 'path_smooth': 6.202132331388559e-07, 'learning_rate': 0.000847906973349658, 'feature_fraction': 0.7326971248799636, 'bagging_fraction': 0.8427819709850706, 'num_leaves': 77, 'min_data_in_leaf': 63, 'max_bin': 181, 'n_estimators': 1319, 'bagging_freq': 3, 'min_child_weight': 18}. Best is trial 0 with value: 0.9297158826269213.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.657915	training's score: 0.630769	valid_1's binary_logloss: 0.66688	valid_1's score: 0.614035
-metric type: accuracy, score: 0.61404
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.664587	training's score: 0.617582	valid_1's binary_logloss: 0.641168	valid_1's score: 0.666667
-metric type: accuracy, score: 0.66667
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.648684	training's score: 0.64693	valid_1's binary_logloss: 0.708152	valid_1's score: 0.548673
-metric type: accuracy, score: 0.54867
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.660555	training's score: 0.61978	valid_1's binary_logloss: 0.64273	valid_1's score: 0.657895
-metric type: accuracy, score: 0.65789
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.654098	training's score: 0.632967	valid_1's binary_logloss: 0.668912	valid_1's score: 0.605263
-metric type: accuracy, score: 0.60526
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:18,346][0m Trial 2 finished with value: 0.6274646793976091 and parameters: {'lambda_l1': 1.1674218504355693e-07, 'lambda_l2': 0.0001356731016994083, 'path_smooth': 1.2191389543727447e-08, 'learning_rate': 0.004815358299691926, 'feature_fraction': 0.6511836287488688, 'bagging_fraction': 0.6203004450169056, 'num_leaves': 76, 'min_data_in_leaf': 92, 'max_bin': 139, 'n_estimators': 113, 'bagging_freq': 3, 'min_child_weight': 11}. Best is trial 0 with value: 0.9297158826269213.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.65161	training's score: 0.637363	valid_1's binary_logloss: 0.679319	valid_1's score: 0.587719
-metric type: accuracy, score: 0.58772
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.657332	training's score: 0.626374	valid_1's binary_logloss: 0.654849	valid_1's score: 0.631579
-metric type: accuracy, score: 0.63158
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's binary_logloss: 0.660375	training's score: 0.620614	valid_1's binary_logloss: 0.643359	valid_1's score: 0.654867
-metric type: accuracy, score: 0.65487
-[LightGBM] [Warning] feature_fraction is set=0.6047911724419435, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.6047911724419435
-[LightGBM] [Warning] lambda_l2 is set=9.933628478180302e-05, reg_lambda=0.0 will be ignored. Current value: lambda_l2=9.933628478180302e-05
-[LightGBM] [Warning] lambda_l1 is set=1.1876278035135512, reg_alpha=0.0 will be ignored. Current value: lambda_l1=1.1876278035135512
-[LightGBM] [Warning] bagging_fraction is set=0.6835566674824104, subsample=1.0 will be ignored. Current value: bagging_fraction=0.6835566674824104
-[LightGBM] [Warning] min_data_in_leaf is set=41, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=41
-[LightGBM] [Warning] bagging_freq is set=6, subsample_freq=0 will be ignored. Current value: bagging_freq=6
-saving model...models/LGBMClassifier-0.92972.npy
-</pre>
-<pre>
-0.9771528998242531
-</pre>
 ### 다중분류(multi-class classification)
 
 
@@ -1172,89 +871,6 @@ params, preds = lgbmoptuna.optimize(iris_df.drop('target', 1),
 (preds == iris_df['target']).mean()
 ```
 
-<pre>
-[32m[I 2021-12-31 04:59:40,599][0m A new study created in memory with name: no-name-35618cd0-ec67-480a-9085-f037935413c3[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.0986	training's score: 0.333333	valid_1's multi_logloss: 1.13617	valid_1's score: 0.333333
-metric type: recall, score: 0.23333
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09865	training's score: 0.366667	valid_1's multi_logloss: 1.15202	valid_1's score: 0.2
-metric type: recall, score: 0.20000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:40,855][0m Trial 0 finished with value: 0.24000000000000005 and parameters: {'lambda_l1': 2.8428410902993423e-08, 'lambda_l2': 1.8755673669382356e-08, 'path_smooth': 1.499386239297807e-05, 'learning_rate': 0.0001723949958936505, 'feature_fraction': 0.6272482811237631, 'bagging_fraction': 0.6243819967615671, 'num_leaves': 34, 'min_data_in_leaf': 94, 'max_bin': 187, 'n_estimators': 2383, 'bagging_freq': 13, 'min_child_weight': 14}. Best is trial 0 with value: 0.24000000000000005.[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09833	training's score: 0.283333	valid_1's multi_logloss: 1.23072	valid_1's score: 0.533333
-metric type: recall, score: 0.16667
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.0986	training's score: 0.333333	valid_1's multi_logloss: 1.13617	valid_1's score: 0.333333
-metric type: recall, score: 0.23333
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09865	training's score: 0.366667	valid_1's multi_logloss: 1.15202	valid_1's score: 0.2
-metric type: recall, score: 0.20000
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:41,109][0m Trial 1 finished with value: 0.24000000000000005 and parameters: {'lambda_l1': 2.540542056065238e-08, 'lambda_l2': 2.6224809909355183e-08, 'path_smooth': 0.0005024149876533159, 'learning_rate': 4.314144944817125e-05, 'feature_fraction': 0.7874658241183157, 'bagging_fraction': 0.6687779014797036, 'num_leaves': 39, 'min_data_in_leaf': 93, 'max_bin': 199, 'n_estimators': 2161, 'bagging_freq': 15, 'min_child_weight': 10}. Best is trial 0 with value: 0.24000000000000005.[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09833	training's score: 0.283333	valid_1's multi_logloss: 1.23072	valid_1's score: 0.533333
-metric type: recall, score: 0.16667
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.0986	training's score: 0.333333	valid_1's multi_logloss: 1.13617	valid_1's score: 0.333333
-metric type: recall, score: 0.23333
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-</pre>
-<pre>
-[32m[I 2021-12-31 04:59:41,365][0m Trial 2 finished with value: 0.24000000000000005 and parameters: {'lambda_l1': 0.04524266799258891, 'lambda_l2': 0.00012453780435096626, 'path_smooth': 5.179052581353628e-05, 'learning_rate': 0.000360109595261492, 'feature_fraction': 0.651618296279452, 'bagging_fraction': 0.5637930567147633, 'num_leaves': 77, 'min_data_in_leaf': 81, 'max_bin': 182, 'n_estimators': 385, 'bagging_freq': 6, 'min_child_weight': 20}. Best is trial 0 with value: 0.24000000000000005.[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09865	training's score: 0.366667	valid_1's multi_logloss: 1.15202	valid_1's score: 0.2
-metric type: recall, score: 0.20000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09861	training's score: 0.341667	valid_1's multi_logloss: 1.10278	valid_1's score: 0.3
-metric type: recall, score: 0.30000
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[1]	training's multi_logloss: 1.09833	training's score: 0.283333	valid_1's multi_logloss: 1.23072	valid_1's score: 0.533333
-metric type: recall, score: 0.16667
-</pre>
-<pre>
-0.0
-</pre>
 ### 회귀(regression)
 
 
@@ -1270,96 +886,6 @@ params, preds = lgbmoptuna_reg.optimize(boston_df.drop('target', 1),
 mean_squared_error(boston_df['target'], preds)
 ```
 
-<pre>
-[32m[I 2021-12-31 05:02:38,481][0m A new study created in memory with name: no-name-a52d56ee-9355-4e7d-b201-b5c65be55685[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[351]	training's l2: 7.21849	training's score: 7.21849	valid_1's l2: 10.9472	valid_1's score: 10.9472
-error type: mse, error: 10.94717
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[140]	training's l2: 11.5192	training's score: 11.5192	valid_1's l2: 17.4302	valid_1's score: 17.4302
-error type: mse, error: 17.43018
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[160]	training's l2: 10.1893	training's score: 10.1893	valid_1's l2: 13.2345	valid_1's score: 13.2345
-error type: mse, error: 13.23448
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[504]	training's l2: 5.85066	training's score: 5.85066	valid_1's l2: 14.7516	valid_1's score: 14.7516
-error type: mse, error: 14.75157
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:02:40,577][0m Trial 0 finished with value: 15.763873396044715 and parameters: {'lambda_l1': 0.014943467602056983, 'lambda_l2': 2.757972944666076e-06, 'path_smooth': 2.0400290053042333e-05, 'learning_rate': 0.08201290433175552, 'feature_fraction': 0.8061018189212343, 'bagging_fraction': 0.790970205275671, 'num_leaves': 42, 'min_data_in_leaf': 55, 'max_bin': 150, 'n_estimators': 1271, 'bagging_freq': 4, 'min_child_weight': 5}. Best is trial 0 with value: 15.763873396044715.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[348]	training's l2: 6.85593	training's score: 6.85593	valid_1's l2: 22.456	valid_1's score: 22.456
-error type: mse, error: 22.45597
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2534]	training's l2: 13.8422	training's score: 13.8422	valid_1's l2: 10.8093	valid_1's score: 10.8093
-error type: mse, error: 10.80932
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2534]	training's l2: 12.0607	training's score: 12.0607	valid_1's l2: 23.1419	valid_1's score: 23.1419
-error type: mse, error: 23.14186
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2534]	training's l2: 13.4055	training's score: 13.4055	valid_1's l2: 12.2618	valid_1's score: 12.2618
-error type: mse, error: 12.26183
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2534]	training's l2: 11.8017	training's score: 11.8017	valid_1's l2: 33.396	valid_1's score: 33.396
-error type: mse, error: 33.39595
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:03:13,952][0m Trial 1 finished with value: 18.66965930852682 and parameters: {'lambda_l1': 0.00021540411697144112, 'lambda_l2': 1.0524026538378448, 'path_smooth': 4.7664370537123035e-05, 'learning_rate': 0.0007886826266967147, 'feature_fraction': 0.5877216485721609, 'bagging_fraction': 0.6781964882397304, 'num_leaves': 81, 'min_data_in_leaf': 17, 'max_bin': 104, 'n_estimators': 2534, 'bagging_freq': 5, 'min_child_weight': 17}. Best is trial 0 with value: 15.763873396044715.[0m
-</pre>
-<pre>
-Did not meet early stopping. Best iteration is:
-[2534]	training's l2: 13.2798	training's score: 13.2798	valid_1's l2: 13.7393	valid_1's score: 13.7393
-error type: mse, error: 13.73934
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2487]	training's l2: 56.2925	training's score: 56.2925	valid_1's l2: 72.2599	valid_1's score: 72.2599
-error type: mse, error: 72.25994
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2487]	training's l2: 55.5484	training's score: 55.5484	valid_1's l2: 81.9251	valid_1's score: 81.9251
-error type: mse, error: 81.92508
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2487]	training's l2: 61.7124	training's score: 61.7124	valid_1's l2: 52.0736	valid_1's score: 52.0736
-error type: mse, error: 52.07363
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[2487]	training's l2: 62.0956	training's score: 62.0956	valid_1's l2: 50.3062	valid_1's score: 50.3062
-error type: mse, error: 50.30623
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:03:26,581][0m Trial 2 finished with value: 60.90457070023608 and parameters: {'lambda_l1': 1.4658913883067469e-08, 'lambda_l2': 0.373582519992502, 'path_smooth': 1.035939357852813e-05, 'learning_rate': 0.00015706230744771008, 'feature_fraction': 0.8488171841431198, 'bagging_fraction': 0.5832771148910988, 'num_leaves': 87, 'min_data_in_leaf': 65, 'max_bin': 225, 'n_estimators': 2487, 'bagging_freq': 14, 'min_child_weight': 3}. Best is trial 0 with value: 15.763873396044715.[0m
-</pre>
-<pre>
-Did not meet early stopping. Best iteration is:
-[2487]	training's l2: 62.619	training's score: 62.619	valid_1's l2: 47.958	valid_1's score: 47.958
-error type: mse, error: 47.95798
-[LightGBM] [Warning] feature_fraction is set=0.8061018189212343, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8061018189212343
-[LightGBM] [Warning] lambda_l2 is set=2.757972944666076e-06, reg_lambda=0.0 will be ignored. Current value: lambda_l2=2.757972944666076e-06
-[LightGBM] [Warning] lambda_l1 is set=0.014943467602056983, reg_alpha=0.0 will be ignored. Current value: lambda_l1=0.014943467602056983
-[LightGBM] [Warning] bagging_fraction is set=0.790970205275671, subsample=1.0 will be ignored. Current value: bagging_fraction=0.790970205275671
-[LightGBM] [Warning] min_data_in_leaf is set=55, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=55
-[LightGBM] [Warning] bagging_freq is set=4, subsample_freq=0 will be ignored. Current value: bagging_freq=4
-saving model...models/LGBMRegressor-15.76387.npy
-</pre>
-<pre>
-15.349830521063373
-</pre>
 ## 하이퍼파라미터 범위 수정 (custom)
 
 
@@ -1454,93 +980,6 @@ params, preds = lgbmoptuna.optimize(boston_df.drop('target', 1),
                                     eval_metric='mse', n_trials=3)
 ```
 
-<pre>
-[32m[I 2021-12-31 05:14:28,951][0m A new study created in memory with name: no-name-e3f20d56-3f4a-4b86-92c4-ff15c6b65b25[0m
-</pre>
-<pre>
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[272]	training's l2: 79.9832	training's score: 79.9832	valid_1's l2: 98.325	valid_1's score: 98.325
-error type: mse, error: 98.32504
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[272]	training's l2: 87.9725	training's score: 87.9725	valid_1's l2: 66.8189	valid_1's score: 66.8189
-error type: mse, error: 66.81888
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[272]	training's l2: 81.8587	training's score: 81.8587	valid_1's l2: 91.2521	valid_1's score: 91.2521
-error type: mse, error: 91.25208
-Training until validation scores don't improve for 30 rounds
-Did not meet early stopping. Best iteration is:
-[272]	training's l2: 86.2988	training's score: 86.2988	valid_1's l2: 73.4895	valid_1's score: 73.4895
-error type: mse, error: 73.48952
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:14:30,364][0m Trial 0 finished with value: 83.99098893365942 and parameters: {'lambda_l1': 4.63862070811483, 'lambda_l2': 0.39932937331692514, 'path_smooth': 3.109872573969194e-08, 'learning_rate': 3.725712434040597e-05, 'feature_fraction': 0.5238436360336499, 'bagging_fraction': 0.637588919667432, 'num_leaves': 24, 'min_data_in_leaf': 75, 'max_bin': 101, 'n_estimators': 272, 'bagging_freq': 2, 'min_child_weight': 11}. Best is trial 0 with value: 83.99098893365942.[0m
-</pre>
-<pre>
-Did not meet early stopping. Best iteration is:
-[272]	training's l2: 82.2362	training's score: 82.2362	valid_1's l2: 90.0694	valid_1's score: 90.0694
-error type: mse, error: 90.06942
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[90]	training's l2: 17.9149	training's score: 17.9149	valid_1's l2: 44.3623	valid_1's score: 44.3623
-error type: mse, error: 44.36231
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[307]	training's l2: 16.1878	training's score: 16.1878	valid_1's l2: 15.0268	valid_1's score: 15.0268
-error type: mse, error: 15.02681
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[72]	training's l2: 22.4192	training's score: 22.4192	valid_1's l2: 20.3597	valid_1's score: 20.3597
-error type: mse, error: 20.35968
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[173]	training's l2: 16.6091	training's score: 16.6091	valid_1's l2: 23.1558	valid_1's score: 23.1558
-error type: mse, error: 23.15582
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:14:31,477][0m Trial 1 finished with value: 23.619569791630962 and parameters: {'lambda_l1': 1.1674781538425141e-05, 'lambda_l2': 0.013511457441167798, 'path_smooth': 1.710982805948588e-07, 'learning_rate': 0.06864604996492914, 'feature_fraction': 0.5712544917709119, 'bagging_fraction': 0.720693018081249, 'num_leaves': 23, 'min_data_in_leaf': 68, 'max_bin': 136, 'n_estimators': 373, 'bagging_freq': 7, 'min_child_weight': 1}. Best is trial 1 with value: 23.619569791630962.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[214]	training's l2: 18.1608	training's score: 18.1608	valid_1's l2: 15.1932	valid_1's score: 15.1932
-error type: mse, error: 15.19322
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[170]	training's l2: 9.81192	training's score: 9.81192	valid_1's l2: 10.0374	valid_1's score: 10.0374
-error type: mse, error: 10.03742
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[151]	training's l2: 10.1451	training's score: 10.1451	valid_1's l2: 10.1609	valid_1's score: 10.1609
-error type: mse, error: 10.16094
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[184]	training's l2: 8.83106	training's score: 8.83106	valid_1's l2: 11.5792	valid_1's score: 11.5792
-error type: mse, error: 11.57918
-Training until validation scores don't improve for 30 rounds
-Early stopping, best iteration is:
-[256]	training's l2: 7.47399	training's score: 7.47399	valid_1's l2: 10.7423	valid_1's score: 10.7423
-error type: mse, error: 10.74227
-Training until validation scores don't improve for 30 rounds
-</pre>
-<pre>
-[32m[I 2021-12-31 05:14:33,494][0m Trial 2 finished with value: 14.714960780892792 and parameters: {'lambda_l1': 2.1025137712294667e-08, 'lambda_l2': 0.0026336954500641987, 'path_smooth': 7.463963953158119e-08, 'learning_rate': 0.030485356557551014, 'feature_fraction': 0.7212541765212778, 'bagging_fraction': 0.890458792615886, 'num_leaves': 20, 'min_data_in_leaf': 35, 'max_bin': 169, 'n_estimators': 364, 'bagging_freq': 15, 'min_child_weight': 12}. Best is trial 2 with value: 14.714960780892792.[0m
-</pre>
-<pre>
-Early stopping, best iteration is:
-[285]	training's l2: 5.56969	training's score: 5.56969	valid_1's l2: 31.055	valid_1's score: 31.055
-error type: mse, error: 31.05498
-[LightGBM] [Warning] feature_fraction is set=0.7212541765212778, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.7212541765212778
-[LightGBM] [Warning] lambda_l2 is set=0.0026336954500641987, reg_lambda=0.0 will be ignored. Current value: lambda_l2=0.0026336954500641987
-[LightGBM] [Warning] lambda_l1 is set=2.1025137712294667e-08, reg_alpha=0.0 will be ignored. Current value: lambda_l1=2.1025137712294667e-08
-[LightGBM] [Warning] bagging_fraction is set=0.890458792615886, subsample=1.0 will be ignored. Current value: bagging_fraction=0.890458792615886
-[LightGBM] [Warning] min_data_in_leaf is set=35, min_child_samples=20 will be ignored. Current value: min_data_in_leaf=35
-[LightGBM] [Warning] bagging_freq is set=15, subsample_freq=0 will be ignored. Current value: bagging_freq=15
-saving model...models/LGBMRegressor-14.71496.npy
-</pre>
 trial에 대한 결과를 출력합니다.
 
 
@@ -1559,7 +998,7 @@ lgbmoptuna.study.trials_dataframe()
     .dataframe tbody tr th {
         vertical-align: top;
     }
-
+    
     .dataframe thead th {
         text-align: right;
     }
@@ -1592,64 +1031,64 @@ lgbmoptuna.study.trials_dataframe()
     <tr>
       <th>0</th>
       <td>0</td>
-      <td>83.990989</td>
-      <td>2021-12-31 05:14:28.953061</td>
-      <td>2021-12-31 05:14:30.364356</td>
-      <td>0 days 00:00:01.411295</td>
-      <td>0.637589</td>
-      <td>2</td>
-      <td>0.523844</td>
-      <td>4.638621e+00</td>
-      <td>0.399329</td>
-      <td>0.000037</td>
-      <td>101</td>
-      <td>11</td>
-      <td>75</td>
-      <td>272</td>
-      <td>24</td>
-      <td>3.109873e-08</td>
+      <td>83.529143</td>
+      <td>2021-12-31 07:26:21.337195</td>
+      <td>2021-12-31 07:26:24.492885</td>
+      <td>0 days 00:00:03.155690</td>
+      <td>0.508583</td>
+      <td>9</td>
+      <td>0.650294</td>
+      <td>6.415572e-07</td>
+      <td>4.982401e-02</td>
+      <td>0.000030</td>
+      <td>205</td>
+      <td>6</td>
+      <td>22</td>
+      <td>363</td>
+      <td>14</td>
+      <td>4.464380e-08</td>
       <td>COMPLETE</td>
     </tr>
     <tr>
       <th>1</th>
       <td>1</td>
-      <td>23.619570</td>
-      <td>2021-12-31 05:14:30.365300</td>
-      <td>2021-12-31 05:14:31.477065</td>
-      <td>0 days 00:00:01.111765</td>
-      <td>0.720693</td>
-      <td>7</td>
-      <td>0.571254</td>
-      <td>1.167478e-05</td>
-      <td>0.013511</td>
-      <td>0.068646</td>
-      <td>136</td>
-      <td>1</td>
-      <td>68</td>
-      <td>373</td>
-      <td>23</td>
-      <td>1.710983e-07</td>
+      <td>82.696414</td>
+      <td>2021-12-31 07:26:24.494212</td>
+      <td>2021-12-31 07:26:26.673476</td>
+      <td>0 days 00:00:02.179264</td>
+      <td>0.712115</td>
+      <td>12</td>
+      <td>0.703372</td>
+      <td>4.705313e-08</td>
+      <td>6.194418e-08</td>
+      <td>0.000061</td>
+      <td>254</td>
+      <td>17</td>
+      <td>39</td>
+      <td>323</td>
+      <td>22</td>
+      <td>2.821343e-08</td>
       <td>COMPLETE</td>
     </tr>
     <tr>
       <th>2</th>
       <td>2</td>
-      <td>14.714961</td>
-      <td>2021-12-31 05:14:31.478094</td>
-      <td>2021-12-31 05:14:33.494045</td>
-      <td>0 days 00:00:02.015951</td>
-      <td>0.890459</td>
-      <td>15</td>
-      <td>0.721254</td>
-      <td>2.102514e-08</td>
-      <td>0.002634</td>
-      <td>0.030485</td>
-      <td>169</td>
-      <td>12</td>
-      <td>35</td>
-      <td>364</td>
+      <td>20.680800</td>
+      <td>2021-12-31 07:26:26.674743</td>
+      <td>2021-12-31 07:26:28.133769</td>
+      <td>0 days 00:00:01.459026</td>
+      <td>0.857708</td>
+      <td>11</td>
+      <td>0.580214</td>
+      <td>1.124464e-02</td>
+      <td>5.298364e-06</td>
+      <td>0.091827</td>
+      <td>230</td>
       <td>20</td>
-      <td>7.463964e-08</td>
+      <td>76</td>
+      <td>485</td>
+      <td>20</td>
+      <td>2.478903e-05</td>
       <td>COMPLETE</td>
     </tr>
   </tbody>
@@ -1657,33 +1096,36 @@ lgbmoptuna.study.trials_dataframe()
 </div>
 
 
+
 하이퍼파라미터 튜닝 결과 시각화
-
-
 
 ```python
 lgbmoptuna.visualize()
 ```
 
+![capture-20211231-161620](../images/2021-12-31/capture-20211231-161620.png)
+
+![capture-20211231-161630](../images/2021-12-31/capture-20211231-161630.png)
+
+
+
 Best 하이퍼파라미터 출력
-
-
 
 ```python
 lgbmoptuna.get_best_params()
 ```
 
 <pre>
-{'lambda_l1': 2.1025137712294667e-08,
- 'lambda_l2': 0.0026336954500641987,
- 'path_smooth': 7.463963953158119e-08,
- 'learning_rate': 0.030485356557551014,
- 'feature_fraction': 0.7212541765212778,
- 'bagging_fraction': 0.890458792615886,
+{'lambda_l1': 0.011244644026182967,
+ 'lambda_l2': 5.298363992080463e-06,
+ 'path_smooth': 2.4789027860002685e-05,
+ 'learning_rate': 0.09182657994717408,
+ 'feature_fraction': 0.5802144206891808,
+ 'bagging_fraction': 0.8577082120277062,
  'num_leaves': 20,
- 'min_data_in_leaf': 35,
- 'max_bin': 169,
- 'n_estimators': 364,
- 'bagging_freq': 15,
- 'min_child_weight': 12}
+ 'min_data_in_leaf': 76,
+ 'max_bin': 230,
+ 'n_estimators': 485,
+ 'bagging_freq': 11,
+ 'min_child_weight': 20}
 </pre>
