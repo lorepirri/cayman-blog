@@ -35,6 +35,10 @@ typora-copy-images-to: ../images/2021-12-31
 
 
 
+[Google Colab 예제]https://colab.research.google.com/drive/1vKBrzrztNmzM_DXh5Ye3WKwL0AGGQFmC?usp=sharing
+
+
+
 <head>
   <style>
     table.dataframe {
