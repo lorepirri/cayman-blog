@@ -622,6 +622,8 @@ params, preds = catboostoptuna.optimize(iris_df.drop('target', 1),
                                         test_data=iris_df.drop('target', 1),
                                         seed=321,
                                         eval_metric='recall', n_trials=3)
+
+(np.squeeze(preds) == iris_df['target']).mean()
 ```
 
 ### 다중분류(multi-class classification)
