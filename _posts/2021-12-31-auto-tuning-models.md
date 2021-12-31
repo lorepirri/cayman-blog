@@ -19,11 +19,8 @@ typora-copy-images-to: ../images/2021-12-31
 지원하는 예측 종류는
 
 - 회귀(regression)
-
 - 이진분류(binary classification)
-
 - 다중분류(multi-class classification)
-
 
 
 입니다.
