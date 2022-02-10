@@ -3,7 +3,7 @@ layout: page
 title:  "[PyTorch] numpy로부터 텐서 변환(copying과 sharing의 차이)"
 description: "[PyTorch] numpy로부터 텐서 변환(copying과 sharing의 차이) 에 대하여 알아보도록 하겠습니다."
 headline: "[PyTorch] numpy로부터 텐서 변환(copying과 sharing의 차이) 에 대하여 알아보도록 하겠습니다."
-categories: machine-learning
+categories: pytorch
 tags: [python, 인공지능 책, 테디노트 책, 테디노트, 파이썬, 파이썬 딥러닝 텐서플로, data science, 데이터 분석, 딥러닝, pytorch, 파이토치, torch, 텐서, tensor, from_numpy, as_tensor, numpy]
 comments: true
 published: true
