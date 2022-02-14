@@ -361,12 +361,7 @@ resnet50 = resnet50.cuda()
 print(resnet50)
 ```
 
-<pre>
-Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
-</pre>
-<pre>
-  0%|          | 0.00/97.8M [00:00<?, ?B/s]
-</pre>
+
 <pre>
 ResNet(
   (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
@@ -740,5 +735,3 @@ Estimated Total Size (MB): 384.62
 ----------------------------------------------------------------
 </pre>
 
-```python
-```
