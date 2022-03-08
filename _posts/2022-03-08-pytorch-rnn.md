@@ -111,17 +111,14 @@ print('Input: ', input_data.size())
 # RNN 출력(output, hidden_state)
 output, hidden_state = rnn(input_data, None)
 # rnn output, hidden_state 차원
+
 # output: [1, 20, 10]
 # output: [batch_size(1), sequence_length(20), hidden_dim(10)]
-
-# hidden: [2, 1, 10]
-# hidden: [num_layers(2), batch_size(1), hidden_dim(10)]
-
-# output shape: batch_size(1) * sequence_length(20), output_size (1)
 print('Output: ', output.size())
 # Output:  torch.Size([1, 20, 10])
 
-# num_layers, batch_size, hidden dimensions
+# hidden: [2, 1, 10]
+# hidden: [num_layers(2), batch_size(1), hidden_dim(10)]
 print('Hidden State: ', hidden_state.size())
 # Hidden State:  torch.Size([2, 1, 10])
 ```
@@ -156,11 +153,11 @@ print('Input size: ', input_data.size())
 
 output, hidden_state = rnn(input_data, None)
 
-# output shape: batch_size, seq_length, hidden_dim
+# output shape: [batch_size, sequence_length, hidden_dim]
 print('Output: ', output.size())
 # Output:  torch.Size([1, 20, 15])
 
-# num_layers, batch_size, hidden_dim
+# hidden shape: [num_layers, batch_size, hidden_dim]
 print('Hidden State: ', hidden_state.size())
 # Hidden State:  torch.Size([2, 1, 15])
 ```
