@@ -7,6 +7,7 @@ categories: pytorch
 tags: [python, 인공지능 책, 테디노트 책, 테디노트, 파이썬, data science, 데이터 분석, 딥러닝, pytorch, 파이토치, torch, 텐서, rnn, lstm, hidden state, hidden dimension, 순환신경망]
 comments: true
 published: true
+typora-copy-images-to: ../images/2022-03-08
 ---
 
 
@@ -95,6 +96,10 @@ print(torch.Tensor(data).unsqueeze(0).shape)
 print(torch.Tensor(np.expand_dims(data, 0)).shape)
 # torch.Size([1, 20, 1])
 ```
+
+
+
+![teddynote-rnn](../images/2022-03-08/teddynote-rnn.png)
 
 
 
