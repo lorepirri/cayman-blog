@@ -12,7 +12,7 @@ typora-copy-images-to: ../images/2022-07-20
 
 
 
-최신 버전의 딥러닝 도커를 구성하여 배포하게 되었습니다. (배포날짜는 **2022년 07월 20일** 기준입니다)
+최신 버전의 GPU를 활용한 학습이 가능한 딥러닝 도커를 구성하여 배포하게 되었습니다. (배포날짜는 **2022년 07월 20일** 기준입니다)
 
 [tensorflow/tensorflow](https://hub.docker.com/r/tensorflow/tensorflow) 도커의 [2.9.1-gpu-jupyter](https://hub.docker.com/layers/tensorflow/tensorflow/tensorflow/2.9.1-gpu-jupyter/images/sha256-6345c1f2eaaf7b8efc9b8ec7f62869e6490db80e07ae5b856d5c16b48146daae?context=explore) 도커 이미지를 확장하여 구성하였습니다.
 
@@ -41,6 +41,8 @@ GitHub에서 Star는 배포하는데 큰 힘이 됩니다 :)
 
 
 ## 설치된 주요 라이브러리
+
+`tensorflow`, `torch`, `keras` 모두 GPU 학습을 지원합니다.
 
 - `tensorflow: 2.9.1`
 - `tensorboard: 2.9.1`
