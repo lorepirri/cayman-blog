@@ -3,7 +3,7 @@ layout: page
 title: "torchvision의 transform으로 이미지 정규화하기(평균, 표준편차를 계산하여 적용)"
 description: "torchvision의 transform으로 이미지 정규화하기(평균, 표준편차를 계산하여 적용)에 대해 알아보겠습니다."
 headline: "torchvision의 transform으로 이미지 정규화하기(평균, 표준편차를 계산하여 적용)에 대해 알아보겠습니다."
-categories: linux
+categories: pytorch
 tags: [python, 파이썬, torch, pytorch, 이미지정규화, torchvision, transform, Image Transform, 이미지 전처리,data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
 published: true
