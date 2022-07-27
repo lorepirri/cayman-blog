@@ -145,9 +145,6 @@ train = datasets.CIFAR10(root='data',
                         )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 # datasets의 CIFAR10 데이터셋 로드 (test 데이터셋)
@@ -159,9 +156,6 @@ test = datasets.CIFAR10(root='data',
                        )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 # 이미지의 RGB 채널별 통계량 확인 함수
@@ -245,9 +239,6 @@ train = datasets.CIFAR10(root='data',
                         )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 # datasets의 CIFAR10 데이터셋 로드 (test 데이터셋)
@@ -258,9 +249,6 @@ test = datasets.CIFAR10(root='data',
                        )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 아래 통계에서 확인할 수 있듯이, 이미지의 픽셀 값의 범위가 `0 ~ 1` 이 아닌 `-1 ~ 1` 사이의 범위를 가지도록 변환 되었습니다.
 
 
@@ -315,9 +303,6 @@ train = datasets.CIFAR10(root='data',
                         )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 # datasets의 CIFAR10 데이터셋 로드 (test 데이터셋)
@@ -328,9 +313,6 @@ test = datasets.CIFAR10(root='data',
                        )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 print_stats(train)
@@ -401,9 +383,6 @@ train = datasets.CIFAR10(root='data',
                         )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 계산된 평균과 표준편차는 다음과 같습니다.
 
 
@@ -438,9 +417,6 @@ train = datasets.CIFAR10(root='data',
                         )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 
 ```python
 # datasets의 CIFAR10 데이터셋 로드 (test 데이터셋)
@@ -451,9 +427,6 @@ test = datasets.CIFAR10(root='data',
                        )
 ```
 
-<pre>
-Files already downloaded and verified
-</pre>
 아래 변환된 통계량을 보면, train 셋의 평균은 거의 `(0, 0, 0)`에 수렴하는 것을 확인할 수 있습니다. (이는 train 셋을 기준으로 변환했기 때문입니다.)
 
 
