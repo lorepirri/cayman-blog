@@ -321,8 +321,6 @@ df.groupby('sex').mean()
 </table>
 </div>
 
-
-
 ```python
 # 분산(var)
 df.groupby('sex').var()
@@ -375,8 +373,6 @@ df.groupby('sex').var()
 </div>
 
 
-
-
 > `.agg()`에 적용할 수 있는 통계함수 문자열 표
 
 | 함수            | 내용                |
@@ -393,9 +389,9 @@ df.groupby('sex').var()
 
 
 
+
+
 `.agg()`를 활용하여 다중 통계량을 구할 수 있습니다.
-
-
 
 ```python
 # 다중 통계 적용
@@ -476,8 +472,6 @@ df.groupby('sex').agg(['mean', 'var'])
 
 `.agg()`로 다중 통계량을 구할 때 컬럼별 적용할 통계 함수를 다르게 적용할 수 있습니다.
 
-
-
 ```python
 # 컬럼별 다른 통계량 산출
 df.groupby('sex').agg({'total_bill': 'mean', 
@@ -549,8 +543,6 @@ df.groupby('sex').agg({'total_bill': 'mean',
 
 바로 이전 출력 결과에서는 `MultiIndex`로 된 컬럼 형태로 출력이 되는데, 이를 **평탄화(Flatten)** 하여 보기 좋게 만들 수 있습니다.
 
-
-
 ```python
 # MultiIndex 컬럼을 평탄화 하는 함수
 def flat_cols(df):
@@ -617,8 +609,6 @@ df.groupby('sex').agg({'total_bill': 'mean',
 
 만약 위의 결과 테이블에서 출력결과의 소수점 자릿수를 지정하고 싶다면, 끝에 `.round(소수점 자릿수)`를 추가할 수 있습니다.
 
-
-
 ```python
 # .round(2): 소수점 둘째자리까지 반올림하여 결과 출력
 df.groupby('sex').agg({'total_bill': 'mean', 
@@ -680,11 +670,7 @@ df.groupby('sex').agg({'total_bill': 'mean',
 
 `.agg()`함수에 사용자 정의 함수(Custom Function)를 적용할 수 있습니다.
 
-
-
 - 단, 사용자 정의 함수는 합산(aggregated)된 결과를 반환해야 합니다.
-
-
 
 ```python
 df.groupby('sex')[['total_bill', 'tip']].agg(lambda x: x.mean() / x.std())
@@ -734,8 +720,6 @@ df.groupby('sex')[['total_bill', 'tip']].agg(lambda x: x.mean() / x.std())
 
 
 `.agg()` 적용한 결과에 대하여 `reset_index()`를 적용하여 왼쪽 Index를 초기화할 수 있습니다.
-
-
 
 ```python
 # 인덱스 초기화 전
@@ -838,11 +822,7 @@ df.groupby('sex').mean().reset_index()
 
 ## 분리된 group 순회
 
-
-
 `groupby`를 활용한 순회시 첫번째 인자는 key값을, 두번재 인자는 group을 반환합니다.
-
-
 
 ```python
 # sex, smoker 기준으로 그룹한 후 순회하며 출력
@@ -1198,8 +1178,6 @@ for (k1, k2), group in df.groupby(['sex', 'smoker']):
 
 다음과 같이 `dict`로 변환한 후 키 값으로 조회하여 **그룹별 데이터프레임(DataFrame)을 조회**할 수 있습니다.
 
-
-
 ```python
 # 그룹별 데이터프레임을 생성 후 dict에 저장
 output = dict(list(df.groupby(['sex', 'smoker'])))
@@ -1299,8 +1277,6 @@ output[('Male', 'Yes')].head()
 
 
 ## apply()로 그룹별 데이터 전처리
-
-
 
 ```python
 # 샘플 데이터셋 로드
@@ -1444,8 +1420,6 @@ df.head()
 
 
 현재 `age` 컬럼에는 총 177건의 결측 데이터가 존재합니다.
-
-
 
 ```python
 # age 컬럼의 결측치 조회
