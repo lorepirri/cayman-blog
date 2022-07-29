@@ -19,7 +19,8 @@ typora-copy-images-to: ../images/2022-07-29
     table.dataframe {
       white-space: normal;
       width: 100%;
-      height: 240px;
+      height: 100%;
+      margin: 0 0 1rem;
       display: block;
       overflow: auto;
       font-family: Arial, sans-serif;
