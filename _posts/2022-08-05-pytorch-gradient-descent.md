@@ -7,6 +7,7 @@ categories: pytorch
 tags: [python, 파이썬, pytorch, 파이토치, 경사하강법, gradient descent, 파이토치 입문, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
 published: true
+use_math: true
 typora-copy-images-to: ../images/2022-08-06
 ---
 
