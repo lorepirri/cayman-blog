@@ -188,7 +188,7 @@ y_hat = w * x + b
 `y_hat`과 `y`의 손실(Loss)을 계산합니다. 여기서 손실함수는 **Mean Squared Error** 함수를 사용합니다.
 
 
-$\Large Loss = \sum_{i=1}^{N}(\hat{y}_i-y_i)^2$
+<p>$\Large Loss = \sum_{i=1}^{N}(\hat{y}_i-y_i)^2$</p>
 
 
 
