@@ -2,7 +2,7 @@
 layout: page
 title: "PyTorch의 자동미분(AutoGrad)을 활용하여 정형 데이터 예측기(regression model)구현"
 description: "PyTorch의 자동미분(AutoGrad)을 활용하여 정형 데이터 예측기(regression model)에 대해 알아보겠습니다."
-headline: "PPyTorch의 자동미분(AutoGrad)을 활용하여 정형 데이터 예측기(regression model)에 대해 알아보겠습니다."
+headline: "PyTorch의 자동미분(AutoGrad)을 활용하여 정형 데이터 예측기(regression model)에 대해 알아보겠습니다."
 categories: pytorch
 tags: [python, 파이썬, pytorch, 파이토치, 경사하강법, gradient descent, 파이토치 입문, 정형데이터, 보스톤 주택가격, data science, 데이터 분석, 딥러닝, 딥러닝 자격증, 머신러닝, 빅데이터, 테디노트]
 comments: true
