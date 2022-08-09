@@ -576,9 +576,7 @@ epoch 20, loss: 0.15411, acc: 0.94178, val_loss: 0.36963, val_accuracy: 0.89350
 model.load_state_dict(torch.load('DNNModel.pth'))
 ```
 
-<pre>
-<All keys matched successfully>
-</pre>
+
 
 ```python
 # 최종 검증 손실(validation loss)와 검증 정확도(validation accuracy)를 산출합니다.
