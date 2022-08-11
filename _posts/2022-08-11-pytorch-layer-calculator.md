@@ -14,18 +14,39 @@ typora-copy-images-to: ../images/2022-08-11
 PyTorch에서
 Conv2d, MaxPool2d 계산기
 
-
 <html>
-<style>
-    html, body { height: 100%; }
-    body { overflow: hidden; margin: 0; }
-    iframe { height: 100%; width: 100%; frameborder: 0; }
-</style>
-<body>
-
-<iframe src="https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/?embed=true" width="600" height="600">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-
-</body>
+  <head>
+    <title>Conv2d, MaxPool2d 계산기</title>
+    <style type="text/css">
+      html {
+        overflow: auto;
+      }  		
+      html,
+      body,
+      div,
+      iframe {
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        border: none;
+      }	
+      iframe {
+        display: block;
+        width: 100%;
+        border: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        width="100%"
+        height="100%"
+        scrolling="auto">
+    </iframe>
+  </body>
 </html>
