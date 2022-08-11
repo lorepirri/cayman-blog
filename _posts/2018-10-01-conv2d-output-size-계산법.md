@@ -13,8 +13,21 @@ published: true
 이번 포스팅에서는 torch 를 이용하여 CNN(Convolution Neural Network) 에서 convolution layer를 겹겹이 쌓았을 때 최종 output volume size를 구하는 방법에 대하여 알아 보겠습니다.
 
 
+## 이미지 출력 자동 계산기 웹앱 배포(2022.08.12)
 
-사실, 이 계산법이 필요한 이유는 Convolution Layer 를 겹겹이 쌓고 중간중간 maxpooling 을 거친 후, Fully-connected layer로 넣기 전 output size 를 계산해주어 node수에 맞게 삽입해 줘야 하는데, 이때 shape을 찍어보고 넣어줄 수도 있겠지만, 이를 미리 계산하고 smart(?)하게 넣어 주는 방법에 대하여 공유 드리고자 합니다.
+PyTorch에서 Conv2d와 MaxPool2d 레이어를 쌓을 때 **이미지 출력 값을 자동으로 계산해주는 웹앱을 만들어 배포** 했습니다!!
+
+- [Conv2d, MaxPool2d 계산기 바로가기](https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/)
+
+
+![torch-calculator](../images/2018-10-01/demo.gif)
+
+
+
+위의 링크에서 자동으로 계산하여 최종 출력 이미지의 shape을 계산할 수 있습니다.
+
+
+최종 출력 이미지의 Shape를 우리가 계산하여 알아야 하는 이유는 Convolution Layer 를 겹겹이 쌓고 중간중간 maxpooling 을 거친 후, Fully-connected layer로 넣기 전 output size 를 계산해주어 node수에 맞게 삽입해 줘야 하는데, 이때 shape을 찍어보고 넣어줄 수도 있겠지만, 이를 미리 계산하고 smart(?)하게 넣어 주는 방법에 대하여 공유 드리고자 합니다.
 
 
 
