@@ -40,7 +40,7 @@ Conv2d, MaxPool2d 계산기
     </style>
   </head>
   <body>
-    <iframe src="https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/"
+    <iframe src="https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/?embedded=true"
         frameborder="0"
         marginheight="0"
         marginwidth="0"
