@@ -17,7 +17,7 @@ published: true
 
 PyTorch에서 Conv2d와 MaxPool2d 레이어를 쌓을 때 **이미지 출력 값을 자동으로 계산해주는 웹앱을 만들어 배포** 했습니다!!
 
-- [Conv2d, MaxPool2d 계산기 바로가기](https://teddylee777-pytorch-layer-calculator-app-87zpr8.streamlitapp.com/)
+- [Conv2d, MaxPool2d 계산기 바로가기](https://bit.ly/torch-calc)
 
 
 ![torch-calculator](../images/2018-10-01/demo.gif)
