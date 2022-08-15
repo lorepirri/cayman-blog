@@ -13,6 +13,14 @@ typora-copy-images-to: ../images/2022-08-06
 
 이번 포스팅에서는 `PyTorch`의 자동미분(AutoGrad) 기능을 활용하여 경사하강법 알고리즘을 직접 구현해보고 손실(loss) 값과 `weights`, `bias`의 변화량을 시각화해 보겠습니다.
 
+
+**실습파일** 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/02-PyTorch/03-pytorch%EB%A1%9C-%EA%B2%BD%EC%82%AC%ED%95%98%EA%B0%95%EB%B2%95-%EA%B5%AC%ED%98%84.ipynb)
+
+
+
+
 <head>
   <style>
     table.dataframe {

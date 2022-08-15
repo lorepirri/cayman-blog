@@ -24,6 +24,11 @@ typora-copy-images-to: ../images/2022-08-02
 에 대하여 알아보겠습니다.
 
 
+**실습파일** 
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/teddylee777/machine-learning/blob/master/02-PyTorch/04-DataSet%EA%B3%BC-DataLoader.ipynb)
+
+
 
 **[참고]**
 
