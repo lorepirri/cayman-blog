@@ -506,10 +506,6 @@ epoch 10, loss: 0.14265, acc: 0.94105, val_loss: 0.23530, val_accuracy: 0.90796
 model.load_state_dict(torch.load(f'{MODEL_NAME}.pth'))
 ```
 
-<pre>
-<All keys matched successfully>
-</pre>
-
 ```python
 # 최종 검증 손실(validation loss)와 검증 정확도(validation accuracy)를 산출합니다.
 final_loss, final_acc = model_evaluate(model, test_loader, loss_fn, device)
