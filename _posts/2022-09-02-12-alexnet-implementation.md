@@ -131,17 +131,8 @@ test_transform = transforms.Compose([
 train_loader, test_loader = sd.cats_and_dogs(train_transform, test_transform)
 ```
 
+
 <pre>
-Truncated Image is found at: tmp/PetImages/Dog/Thumbs.db
-</pre>
-<pre>
-/opt/conda/envs/py37/lib/python3.7/site-packages/PIL/TiffImagePlugin.py:845: UserWarning: Truncated File Read
-  warnings.warn(str(msg))
-</pre>
-<pre>
-Truncated Image is found at: tmp/PetImages/Dog/11702.jpg
-Truncated Image is found at: tmp/PetImages/Cat/Thumbs.db
-Truncated Image is found at: tmp/PetImages/Cat/666.jpg
 ['tmp/PetImages/Dog', 'tmp/PetImages/Cat']
 ==============================
 train images: 20000
