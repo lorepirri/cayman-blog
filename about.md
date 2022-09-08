@@ -3,16 +3,17 @@ layout: page
 title: 데이터 분석, 머신러닝, 딥러닝의 대중화를 꿈 꿉니다.
 tagline: Who am I?
 permalink: /about.html
+typora-copy-images-to: ./images/about
 ---
 
 ## Contact
 + [Blog](https://teddylee777.github.io)
-+ [GitHub](https://github.com/teddylee777)
++ [GitHub @teddylee777](https://github.com/teddylee777)
 + [LinkedIn](https://www.linkedin.com/in/teddy-lee/)
-+ [YouTube](https://www.youtube.com/channel/UCt2wAAXgm87ACiQnDHQEW6Q)
++ [유튜브 테디노트](https://www.youtube.com/channel/UCt2wAAXgm87ACiQnDHQEW6Q)
 + <teddylee777@gmail.com>
 
-## History
+## Career
 + University of Wisconsin - Madison (위스콘신 주립대) 경제학 졸.
 + 삼성 SCSA 1기 졸.
 + 삼성전자 무선사업부 UX개발그룹 (Samsung Notes, Samsung Themes, 갤러리카메라 등 개발).
@@ -41,19 +42,41 @@ permalink: /about.html
 + 패스트캠퍼스 - [파이썬 딥러닝 300제 강의](https://fastcampus.co.kr/data_online_dl300)
 + 대구 디지털진흥원 - Python, 데이터분석, 시각화, 머신러닝 강의.
 + CJ올리브네트웍스 - Python, 데이터분석, 시각화, 머신러닝, 딥러닝 강의.
-
++ 충남 AI, SW교육 한마당 진로특강.
++ 인천대학교 - 파이썬을 활용한 데이터 분석 특강.
++ 한림대학교 - 비전공자 대상 데이터 분석 특강.
++ 한신대학교 - ABC(AI, Bigdata, Contents) 캠프 AI 특강.
++ 청년인재 AI 이어드림스쿨 - "나만의 인공지능 학습 노하우" 특강.
++ 금오공과대학교 - 텐서플로우 자격 인증 과정 강의.
++ 한양대학교 - 데이터 역량강화 교육 특강.
++ 유데미(Udemy) - [한 방으로 끝내는 판다스 Pandas](https://www.udemy.com/course/pandas-i/).
++ 대구 디지털산업진흥원 – 2022년도 빅데이터 분석 강의.
++ 엘리스(Elice) - 파이썬 입문 VOD 강의.
++ 세교고등학교 - ABC 캠프 (쉽게 배우는 인공지능) 강의.
++ SK그룹 - Project Based Learning (PBL) 멘토 & 강의.
++ 한신대학교 - ABC(AI, Bigdata, Contents) 캠프 2022년도 여름학기 AI 특강.
 
 ## Certificate
+
+![tensorflow certificate](images/about/capture-20220908-003654.png)
+
 + [TensorFlow Developers Certificate](https://www.credential.net/bbed6f0a-2767-4526-afe8-bd3ffc09ba2d)
 
+## Written Books
+
+![image-20220908004618479](images/about/image-20220908004618479.png)
+
+- [파이썬 딥러닝 텐서플로(2021) - 정보문화사](http://www.yes24.com/Product/Goods/102603640?OzSrank=2)
+
 ## Key Skills
+
 + Windows / Mac OS / Linux
 + Android / Java / Python
 + C# / C++ / C
 + Bluetooth firmware / BLE
 + Data Science / Pandas, Numpy, Matplotlib, Seaborn
 + Machine Learning / scikit-learn
-+ Deep Learning / Tensorflow, Keras, PyTorch
++ Deep Learning / TensorFlow, Keras, PyTorch
 + Git, GitHub
 
 ## Articles
@@ -62,6 +85,8 @@ permalink: /about.html
 + [[스타트업] 헬멧에 부착하는 무선 헤드셋 '어헤드' 만든 아날로그 플러스](https://1boon.kakao.com/appstory/171208_3)
 + [‘모두 대기업에서 나왔습니다. 왜 나오게 되었을까요?’ 아날로그플러스 팀](https://www.theteams.kr/teamterview/page/264)
 + [‘삼성발(發) 아이디어 집합소’ C랩 부스 빛낸 화제의 상품 5](https://news.samsung.com/kr/%ED%86%A1%ED%86%A1-%ED%8A%80%EB%8A%94-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%EA%B0%80-%EA%B0%80%EB%93%9D-%ED%8A%B9%EB%B3%84%ED%95%9C-8%EA%B0%9C-%EC%A0%9C%ED%92%88-%EC%84%A0%EB%B3%B4%EC%9D%B8-c%EB%9E%A9?cid=in_paid_display_affiliate_cake_cefest_eshop_hhp_20200101_none)
++ [AI 교육 스타트업 대표가 말하는 딥러닝의 현실: 파이썬 강의 인터뷰](https://blog.naver.com/fastcampus/222280812999)
++ [남들 다 부러워하는 삼성전자 그만두고 선택한 놀라운 일](https://v.daum.net/v/5e816892e0b0c27a3bf31c1c)
 
 ## Language
 + Korean (Native)
