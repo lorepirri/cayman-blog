@@ -18,7 +18,7 @@ typora-copy-images-to: ../images/2022-10-22
 
 먼저 spotlight 를 열어 **"터미널"** 혹은 **"terminal"**을 입력하여 터미널 창을 열어줍니다.
 
-![image0](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image0.png)
+![image0](../images/2022-10-22/image0.png)
 
 
 
@@ -28,7 +28,7 @@ typora-copy-images-to: ../images/2022-10-22
 xcode-select --install
 ```
 
-![image3](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image3.png)
+![image3](../images/2022-10-22/image3.png)
 
 
 
@@ -40,7 +40,7 @@ xcode-select --install
 
 다운로드는 "다운로드" 혹은 "Downloads" 폴더에 다운로드 받도록 하겠습니다.
 
-![image5](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image5.png)
+![image5](../images/2022-10-22/image5.png)
 
 
 
@@ -48,7 +48,7 @@ xcode-select --install
 
 열어 놓은 터미널 창에 `cd Downloads`  명령어를 입력하여 다운로드 폴더로 이동합니다.
 
-![image4](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image4.png)
+![image4](../images/2022-10-22/image4.png)
 
 이동한 다운로드 폴더 내에서 다음의 명령어를 입력하여 설치를 진행합니다.
 
@@ -62,7 +62,7 @@ bash ./Miniconda3-latest-MacOSX-arm64.sh -b -p $HOME/miniconda
 source ~/miniconda/bin/activate
 ```
 
-![image6](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image6.png)
+![image6](../images/2022-10-22/image6.png)
 
 왼쪽에 **(base)  라고 표기된다면 성공**입니다.
 
@@ -72,13 +72,13 @@ source ~/miniconda/bin/activate
 
 다음의 명령어를 터미널 창에 입력하여 `.zshrc` 파일을 열어줍니다.
 
-![image7](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image7.png)
+![image7](../images/2022-10-22/image7.png)
 
 아래와 같이 `.zshrc` 파일이 열립니다.
 
 <**설정 파일 안은 제가 캡처한 화면과 다르게 나타탈 수 있으나, 크게 신경 안쓰셔도 됩니다.**>
 
-![image8](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image8.png)
+![image8](../images/2022-10-22/image8.png)
 
 
 
@@ -90,11 +90,11 @@ source ~/miniconda/bin/activate
 export PATH="$HOME/miniconda/bin:$PATH"
 ```
 
-![image9](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image9.png)
+![image9](../images/2022-10-22/image9.png)
 
 입력을 마쳤으면, `control + X` 를 누르고 `Y`를 눌러 저장하고 빠져 나옵니다.
 
-![image10](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image10.png)
+![image10](../images/2022-10-22/image10.png)
 
 다시 터미널 창에 다음의 명령어를 입력하여 변경사항을 적용합니다.
 
@@ -102,11 +102,11 @@ export PATH="$HOME/miniconda/bin:$PATH"
 source ~/.zshrc
 ```
 
-![image11](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image11.png)
+![image11](../images/2022-10-22/image11.png)
 
 `conda` 라는 명령어 입력시 아래와 같이 출력되면 성공입니다!
 
-![image12](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image12.png)
+![image12](../images/2022-10-22/image12.png)
 
 
 
@@ -120,7 +120,7 @@ source ~/.zshrc
 conda create -n tf-cert python=3.8
 ```
 
-![image13](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image13.png)
+![image13](../images/2022-10-22/image13.png)
 
 다음의 명령어로 가상환경을 활성화 합니다.
 
@@ -128,7 +128,7 @@ conda create -n tf-cert python=3.8
 source activate tf-cert
 ```
 
-![image15](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image15.png)
+![image15](../images/2022-10-22/image15.png)
 
 가상환경이 활성화 되면 왼쪽 () 괄호 안에 가상환경의 이름이 표시 됩니다.
 
@@ -154,7 +154,7 @@ pip install tensorflow-metal==0.5.0
 
 지원하는 형식은 아래 표를 참고해 주세요.
 
-![image16](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image16.png)
+![image16](../images/2022-10-22/image16.png)
 
 만약 이전 버전인 v2.8을 설치하고자 한다면 다음과 같이 명령어를 변경할 수 있습니다.
 
@@ -184,5 +184,5 @@ import tensorflow as tf
 tf.__version__
 ```
 
-![image17](/Users/teddy/Dev/teddylee777.github.io/images/2022-10-22/image17.png)
+![image17](../images/2022-10-22/image17.png)
 
