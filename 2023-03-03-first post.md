@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "블로그를 시작해보겠습니다"
 ---
 
