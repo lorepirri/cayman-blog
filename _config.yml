@@ -2,7 +2,7 @@ title: Thanks My Life
 description: Hi
 show_downloads: true
 
-baseurl: "/ThanksMyLife.blog" 
+baseurl: "" 
 url: "https://ThanksMyLife.github.io" 
 
 google_analytics:
