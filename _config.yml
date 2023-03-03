@@ -1,8 +1,8 @@
-title: Cayman Blog Theme
+title: Thanks My Life
 description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
 show_downloads: true
 
-baseurl: "/ThanksMyLife.blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
+baseurl: "" 
 url: "https://ThanksMyLife.github.io" 
 
 google_analytics:
