@@ -341,21 +341,21 @@ section {
 
 /* Header Section Styling */
 #home {
-  background: #d90647; /* Old browsers */
+  background: #34495e; /* Old browsers */
   background: -moz-linear-gradient(
     top,
-    #d90647 37%,
-    #eb402c 98%
+    #34495e 37%,
+    #34495e 98%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    #d90647 37%,
-    #eb402c 98%
+    #34495e 37%,
+    #34495e 98%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    #d90647 37%,
-    #eb402c 98%
+    #34495e 37%,
+    #34495e 98%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90647', endColorstr='#eb402c',GradientType=0 ); /* IE6-9 */
   background-repeat: no-repeat;
@@ -398,13 +398,13 @@ nav {
   background-color: #fff;
   z-index: 500;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  color: #d90647;
+  color: #34495e;
   padding: 10px 40px;
   transition: 0.3s;
 }
 
 .sticky .logo {
-  color: #d90647;
+  color: #34495e;
 }
 
 .sticky #navbar ul li a {
