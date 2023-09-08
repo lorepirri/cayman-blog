@@ -255,7 +255,7 @@ section {
 .preloader .loader {
   height: 2.5rem;
   width: 2.5rem;
-  border: 0.25rem solid #d90647;
+  border: 0.25rem solid #34495e;
   border-radius: 50%;
   border-top: 0.25rem solid transparent;
   border-bottom: 0.25rem solid transparent;
